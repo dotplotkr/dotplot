@@ -167,7 +167,6 @@ body{
 
   }
 
-<<<<<<< HEAD
   /* 모달 윈도우 */
   input[id="popup"]{
     display:none;
@@ -242,9 +241,6 @@ body{
 
 
   .work_wrapper > div{
-=======
-  .work_wrapper div{
->>>>>>> parent of 9b820be (dd)
     position:relative;
     top:0;
     left:0;
@@ -285,14 +281,8 @@ body{
 
   .work_wrapper div > .work > .img_name{
     font-family:'Roboto',sans-serif;
-<<<<<<< HEAD
-    text-shadow: 3px 3px 25px black;
-    opacity:0;
-    font-size:6rem;
-=======
     opacity:100;
     font-size:8rem;
->>>>>>> parent of 9b820be (dd)
     position:absolute;
     width:100%;
     top:50%;
