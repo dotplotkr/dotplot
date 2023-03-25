@@ -281,7 +281,7 @@ body{
 
   .work_wrapper div > .work > .img_name{
     font-family:'Roboto',sans-serif;
-    opacity:100;
+    opacity:1;
     font-size:8rem;
     position:absolute;
     width:100%;
@@ -291,7 +291,7 @@ body{
   }
 
   .work_wrapper div > .work:hover > .img_name{
-    opacity:1;
+    opacity:0;
     transition: all 1s;
   }
 
