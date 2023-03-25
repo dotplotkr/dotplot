@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOTPLOT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <div class="loader">
+        hello. welcome to dotplot
+    </div>
+    <!-- 커서 시작 -->
+    <div class="cursor"></div>
+    <!-- 커서 끝 -->
+
+    <!-- 헤더 시작 -->
+<header class="top_bar">
+    <section class="header_logo-wrap">
+        <a class="cursor-big" href="/index.html">
+            DOTPLOT
+        </a>
+    </section>
+    
+    <section class="header_right">
+        <ul class="menu_box">
+            <li class="cursor-big"><a href="work/work.html">Work</a></li>
+            <li class="cursor-big"><a href="about/about.html">About</a></li>
+        </ul>
+    </section>
+</header>
+
+    <!-- 헤더 끝 -->
+
+<!-- 마르퀴 시작 -->
+
+    <div class="marquee">
+        <div class="text-wrapper">
+        <h1>There is no perfection, Only perspective exist. We can do what we want to do.</h1>
+        <h1>There is no perfection, Only perspective exist. We can do what we want to do.</h1>
+        <h1>There is no perfection, Only perspective exist. We can do what we want to do.</h1>
+        <h1>There is no perfection, Only perspective exist. We can do what we want to do.</h1>
+        </div>
+    </div>
+    <!-- 마르퀴 끝 -->
+
+    <!-- 메인 시작 -->
+    <main class="main_bar border_red">
+        <div class="banner">
+            <video src="source/video/connected.mp4" autoplay muted loop playsinline ></video>
+        </div>
+    </main>
+
+
+    <!-- 메인 끝 -->
+
+    <!-- 푸터 시작 -->
+<footer class="bottom_bar">
+    <section class="bottom_bar_box">
+        <div class="bottom_bar_inf">
+                <div class="ftc_inf cursor-big" onclick="onopen();">ⓒ2022. Dotplot. all rights reserved.</div>
+        </div>
+        
+    </section>
+</footer>
+    <!-- 푸터 끝 -->
+
+    
+    
+    <script language="JavaScript">
+        function onopen()
+        {
+        var url =
+        "http://www.ftc.go.kr/bizCommPop.do?wrkr_no="+7662401352;
+        window.open(url, "bizCommPop", "width=750, height=700;");
+        }
+        </script>
+</body>
+</html>
