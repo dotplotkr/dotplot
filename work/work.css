@@ -48,6 +48,8 @@ body{
     background-color:white;
 }
 .cursor {
+    top:-300px;
+    left:-300px;
     position:fixed;
     width:15px;
     height:15px;
@@ -67,72 +69,73 @@ body{
 /* 커스텀 커서 끝 */
 
 body{
-    background-color:black;
+  background-color:black;
 }
+
 /* 헤더 시작 */
 .top_bar{
-    position:fixed;
-    display:flex;
-    justify-content:space-between;
-    width:100vw;
-    height:8vh;
-    font-family:'Roboto','sans-serif';
-    font-weight: 700;
-    z-index:1;
+  position:fixed;
+  display:flex;
+  justify-content:space-between;
+  width:100vw;
+  height:8vh;
+  font-family:'Roboto','sans-serif';
+  font-weight: 700;
+  z-index:1;
 
 }
 
 .header_logo-wrap{
-    margin-top:5vh;
-    margin-left:calc(2vw + 10px);
+  margin-top:5vh;
+  margin-left:calc(2vw + 10px);
 }
 
 .header_logo-wrap > a{
-    font-size:1.2rem;
-    background-color:white;
-    border-radius:3px;
-    font-size:1.2rem;
-    width:10px;
-    height:10px;
-    padding:3px;
-    transition:all .5s;
+  font-size:1.2rem;
+  background-color:white;
+  border-radius:3px;
+  font-size:1.2rem;
+  width:10px;
+  height:10px;
+  padding:3px;
+  transition:all .5s;
 }
 
 .header_logo-wrap > a:hover{
-    font-size:1.2rem;
-    background-color:black;
-    color:white;
-    border-radius:3px;
-    font-size:1.2rem;
-    width:10px;
-    height:10px;
-    padding:3px;
-    transition:all .5s;
+  font-size:1.2rem;
+  background-color:black;
+  color:white;
+  border-radius:3px;
+  font-size:1.2rem;
+  width:10px;
+  height:10px;
+  padding:3px;
+  transition:all .5s;
 
 }
 
 .header_right > ul{
-    display:flex;
-    margin-top:5vh;
-    margin-right:2vw;
-    
+  display:flex;
+  margin-top:5vh;
+  margin-right:2vw;
+  
 }
 
 .header_right > ul > li > a{
-    background-color:white;
-    border-radius:3px;
-    font-size:1.2rem;
-    padding:5px;
-    width:10px;
-    height:10px;
-    margin:10px;
-    transition:all .5s;
+  background-color:white;
+  border-radius:3px;
+  font-size:1.2rem;
+  padding:5px;
+  width:10px;
+  height:10px;
+  margin:10px;
+  transition:all .5s;
 }
 
 .header_right > ul > li > a:hover{
-    background-color:black;
-    color:white;
-    transition:all .5s;
+  background-color:black;
+  color:white;
+  transition:all .5s;
 }
 
 /* 헤더 끝 */
@@ -140,7 +143,6 @@ body{
   .main_box{
     display:block;
     align-items: center;
-    width:100vw;
     background-color:black;
 }
 
@@ -159,15 +161,8 @@ body{
     font-size:4rem;
     font-weight:700;
   }
-  
-  .work_wrapper{
-    display:block;
-    justify-content: center;
-    width:100vw;
 
-  }
-
-  /* 모달 윈도우 */
+  /* 모달 윈도우 시작 */
   input[id="popup"]{
     display:none;
   }
@@ -195,7 +190,6 @@ body{
     visibility:visible;
     
   }
-
 
 
   input[id="popup"] + label + div > div{
@@ -237,7 +231,7 @@ body{
     z-index:1;
   }
 
-  /* 모달 윈도우 */
+  /* 모달 윈도우 끝 */
 
 
   .work_wrapper > div{
@@ -247,7 +241,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width:100vw;
+    width:99vw;
     box-sizing: border-box;
   }
 
@@ -257,6 +251,7 @@ body{
   }
   .work_wrapper div > .work{
     position:relative;
+    margin-top:1vw;
     color:white;
     width:61vw;
     height:75vh;
@@ -296,20 +291,21 @@ body{
   }
 
   @media screen and (max-width:1000px){
+    .work_wrapper > div{
+      width:97vw;
+    }
+
       .work_wrapper div > .work{
         position:relative;
-        color:white;
-        width:98vw;
-        height:98vw;
+        width:95vw;
+        height:95vw;
         top:50%;
-        text-align: center;
       }
       
       .work_wrapper div > .work > img{
-
         border-radius: 20px;
-        width:98vw;
-        height:98vw;
+        width:95vw;
+        height:95vw;
         object-fit: cover;
         transition: all 0.5s;
         z-index:10;
@@ -330,8 +326,8 @@ body{
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        width:80vw;
-        height:45vw;
+        width:96vw;
+        height:54vw;
         /*background-color: white;*/
         z-index:2;
       }
@@ -340,8 +336,8 @@ body{
         position:absolute;
         color:white;
         font-size:2rem;
-        top:-15%;
-        right:3%;
+        top:-10%;
+        right:4%;
         padding:20px;
         border-radius:100%;
         z-index:1;
@@ -352,24 +348,26 @@ body{
 
 /* 푸터 시작 */
 .bottom_bar{
-    bottom:0;
-    
+  bottom:0;
+  
+  
 }
 
 .bottom_bar_box{
-    display:flex;
-    margin-left:2vw;
-    font-size:.6rem;
-    font-family: 'Noto Sans Kr', sans-serif;
-    font-weight: 300;
-    height:3vh;
+  display:flex;
+  margin-bottom:1vw;
+  margin-left:2vw;
+  font-size:.6rem;
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight: 300;
+  height:3vh;
 
 }
 
 .bottom_bar > .bottom_bar_box > .bottom_bar_inf > .ftc_inf{
-    display:inline-block;
-    margin-right:10px;
-    color:white;
+  display:inline-block;
+  margin-right:10px;
+  color:white;
 }
 
 /* 푸터 끝 */

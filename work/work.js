@@ -27,3 +27,9 @@ $('.cursor-big').mouseleave(function(){
 window.onload = function(){
   $('.loader').fadeOut();
         };
+
+gsap.from('.title_wrapper > .title',{
+  y:60,
+  opacity:0,
+  duration:1
+});

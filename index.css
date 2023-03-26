@@ -50,6 +50,8 @@ body{
     background-color:white;
 }
 .cursor {
+    top:-300px;
+    left:-300px;
     position:fixed;
     width:15px;
     height:15px;
