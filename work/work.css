@@ -39,6 +39,19 @@ border:3px solid blue;
 }
 
 /* 라이브러리 끝 */
+/* 로더 시작 */
+.loader {
+  position:fixed;
+  width:99vw;
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+  color:white;
+  z-index:500;
+}
+/* 로더 끝 */
 /* 커스텀 커서 시작 */
 * {
     cursor:none;
@@ -67,7 +80,20 @@ body{
     height:50px;
   }
 /* 커스텀 커서 끝 */
+/* 스크롤바 시작 */
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width:0px;
+  
+}
 
+::-webkit-scrollbar-thumb{
+  background: #FF0000;
+}
+/* 스크롤바 끝 */
 body{
   background-color:black;
 }
@@ -292,7 +318,7 @@ body{
 
   @media screen and (max-width:1000px){
     .work_wrapper > div{
-      width:97vw;
+      width:100vw;
     }
 
       .work_wrapper div > .work{
@@ -356,7 +382,7 @@ body{
 .bottom_bar_box{
   display:flex;
   margin-bottom:1vw;
-  margin-left:2vw;
+  margin-left:3vw;
   font-size:.6rem;
   font-family: 'Noto Sans Kr', sans-serif;
   font-weight: 300;

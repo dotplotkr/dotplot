@@ -150,12 +150,15 @@ body{
 /* 마르퀴 시작 */
 .marquee{
     position:absolute;
-    margin:-.2vh 8.5vw;
+    margin:4.8vh 12vw;
+    height:100px;
 }
 
 .text-wrapper{
     display:flex;
-    width:80vw;
+    height:100px;
+    margin-top:-50px;
+    width:71vw;
     color:white;
     font-family:'Ubuntu Mono', sans-serif;
     font-style: italic;
@@ -183,7 +186,7 @@ body{
 @media screen and (max-width:1000px){
     .marquee{
         position:absolute;
-        margin:10vh 0;
+        margin:17vh 0;
     }
     
     .text-wrapper{

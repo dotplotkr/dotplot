@@ -1,5 +1,7 @@
 console.clear();
 
+gsap.registerPlugin(ScrollTrigger);
+
 $('.dot_second').click(function(){
   $('.main_bar').toggleClass('showback');
   $(this).toggleClass('big');
@@ -25,11 +27,77 @@ $('.cursor-big').mouseleave(function(){
 });
 
 window.onload = function(){
-  $('.loader').fadeOut();
+  $('.loader').delay('1000').fadeOut();
+  gsap.from('.title_wrapper > .title',{
+    y:60,
+    opacity:0,
+    duration:1,
+    delay:1
+  });
         };
 
-gsap.from('.title_wrapper > .title',{
-  y:60,
-  opacity:0,
-  duration:1
-});
+        gsap.from('.scroll1', {
+          scrollTrigger:{
+            trigger:'.scroll1',
+            scrub:true,
+            start:"top +=33%",
+            end:"bottom +=90%",
+            markers:false
+          },
+          opacity:0,
+          x: -1000,
+          duration: 4
+        });
+
+        gsap.from('.scroll2', {
+          scrollTrigger:{
+            trigger:'.scroll2',
+            scrub:true,
+            start:"top +=80%",
+            end:"bottom +=100%",
+            markers:false
+          },
+          opacity:0,
+          x: -1000,
+          duration: 4
+        });
+
+        gsap.from('.scroll3', {
+          scrollTrigger:{
+            trigger:'.scroll3',
+            scrub:true,
+            start:"top +=80%",
+            end:"bottom +=100%",
+            markers:false
+          },
+          opacity:0,
+          x: -1000,
+          duration: 4
+        });
+
+        gsap.from('.scroll4', {
+          scrollTrigger:{
+            trigger:'.scroll4',
+            scrub:true,
+            start:"top +=80%",
+            end:"bottom +=100%",
+            markers:false
+          },
+          opacity:0,
+          x: -1000,
+          duration: 4
+        });
+
+        gsap.from('.scroll5', {
+          scrollTrigger:{
+            trigger:'.scroll5',
+            scrub:true,
+            start:"top +=80%",
+            end:"bottom +=100%",
+            markers:false
+          },
+          opacity:0,
+          x: -1000,
+          duration: 4,
+          
+        });
