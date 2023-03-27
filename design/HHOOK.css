@@ -273,42 +273,20 @@ font-weight:lighter;
   margin-bottom:20vw;
 }
 @media screen and (max-width:1000px){
-  .card2, .card3, .card4{
-    margin-top:-3vw;
-  }
-
-  .card2{
-    margin-top:-14vw;
-    margin-bottom:17vw;
-  }
-
   h1{
-    font-size:2rem;
+    font-size:1rem;
   }
   
   h2{
-    font-size:1rem;
+    font-size:.5rem;
   }
   
   h3{
     font-size:.5em;
   }
-
-  .card2 > h4{
-    font-size:1rem;
-     text-align:center;
-     margin-top:18vw;
-  }
-
-  .card3{
-    margin-top:-8vw;
-  }
-
-  .card5{
-    margin-top:-10vw;
-  }
-  .card11{
-    margin-bottom:20vw;
+  
+  h4{
+    display:none;
   }
   .card4 > .elementWrapper > element{
     float:left;
@@ -329,21 +307,8 @@ font-weight:lighter;
     display:block;
     text-align: center;;
   }
-  .card2 > h1, h2{
-    margin-top:1vw;
-  }
+
   
-  .card2 > h3{
-    margin-top:1vw;
-  }
-
-  .card7{
-    margin-top:13vw;
-  }
-
-  .card9{
-    margin-top:10vw;
-  }
   }
 /* 메인박스 끝 */
 /* 푸터 시작 */
