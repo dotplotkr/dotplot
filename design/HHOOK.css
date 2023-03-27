@@ -197,7 +197,6 @@ body{
   height:100%;
   height:calc(100vw / 16 * 9);
   color:white;
-  border:.1px solid blue;
 }
 .card2, .card3, .card4, .card5, .card7, .card8, .card9{
   padding:5vw;
