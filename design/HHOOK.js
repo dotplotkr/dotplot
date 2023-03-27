@@ -28,37 +28,7 @@ $('.cursor-big').mouseleave(function(){
 
 window.onload = function(){
   $('.loader').delay('1000').fadeOut();
-  gsap.from('.title_wrapper > .title',{
-    y:60,
-    opacity:0,
-    duration:1,
-    delay:1
-  });
+
         };
 
-        gsap.from('.scroll1', {
-          scrollTrigger:{
-            trigger:'.scroll1',
-            scrub:true,
-            start:"top +=33%",
-            end:"bottom +=90%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4
-        });
-
-        gsap.from('.scroll2', {
-          scrollTrigger:{
-            trigger:'.scroll2',
-            scrub:true,
-            start:"top +=80%",
-            end:"bottom +=100%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4
-        });
-
+       

@@ -266,7 +266,47 @@ font-weight:lighter;
   align-items: flex-end;
   padding-bottom:15vw;
 }
+@media screen and (max-width:1000px){
+  h1{
+    font-size:2rem;
+  }
+  
+  h2{
+    font-size:1rem;
+  }
+  
+  h3{
+    font-size:.5em;
+  }
 
+  .card2 > h4{
+    font-size:1.3rem;
+     text-align:center;
+     margin-top:10vw;
+  }
+  .card11{
+    margin-bottom:20vw;
+  }
+  .card4 > .elementWrapper > element{
+    float:left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:15vw;
+    height:15vw;
+    border:3px solid #a90f29;
+    margin-left:3vw;
+    margin-top:10vw;
+    font-weight:bold;
+    font-size:0.7rem;
+  }
+  
+  .card4 > .elementWrapper > element> span{
+    color:#a90f29;
+    display:block;
+    text-align: center;;
+  }
+  }
 /* 메인박스 끝 */
 /* 푸터 시작 */
 .bottom_bar{

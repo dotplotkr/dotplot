@@ -188,6 +188,8 @@ body{
     font-weight:700;
   }
 
+  /* 워크 래퍼 시작 */
+
   .work_wrapper > div{
     position:relative;
     top:0;
@@ -274,7 +276,8 @@ body{
         transform: translateY(-50%);
         
       }
-
+    }
+  /* 워크 래퍼 끝 */
   /* 메인 박스 끝 */
 
 /* 푸터 시작 */
