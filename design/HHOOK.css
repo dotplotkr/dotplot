@@ -197,13 +197,16 @@ body{
   height:100%;
   height:calc(100vw / 16 * 9);
   color:white;
+  border:1px solid
 }
 .card2, .card3, .card4, .card5, .card7, .card8, .card9{
   padding:5vw;
 font-family:'NotoSans', sans-serif;
 font-weight:lighter;
 }
-
+.card2{
+  padding-top:2vw;
+}
 .card2 > h1, h2{
   margin-top:2vw;
 }
@@ -271,6 +274,11 @@ font-weight:lighter;
     margin-top:-3vw;
   }
 
+  .card2{
+    margin-top:-14vw;
+    margin-bottom:17vw;
+  }
+
   h1{
     font-size:2rem;
   }
@@ -286,7 +294,15 @@ font-weight:lighter;
   .card2 > h4{
     font-size:1rem;
      text-align:center;
-     margin-top:14vw;
+     margin-top:18vw;
+  }
+
+  .card3{
+    margin-top:-8vw;
+  }
+
+  .card5{
+    margin-top:-10vw;
   }
   .card11{
     margin-bottom:20vw;
@@ -319,7 +335,7 @@ font-weight:lighter;
   }
 
   .card7{
-    margin-top:4vw;
+    margin-top:13vw;
   }
 
   .card9{
