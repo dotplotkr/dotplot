@@ -267,6 +267,10 @@ font-weight:lighter;
   padding-bottom:15vw;
 }
 @media screen and (max-width:1000px){
+  .card2, .card3, .card4{
+    margin-top:-3vw;
+  }
+
   h1{
     font-size:2rem;
   }
@@ -280,9 +284,9 @@ font-weight:lighter;
   }
 
   .card2 > h4{
-    font-size:1.3rem;
+    font-size:1rem;
      text-align:center;
-     margin-top:10vw;
+     margin-top:14vw;
   }
   .card11{
     margin-bottom:20vw;
@@ -305,6 +309,21 @@ font-weight:lighter;
     color:#a90f29;
     display:block;
     text-align: center;;
+  }
+  .card2 > h1, h2{
+    margin-top:1vw;
+  }
+  
+  .card2 > h3{
+    margin-top:1vw;
+  }
+
+  .card7{
+    margin-top:4vw;
+  }
+
+  .card9{
+    margin-top:10vw;
   }
   }
 /* 메인박스 끝 */
