@@ -209,6 +209,9 @@ body{
 /* 마르퀴 끝 */
 
   /* 메인 박스 시작 */
+  .banner{
+    overflow: hidden;
+  }
   /* 비디오 시작 */
 .banner video{
     display:flex;

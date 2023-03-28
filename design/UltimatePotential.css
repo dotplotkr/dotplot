@@ -7,7 +7,7 @@
 
 
 
-/* 노말라이즈 시작 */
+/* Normalize start*/
 * {
     box-sizing: border-box;
 }
@@ -23,8 +23,8 @@ a{
     text-decoration: none;
 }
 
-/* 노말라이즈 끝 */
-/* 라이브러리 시작 */
+/* Normalize end*/
+/* Library start*/
 
 .border_blue{
 border:3px solid blue;
@@ -38,11 +38,11 @@ border:3px solid blue;
     border:3px solid green;
 }
 
-/* 라이브러리 끝 */
-/* 로더 시작 */
+/* Library end*/
+/* Loader start*/
 .loader {
   position:fixed;
-  width:99vw;
+  width:100vw;
   height:100vh;
   display:flex;
   align-items: center;
@@ -51,8 +51,8 @@ border:3px solid blue;
   color:white;
   z-index:500;
 }
-/* 로더 끝 */
-/* 커스텀 커서 시작 */
+/* Loader end*/
+/* Cursor start*/
 * {
     cursor:none;
 }
@@ -79,8 +79,8 @@ body{
     width:50px;
     height:50px;
   }
-/* 커스텀 커서 끝 */
-/* 스크롤바 시작 */
+/* Cursor end*/
+/* ScrollBar start*/
 html{
   overflow: scroll;
   overflow-x: hidden;
@@ -93,12 +93,12 @@ html{
 ::-webkit-scrollbar-thumb{
   background: #FF0000;
 }
-/* 스크롤바 끝 */
+/* ScrollBar end*/
 body{
   background-color:black;
 }
 
-/* 헤더 시작 */
+/* Header start*/
 .top_bar{
   position:fixed;
   display:flex;
@@ -164,120 +164,41 @@ body{
   transition:all .5s;
 }
 
-/* 헤더 끝 */
-  /* 메인 박스 시작 */
-  .main_box{
-    display:block;
-    align-items: center;
-    background-color:black;
+/* Header end*/
+/* Main start*/
+.main_box{
+  width:100%;
+  overflow: hidden;
 }
 
-.main_box > .title_wrapper{
-    display:flex;
-    justify-content: center;
-    
-
+.main_box > .card1 > video{
+  display:flex;
+  object-fit: cover;
+  width:100vw;
+  height:100vh;
+  pointer-events: none;
+  z-index:1;
+  color:white;
+  font-size:100rem;
+  box-sizing:border-box;
 }
-  .main_box > .title_wrapper > .title{
-    margin-top:15vh;
-    margin-bottom:10vh;
-    position:relative;
-    color:white;
-    font-family:'Roboto', sans-serif;
-    font-size:4rem;
-    font-weight:700;
-  }
+.main_box_section{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+}
 
-  .work_wrapper > div{
-    position:relative;
-    top:0;
-    left:0;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:99vw;
-    box-sizing: border-box;
-  }
+.card2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media screen and (max-width:1000px){
+}
+  /* Main end*/
 
-  .work_wrapper div:nth-of-type(2){
-    margin-bottom:15vh;
-
-  }
-  .work_wrapper div > .work{
-    position:relative;
-    margin-top:1vw;
-    color:white;
-    width:61vw;
-    height:75vh;
-    top:50%;
-    text-align: center;
-  }
-  
-  .work_wrapper div > .work > img{
-    opacity:30%;
-    border-radius: 20px;
-    width:60vw;
-    height:75vh; 
-    object-fit: cover;
-    transition: all 0.5s;
-    z-index:10;
-  }
-
-  .work_wrapper div > .work:hover > img{
-    opacity:100%;
-    transform: scale(0.8);
-  }
-
-  .work_wrapper div > .work > .img_name{
-    font-family:'Roboto',sans-serif;
-    opacity:1;
-    font-size:8rem;
-    position:absolute;
-    width:100%;
-    top:50%;
-    transform: translateY(-50%);
-    
-  }
-
-  .work_wrapper div > .work:hover > .img_name{
-    opacity:0;
-    transition: all 1s;
-  }
-
-  @media screen and (max-width:1000px){
-    .work_wrapper > div{
-      width:100vw;
-    }
-
-      .work_wrapper div > .work{
-        position:relative;
-        width:95vw;
-        height:95vw;
-        top:50%;
-      }
-      
-      .work_wrapper div > .work > img{
-        border-radius: 20px;
-        width:95vw;
-        height:95vw;
-        object-fit: cover;
-        transition: all 0.5s;
-        z-index:10;
-      }
-    
-      .work_wrapper div > .work > .img_name{
-        opacity:100;
-        font-size:3rem;
-        position:absolute;
-        width:100%;
-        top:50%;
-        transform: translateY(-50%);
-        
-      }
-
-  /* 메인 박스 끝 */
-
-/* 푸터 시작 */
+/* Footer start*/
 .bottom_bar{
   bottom:0;
   
@@ -301,9 +222,9 @@ body{
   color:white;
 }
 
-/* 푸터 끝 */
+/* Footer end*/
 
-/* 스크립트 토글 시작 */
+/* Toggle start*/
 .big {
     transform:scale(2);
 }
@@ -316,4 +237,4 @@ body{
     height: 5vw;
     width: 5vw;
 }
-/* 스크립트 토글 끝 */
+/* Toggle end*/

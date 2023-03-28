@@ -28,10 +28,4 @@ $('.cursor-big').mouseleave(function(){
 
 window.onload = function(){
   $('.loader').delay('1000').fadeOut();
-  gsap.from('.title_wrapper > .title',{
-    y:60,
-    opacity:0,
-    duration:1,
-    delay:1
-  });
         };
