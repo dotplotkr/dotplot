@@ -52,7 +52,7 @@ border:3px solid blue;
 /* 로더 시작 */
 .loader {
   position:fixed;
-  width:99vw;
+  width:100vw;
   height:100vh;
   display:flex;
   align-items: center;

@@ -28,9 +28,6 @@ $('.cursor-big').mouseleave(function(){
 
         window.onload = function(){
           $('.loader').delay('1000').fadeOut();
-          function scrollToTop(){
-            window.scrollTo(0,0);
-          };
           gsap.from('.title_wrapper > .title',{
             y:60,
             opacity:0,
@@ -38,7 +35,10 @@ $('.cursor-big').mouseleave(function(){
             delay:1
           });
                 };
-        
+        function scrollToTop(){
+        window.scrollTo(0,0);
+                };
+
                 gsap.from('.scroll1', {
                   scrollTrigger:{
                     trigger:'.scroll1',
