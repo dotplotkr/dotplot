@@ -178,7 +178,6 @@ body{
   width:100vw;
   height:100vh;
   overflow:hidden;
-  border:3px solid white;
 }
 
 .card2{
@@ -188,8 +187,9 @@ body{
   color: black;
   
 }
+
 .card2 > div{
- margin:0 30px; 
+  margin:0 30px;
 }
 .card2 h6{
   font-size: 1rem;
@@ -201,15 +201,21 @@ body{
   height:120px;
 }
 
-.card3{
+.card3, .card4{
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
-.card3 > div{
-  margin:0 auto;
-  border: 3px solid blue;
+.card3 > div,
+.card4 > div{
+  margin:auto auto;
+  text-align:center;
+}
+
+.card3 > div > video,
+.card4 > div > video{
+  width:80%;
 }
 
 @media screen and (max-width:1000px){
@@ -237,19 +243,6 @@ body{
   
   }
 
-  .card3{
-    display:block;
-   height:200vh;
-  }
-  
-  .card3 > div{
-    margin:0 auto;
-    border: 3px solid blue;
-  }
-
-  .card3 div > video{
-    width:100%;
-  }
   /* Main end*/
 
 /* Footer start*/
