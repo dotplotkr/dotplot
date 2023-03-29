@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 
 @font-face{
-    src : url("../dotplot/source/font/medio.otf");
-    font-family:'medio', 'sans-serif';
+  src : url("/source/font/FontsFree-Net-Avalon.ttf");
+  font-family:'Avalon';
 }
 
 
@@ -49,7 +49,7 @@ border:3px solid blue;
   justify-content: center;
   background-color:black;
   color:white;
-  z-index:500;
+  z-index:200;
 }
 /* 로더 끝 */
 /* 커스텀 커서 시작 */
@@ -71,7 +71,7 @@ body{
     mix-blend-mode:difference;
     pointer-events:none;
     transform:translateX(-50%) translateY(-50%);
-    z-index:100;
+    z-index:200;
     transition:width .1s, height .1s, background-color 1s;
   }
 
@@ -98,17 +98,14 @@ body{
   background-color:black;
 }
 
-/* 헤더 시작 */
+/* Header start */
 .top_bar{
   position:fixed;
   display:flex;
+  align-items: flex-end;
   justify-content:space-between;
   width:100vw;
-  height:8vh;
-  font-family:'Roboto','sans-serif';
-  font-weight: 700;
-  z-index:1;
-
+  z-index:100;
 }
 
 .header_logo-wrap{
@@ -117,8 +114,10 @@ body{
 }
 
 .header_logo-wrap > a{
-  font-size:1.2rem;
-  background-color:white;
+  font-family:'Roboto','sans-serif';
+  font-weight: 700;
+  color:white;
+  vertical-align: middle;
   border-radius:3px;
   font-size:1.2rem;
   width:10px;
@@ -128,43 +127,34 @@ body{
 }
 
 .header_logo-wrap > a:hover{
-  font-size:1.2rem;
-  background-color:black;
-  color:white;
-  border-radius:3px;
-  font-size:1.2rem;
-  width:10px;
-  height:10px;
-  padding:3px;
+  color:#231f20;
   transition:all .5s;
-
 }
 
 .header_right > ul{
   display:flex;
   margin-top:5vh;
   margin-right:2vw;
-  
+}
+.header_right > .menu_box > li{
+  margin:0 15px;
 }
 
 .header_right > ul > li > a{
-  background-color:white;
-  border-radius:3px;
-  font-size:1.2rem;
-  padding:5px;
-  width:10px;
-  height:10px;
-  margin:10px;
+  color:white;
+  font-family:'Avalon';
+  font-size:1rem;
+  padding:3px;
   transition:all .5s;
 }
 
 .header_right > ul > li > a:hover{
-  background-color:black;
-  color:white;
+  background-color:white;
+  padding:3px;
+  border-radius:10%;
+  color:black;
   transition:all .5s;
 }
-
-/* 헤더 끝 */
   /* 메인 박스 시작 */
   .main_box{
     display:block;
@@ -197,7 +187,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width:99vw;
+    width:100vw;
     box-sizing: border-box;
   }
 
@@ -222,7 +212,6 @@ body{
     height:75vh; 
     object-fit: cover;
     transition: all 0.5s;
-    z-index:10;
   }
 
   .work_wrapper div > .work:hover > img{
@@ -232,6 +221,7 @@ body{
 
   .work_wrapper div > .work > .img_name{
     font-family:'Roboto',sans-serif;
+    font-weight:700;
     opacity:1;
     font-size:8rem;
     position:absolute;
@@ -264,7 +254,6 @@ body{
         height:95vw;
         object-fit: cover;
         transition: all 0.5s;
-        z-index:10;
       }
     
       .work_wrapper div > .work > .img_name{

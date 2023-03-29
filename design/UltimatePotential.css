@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 
 @font-face{
-    src : url("../dotplot/source/font/medio.otf");
-    font-family:'medio', 'sans-serif';
+  src : url("/source/font/FontsFree-Net-Avalon.ttf");
+  font-family:'Avalon';
 }
-
 
 
 /* Normalize start*/
@@ -24,7 +23,7 @@ a{
 }
 
 /* Normalize end*/
-/* Library start*/
+/* Lib start*/
 
 .border_blue{
 border:3px solid blue;
@@ -38,7 +37,7 @@ border:3px solid blue;
     border:3px solid green;
 }
 
-/* Library end*/
+/* Lib end*/
 /* Loader start*/
 .loader {
   position:fixed;
@@ -49,7 +48,7 @@ border:3px solid blue;
   justify-content: center;
   background-color:black;
   color:white;
-  z-index:500;
+  z-index:200;
 }
 /* Loader end*/
 /* Cursor start*/
@@ -71,7 +70,7 @@ body{
     mix-blend-mode:difference;
     pointer-events:none;
     transform:translateX(-50%) translateY(-50%);
-    z-index:100;
+    z-index:200;
     transition:width .1s, height .1s, background-color 1s;
   }
 
@@ -85,6 +84,7 @@ html{
   overflow: scroll;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   width:0px;
   
@@ -95,20 +95,17 @@ html{
 }
 /* ScrollBar end*/
 body{
-  background-color:black;
+  background-color:white;
 }
 
-/* Header start*/
+/* Header start */
 .top_bar{
   position:fixed;
   display:flex;
+  align-items: flex-end;
   justify-content:space-between;
   width:100vw;
-  height:8vh;
-  font-family:'Roboto','sans-serif';
-  font-weight: 700;
-  z-index:1;
-
+  z-index:100;
 }
 
 .header_logo-wrap{
@@ -117,8 +114,10 @@ body{
 }
 
 .header_logo-wrap > a{
-  font-size:1.2rem;
-  background-color:white;
+  font-family:'Roboto','sans-serif';
+  font-weight: 700;
+  color:#231f20;
+  vertical-align: middle;
   border-radius:3px;
   font-size:1.2rem;
   width:10px;
@@ -128,43 +127,36 @@ body{
 }
 
 .header_logo-wrap > a:hover{
-  font-size:1.2rem;
-  background-color:black;
-  color:white;
-  border-radius:3px;
-  font-size:1.2rem;
-  width:10px;
-  height:10px;
-  padding:3px;
+  color:#f2f2f2;
   transition:all .5s;
-
 }
 
 .header_right > ul{
   display:flex;
   margin-top:5vh;
   margin-right:2vw;
-  
+}
+.header_right > .menu_box > li{
+  margin:0 15px;
 }
 
 .header_right > ul > li > a{
-  background-color:white;
-  border-radius:3px;
-  font-size:1.2rem;
-  padding:5px;
-  width:10px;
-  height:10px;
-  margin:10px;
+  color:#231f20;
+  font-family:'Avalon';
+  font-size:1rem;
+  padding:3px;
   transition:all .5s;
 }
 
 .header_right > ul > li > a:hover{
-  background-color:black;
-  color:white;
+  color:#231f20;
+  padding:3px;
+  border-radius:10%;
+  background-color:#f2f2f2;
   transition:all .5s;
 }
 
-/* Header end*/
+/* Header end */
 /* Main start*/
 .main_box{
   width:100%;
@@ -186,17 +178,61 @@ body{
   width:100vw;
   height:100vh;
   overflow:hidden;
+  border:3px solid white;
 }
 
 .card2{
   display:flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   
 }
-@media screen and (max-width:1000px){
+.card2 > div{
+ margin:0 30px; 
 }
+.card2 h6{
+  font-size: 1rem;
+  font-family:'NotosansKr', Sans-serif;
+  font-weight:500;
+}
+
+.card2 img{
+  height:120px;
+}
+
+.card3{
+  display:flex;
+}
+
+.card3 > div{
+  border: 3px solid blue;
+}
+
+@media screen and (max-width:1000px){
+  .card2{
+  display:block;
+  text-align: center;
+  color: black;
+    
+  }
+  .card2 > div:first-child{
+    margin-top:50%;
+  }
+
+  .card2 > div:last-child{
+    margin-top:100px;
+  }
+
+  .card2 img{
+    height:100px;
+  }
+
+  .card2 h6{
+    text-align:justify;
+  }
+  
+  }
   /* Main end*/
 
 /* Footer start*/

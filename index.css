@@ -9,7 +9,7 @@
 
 
 
-/* 노말라이즈 시작 */
+/* Nomalize start */
 * {
     box-sizing: border-box;
 }
@@ -25,8 +25,8 @@ a{
     text-decoration: none;
 }
 
-/* 노말라이즈 끝 */
-/* 라이브러리 시작 */
+/* Nomalize end */
+/* Lib start */
 
 .border_blue{
 border:3px solid blue;
@@ -40,8 +40,8 @@ border:3px solid blue;
     border:3px solid green;
 }
 
-/* 라이브러리 끝 */
-/* 커스텀 커서 시작 */
+/* Lib end */
+/* Cursor start */
 * {
     cursor:none;
 }
@@ -60,7 +60,7 @@ body{
     mix-blend-mode:difference;
     pointer-events:none;
     transform:translateX(-50%) translateY(-50%);
-    z-index:1000;
+    z-index:200;
     transition:width .1s, height .1s, background-color 1s;
   }
 
@@ -68,8 +68,12 @@ body{
     width:50px;
     height:50px;
   }
-/* 커스텀 커서 끝 */
-/* 커스텀 시작 */
+/* Cursor end */
+
+html{
+    background-color:black;
+}
+/* Loader start */
 .loader {
     position:absolute;
     width:100vw;
@@ -79,78 +83,70 @@ body{
     justify-content: center;
     background-color:black;
     color:white;
-    z-index:500;
+    z-index:200;
 }
-/* 헤더 시작 */
-  .top_bar{
+/* Loader end */
+/* Header start */
+.top_bar{
     position:absolute;
     display:flex;
+    align-items: flex-end;
     justify-content:space-between;
     width:100vw;
-    height:100vh;
-    font-family:'Roboto','sans-serif';
-    font-weight: 700;
-}
-
-.header_logo-wrap{
+  }
+  
+  .header_logo-wrap{
     margin-top:5vh;
     margin-left:calc(2vw + 10px);
-}
-
-.header_logo-wrap > a{
-    font-size:1.2rem;
-    background-color:white;
-    border-radius:3px;
-    font-size:1.2rem;
-    width:10px;
-    height:10px;
-    padding:3px;
-    transition:all .5s;
-}
-
-.header_logo-wrap > a:hover{
-    font-size:1.2rem;
-    background-color:black;
+  }
+  
+  .header_logo-wrap > a{
+    font-family:'Roboto','sans-serif';
+    font-weight: 700;
     color:white;
+    vertical-align: middle;
     border-radius:3px;
     font-size:1.2rem;
     width:10px;
     height:10px;
     padding:3px;
     transition:all .5s;
-
-}
-
-.header_right > ul{
+  }
+  
+  .header_logo-wrap > a:hover{
+    color:#231f20;
+    transition:all .5s;
+  }
+  
+  .header_right > ul{
     display:flex;
     margin-top:5vh;
     margin-right:2vw;
-    
-}
-
-.header_right > ul > li > a{
-    background-color:white;
-    border-radius:3px;
-    font-size:1.2rem;
-    padding:5px;
-    width:10px;
-    height:10px;
-    margin:10px;
-    transition:all .5s;
-}
-
-.header_right > ul > li > a:hover{
-    background-color:black;
+  }
+  .header_right > .menu_box > li{
+    margin:0 15px;
+  }
+  
+  .header_right > ul > li > a{
     color:white;
+    font-family:'Avalon';
+    font-size:1rem;
+    padding:3px;
     transition:all .5s;
-}
+  }
+  
+  .header_right > ul > li > a:hover{
+    background-color:white;
+    padding:3px;
+    border-radius:10%;
+    color:black;
+    transition:all .5s;
+  }
 
-/* 헤더 끝 */
-
-/* 마르퀴 시작 */
+/* Marquee start */
 .marquee{
     position:absolute;
-    margin:4.8vh 12vw;
+    margin:5.5vh 12vw;
     height:100px;
 }
 
@@ -159,20 +155,20 @@ body{
     height:100px;
     margin-top:-50px;
     width:71vw;
-    color:white;
-    font-family:'Ubuntu Mono', sans-serif;
-    font-style: italic;
     overflow: hidden;
 }
 
 .text-wrapper > h1{
+    color:white;
+    font-family:'Avalon';
+    font-weight: bold;
+    font-style: italic;
     font-size: 3rem;
     letter-spacing: 1px;
     white-space: nowrap;
     animation: move-rt1 40000ms linear infinite;
 
 }
-
 
 @keyframes move-rt1{
     0%{
@@ -186,33 +182,34 @@ body{
 @media screen and (max-width:1000px){
     .marquee{
         position:absolute;
-        margin:17vh 0;
+        margin:16vh 0;
     }
     
     .text-wrapper{
         display:flex;
         width:100vw;
-        color:white;
-        font-family:'Ubuntu Mono', sans-serif;
-        font-style: italic;
         overflow: hidden;
     }
     
     .text-wrapper > h1{
-        margin:-10px 0;
+        height:98px;
+        margin-top: 0;
+        font-family:'Avalon';
+        font-weight: bold;
         font-size: 6rem;
+        color:white;
         letter-spacing: 1px;
         white-space: nowrap;
         animation: move-rt1 40000ms linear infinite;
     }
 }
-/* 마르퀴 끝 */
+/* Marquee end */
 
-  /* 메인 박스 시작 */
+ /* Main start */
   .banner{
     overflow: hidden;
   }
-  /* 비디오 시작 */
+  /* Video start */
 .banner video{
     display:flex;
     object-fit: cover;
@@ -224,11 +221,11 @@ body{
     font-size:100rem;
 }
 
-/* 비디오 끝 */
-/* 메인 박스 끝 */
+/* Video end */
+/* Main end */
 
 
-/* 푸터 시작 */
+/* Footer start */
 .bottom_bar{
     position:fixed;
     bottom:0;
@@ -253,9 +250,9 @@ body{
     margin-right:10px;
 }
 
-/* 푸터 끝 */
+/* Footer end */
 
-/* 스크립트 토글 시작 */
+/* Toggle start */
 .big {
     transform:scale(2);
 }
@@ -268,5 +265,4 @@ body{
     height: 5vw;
     width: 5vw;
 }
-/* 스크립트 토글 끝 */
-/* 커스텀 끝 */
+/* Toggle end */
