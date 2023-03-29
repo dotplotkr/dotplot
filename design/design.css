@@ -135,6 +135,7 @@ body{
   display:flex;
   margin-top:5vh;
   margin-right:2vw;
+  margin-bottom:3px;
 }
 .header_right > .menu_box > li{
   margin:0 15px;

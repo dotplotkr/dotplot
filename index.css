@@ -121,7 +121,9 @@ html{
   .header_right > ul{
     display:flex;
     margin-top:5vh;
+    margin-bottom:3px;
     margin-right:2vw;
+    
   }
   .header_right > .menu_box > li{
     margin:0 15px;
