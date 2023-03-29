@@ -203,9 +203,12 @@ body{
 
 .card3{
   display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card3 > div{
+  margin:0 auto;
   border: 3px solid blue;
 }
 
@@ -232,6 +235,16 @@ body{
     text-align:justify;
   }
   
+  }
+
+  .card3{
+   display:block;
+   height:200vh;
+  }
+  
+  .card3 > div{
+    margin:0 auto;
+    border: 3px solid blue;
   }
   /* Main end*/
 
