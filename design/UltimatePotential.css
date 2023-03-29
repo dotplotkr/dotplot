@@ -238,13 +238,17 @@ body{
   }
 
   .card3{
-   display:block;
+    display:block;
    height:200vh;
   }
   
   .card3 > div{
     margin:0 auto;
     border: 3px solid blue;
+  }
+
+  .card3 div > video{
+    width:100%;
   }
   /* Main end*/
 
