@@ -392,7 +392,7 @@ z-index: -1;
 
 .card10 > .videoBox-10 > video{
   object-fit: cover;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 .card11 > .videoBox-11{
@@ -405,7 +405,7 @@ z-index: -1;
 
 .card11 > .videoBox-11 > video{
   object-fit: cover;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 @media screen and (max-width:1000px){
