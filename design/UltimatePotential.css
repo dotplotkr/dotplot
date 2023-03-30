@@ -251,10 +251,6 @@ body{
   margin-bottom: 25px;
 }
 
-.card6{
-  border:1px solid red;
-}
-
 .card6 > .mainPhrase{
   display:flex;
   justify-content: center;
@@ -280,25 +276,26 @@ height:80vh;
 transform:scale(1.5);
 transform:translateY(-10vh);
 z-index: -1;
-border:5px solid black;
 }
 
-.card7{
-  border:1px solid red;
+.card7 > .mainPhrase{
+  height:20vh;
+  padding-top:5vh;
 }
-
 .card7 > .mainPhrase > h5{
   font-family:'Avalon';
   font-size: 1.4rem;
   font-style:italic;
   text-align:center;
-
 }
-
-.main_box > .card7 > video{
+.main_box > .card7 > .videoBox{
+  width:100vw;
+  height:80vh;
+}
+.main_box > .card7 > .videoBox > video{
+  object-fit: cover;
   width:100vw;
   height:100vh;
-  object-fit: cover;
 }
 
 .card8 > .audio > h5{
@@ -312,24 +309,21 @@ border:5px solid black;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border:3px solid red;
 }
 
 .card8 > .audio{
-  border:3px solid red;
   padding-top:5vh;
   height:20vh;
 }
 
 .card8 > .audioBox{
-  border:3px solid green;
   border-radius: 3%;
   display:flex;
   align-items: flex-end;
   margin:auto auto;
-  margin-top:25%;
-  width:50vw;
-  height:50vw;
+  margin-top:15vh;
+  width:50vh;
+  height:50vh;
   background-image: url(/source/img/audioPicture2.jpg);
   background-position:center;
   background-size:200%;
@@ -339,17 +333,15 @@ border:5px solid black;
 
 .card8 > .audioBox > audio{
   width:100%;
-  border:3px solid red;
+  margin-bottom:1vh;
 }
 
 .card9{
   display:block;
-  height:200vw;
-  border:3px solid red;
+  height:170vw;
 }
 
 .card9 > .locate{
-  border:3px solid blue;
   font-family:'Avalon';
   font-size: 1.4rem;
   font-style:italic;
@@ -371,6 +363,49 @@ border:5px solid black;
 .card9 > .imgWrapper  .imgBox > img{
   width:50vw;
   height:50vw;
+}
+.card10 > .media{
+  height:20vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.card10 > .media > h5{
+  font-family:'Avalon';
+  font-size: 1.4rem;
+  font-style:italic;
+  text-align:center;
+}
+
+.card10{
+  width:100vw;
+  height:120vh;
+}
+
+.card10 > .videoBox-10{
+  height:100vh;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card10 > .videoBox-10 > video{
+  object-fit: cover;
+  transform: scale(2);
+}
+
+.card11 > .videoBox-11{
+  height:100vh;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card11 > .videoBox-11 > video{
+  object-fit: cover;
+  transform: scale(2);
 }
 
 @media screen and (max-width:1000px){
@@ -409,9 +444,21 @@ border:5px solid black;
   .card7 > .mainPhrase > h5{
     margin:auto auto;
   }
-  .main_box > .card7 > video{
-object-fit: none;
+
+  
+  .main_box > .card7 > .videoBox > video{
+    object-fit: cover;
   }
+
+  .card8 > .audioBox{
+    width:70vw;
+    height:70vw;
+  }
+
+  .card9{
+    height:200vw;
+  }
+
   }
 
   /* Main end*/
