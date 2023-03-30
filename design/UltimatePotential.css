@@ -219,6 +219,160 @@ body{
   width:80%;
 }
 
+.card5{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:150vh;
+}
+.card5 > .fontStyle{
+  font-family:'Avalon';
+  font-style:italic;
+  font-size: 1.4rem;
+  height:20vh;
+  padding-top:3%;
+}
+
+.card5 > .font{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:30px;
+}
+
+.card5 > .font > img{
+  width:80%;
+}
+
+.card5 > .font > h5{
+  font-family:'Avalon';
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.card6{
+  border:1px solid red;
+}
+
+.card6 > .mainPhrase{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  height:20vh;
+
+}
+.card6 > .mainPhrase > h5{
+  font-family:'Avalon';
+  font-size: 1.4rem;
+  font-style:italic;
+  text-align:center;
+
+}
+.card6 > .videoBox-6{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.card6 > .videoBox-6 > video{
+width:100vw;
+height:80vh;
+transform:scale(1.5);
+transform:translateY(-10vh);
+z-index: -1;
+border:5px solid black;
+}
+
+.card7{
+  border:1px solid red;
+}
+
+.card7 > .mainPhrase > h5{
+  font-family:'Avalon';
+  font-size: 1.4rem;
+  font-style:italic;
+  text-align:center;
+
+}
+
+.main_box > .card7 > video{
+  width:100vw;
+  height:100vh;
+  object-fit: cover;
+}
+
+.card8 > .audio > h5{
+  font-family:'Avalon';
+  font-size: 1.4rem;
+  font-style:italic;
+  text-align:center;
+}
+.card8{
+  display:block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:3px solid red;
+}
+
+.card8 > .audio{
+  border:3px solid red;
+  padding-top:5vh;
+  height:20vh;
+}
+
+.card8 > .audioBox{
+  border:3px solid green;
+  border-radius: 3%;
+  display:flex;
+  align-items: flex-end;
+  margin:auto auto;
+  margin-top:25%;
+  width:50vw;
+  height:50vw;
+  background-image: url(/source/img/audioPicture2.jpg);
+  background-position:center;
+  background-size:200%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.card8 > .audioBox > audio{
+  width:100%;
+  border:3px solid red;
+}
+
+.card9{
+  display:block;
+  height:200vw;
+  border:3px solid red;
+}
+
+.card9 > .locate{
+  border:3px solid blue;
+  font-family:'Avalon';
+  font-size: 1.4rem;
+  font-style:italic;
+  text-align: center;
+  height:20vh;
+  padding-top:5vh;
+  top:0;
+}
+.card9 > .locate > h5{
+  margin-bottom:100%;
+}
+.card9 > .imgWrapper{
+  display:block;
+  width:100vw;
+  height:80vh;
+  text-align: center;
+}
+
+.card9 > .imgWrapper  .imgBox > img{
+  width:50vw;
+  height:50vw;
+}
+
 @media screen and (max-width:1000px){
   .card2{
   display:block;
@@ -241,7 +395,23 @@ body{
   .card2 h6{
     text-align:justify;
   }
-  
+
+  .card6 > video{
+    display:flex;
+    object-fit: cover;
+    
+
+  width:100vw;
+  height:80vh;
+  z-index:1;
+  box-sizing:border-box;
+  }
+  .card7 > .mainPhrase > h5{
+    margin:auto auto;
+  }
+  .main_box > .card7 > video{
+object-fit: none;
+  }
   }
 
   /* Main end*/
@@ -267,7 +437,7 @@ body{
 .bottom_bar > .bottom_bar_box > .bottom_bar_inf > .ftc_inf{
   display:inline-block;
   margin-right:10px;
-  color:white;
+  color:black;
 }
 
 /* Footer end*/

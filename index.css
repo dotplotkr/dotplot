@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 
-@import url('https://fonts.cdnfonts.com/css/ubuntu-mono-2');
-
 @font-face{
     src : url("/source/font/FontsFree-Net-Avalon.ttf");
     font-family:'Avalon';
@@ -163,7 +161,6 @@ html{
 .text-wrapper > h1{
     color:white;
     font-family:'Avalon';
-    font-weight: bold;
     font-style: italic;
     font-size: 3rem;
     letter-spacing: 1px;
@@ -184,7 +181,7 @@ html{
 @media screen and (max-width:1000px){
     .marquee{
         position:absolute;
-        margin:16vh 0;
+        margin:18vh 0;
     }
     
     .text-wrapper{
@@ -197,10 +194,9 @@ html{
         height:98px;
         margin-top: 0;
         font-family:'Avalon';
-        font-weight: bold;
         font-size: 6rem;
         color:white;
-        letter-spacing: 1px;
+        letter-spacing: -1px;
         white-space: nowrap;
         animation: move-rt1 40000ms linear infinite;
     }
