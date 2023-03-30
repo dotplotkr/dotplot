@@ -28,10 +28,9 @@ $('.cursor-big').mouseleave(function(){
 
 window.onload = function(){
   $('.loader').fadeOut();
-  function scrollToTop(){
+    
     window.scrollTo(0,0);
   };
-        };
 
         
 

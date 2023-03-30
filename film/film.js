@@ -28,9 +28,7 @@ $('.cursor-big').mouseleave(function(){
 
 window.onload = function(){
   $('.loader').delay('1000').fadeOut();
-  function scrollToTop(){
-    window.scrollTo(0,0);
-  };
+  
   gsap.from('.title_wrapper > .title',{
     y:60,
     opacity:0,

@@ -35,9 +35,7 @@ $('.cursor-big').mouseleave(function(){
             delay:1
           });
                 };
-        function scrollToTop(){
-        window.scrollTo(0,0);
-                };
+      
 
                 gsap.from('.scroll1', {
                   scrollTrigger:{
@@ -64,4 +62,3 @@ $('.cursor-big').mouseleave(function(){
                   x: -1000,
                   duration: 4
                 });
-

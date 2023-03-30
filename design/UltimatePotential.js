@@ -26,9 +26,9 @@ $('.cursor-big').mouseleave(function(){
     $('.cursor').css('background-color', 'white')
 });
 
+
+
 window.onload = function(){
   $('.loader').delay('1000').fadeOut();
-  function scrollToTop(){
-    window.scrollTo(0,0)};
-  
         };
+
