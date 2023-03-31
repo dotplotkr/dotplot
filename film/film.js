@@ -1,11 +1,8 @@
-console.clear();
-
+//Plugin start
 gsap.registerPlugin(ScrollTrigger);
+//Plugin end
 
-$('.dot_second').click(function(){
-  $('.main_bar').toggleClass('showback');
-  $(this).toggleClass('big');
-});
+//Cursor start
 
 const $cursor = $('.cursor');
 
@@ -26,84 +23,88 @@ $('.cursor-big').mouseleave(function(){
     $('.cursor').css('background-color', 'white')
 });
 
+//Cursor end
+
+//Loader start
 window.onload = function(){
   $('.loader').delay('1000').fadeOut();
-  
   gsap.from('.title_wrapper > .title',{
     y:60,
     opacity:0,
     duration:1,
     delay:1
   });
-        };
+};
+//Loader end
 
-        gsap.from('.scroll1', {
-          scrollTrigger:{
-            trigger:'.scroll1',
-            scrub:true,
-            start:"top +=33%",
-            end:"bottom +=90%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4
-        });
+//ScrollTrigger start
+gsap.from('.scroll1', {
+  scrollTrigger:{
+    trigger:'.scroll1',
+    scrub:true,
+    start:"top +=33%",
+    end:"bottom +=90%",
+    markers:false
+  },
+opacity:0,
+x: -1000,
+duration: 4
+});
 
-        gsap.from('.scroll2', {
-          scrollTrigger:{
-            trigger:'.scroll2',
-            scrub:true,
-            start:"top +=80%",
-            end:"bottom +=100%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4
-        });
+gsap.from('.scroll2', {
+  scrollTrigger:{
+    trigger:'.scroll2',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4
+});
 
-        gsap.from('.scroll3', {
-          scrollTrigger:{
-            trigger:'.scroll3',
-            scrub:true,
-            start:"top +=80%",
-            end:"bottom +=100%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4
-        });
+gsap.from('.scroll3', {
+  scrollTrigger:{
+    trigger:'.scroll3',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4
+});
 
-        gsap.from('.scroll4', {
-          scrollTrigger:{
-            trigger:'.scroll4',
-            scrub:true,
-            start:"top +=80%",
-            end:"bottom +=100%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4
-        });
+gsap.from('.scroll4', {
+  scrollTrigger:{
+    trigger:'.scroll4',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4
+});
 
-        gsap.from('.scroll5', {
-          scrollTrigger:{
-            trigger:'.scroll5',
-            scrub:true,
-            start:"top +=80%",
-            end:"bottom +=100%",
-            markers:false
-          },
-          opacity:0,
-          x: -1000,
-          duration: 4,
-          
-        });
+gsap.from('.scroll5', {
+  scrollTrigger:{
+    trigger:'.scroll5',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4,
+});
+//ScrollTriger end
 
-
+//VideoPause Start
 const video1 = document.getElementById('video1');
 
 $('#vpause1-1').click(function(){
@@ -154,3 +155,5 @@ $('#vpause5-1').click(function(){
 $('#vpause5-2').click(function(){
   video5.setAttribute('src','https://player.vimeo.com/video/811759385?h=752ba1777b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 });
+
+//VideoPause end

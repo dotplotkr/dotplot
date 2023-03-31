@@ -4,7 +4,7 @@
   src : url("/source/font/FontsFree-Net-Avalon.ttf");
   font-family:'Avalon';
 }
-
+/* 전체 정리 */
 
 /* Nomalize start */
 * {
@@ -109,7 +109,7 @@ body{
 }
 
 /* Header start */
-.top_bar{
+.header{
   position:fixed;
   display:flex;
   align-items: flex-end;
@@ -118,12 +118,12 @@ body{
   z-index:100;
 }
 
-.header_logo-wrap{
+.header-logoBox{
   margin-top:5vh;
   margin-left:calc(2vw + 10px);
 }
 
-.header_logo-wrap > a{
+.header-logoBox > a{
   font-family:'Roboto','sans-serif';
   font-weight: 700;
   color:white;
@@ -136,22 +136,22 @@ body{
   transition:all .5s;
 }
 
-.header_logo-wrap > a:hover{
+.header-logoBox > a:hover{
   color:#231f20;
   transition:all .5s;
 }
 
-.header_right > ul{
+.header-menuBox > ul{
   display:flex;
   margin-top:5vh;
-  margin-right:2vw;
   margin-bottom:3px;
+  margin-right:2vw;
 }
-.header_right > .menu_box > li{
+.header-menuBox > .header-menuBox-wrapper > li{
   margin:0 15px;
 }
 
-.header_right > ul > li > a{
+.header-menuBox > ul > li > a{
   color:white;
   font-family:'Avalon';
   font-size:1rem;
@@ -159,13 +159,15 @@ body{
   transition:all .5s;
 }
 
-.header_right > ul > li > a:hover{
+.header-menuBox > ul > li > a:hover{
   background-color:white;
   padding:3px;
   border-radius:10%;
   color:black;
   transition:all .5s;
 }
+
+/* Header end */
 /* Main start */
 .main_box{
   width:100%;
@@ -301,44 +303,21 @@ font-weight:lighter;
   
   }
 /* Main end */
-/* Footer start */
-.bottom_bar{
-  bottom:0;
-  display:block;
-  
-  
+/* Footer start*/
+.footer{
+  bottom:0;  
 }
 
-.bottom_bar_box{
-  display:flex;
-  margin-bottom:1vw;
-  margin-left:3vw;
-  font-size:.6rem;
+.footer-infBox{
+  margin-bottom:3vh;
+  margin-left:calc(2vw + 10px);
+}
+
+.footer > .footer-infBox > .co-inf{
   font-family: 'Noto Sans Kr', sans-serif;
   font-weight: 300;
-  height:3vh;
-
+  font-size:.6rem;
+  color:white;  
 }
 
-.bottom_bar > .bottom_bar_box > .bottom_bar_inf > .ftc_inf{
-  display:inline-block;
-  margin-right:10px;
-  color:white;
-}
-
-/* Footer end */
-
-/* Toggle start */
-.big {
-    transform:scale(2);
-}
-
-.showback{
-    background-color:transparent;
-}
-
-.small{
-    height: 5vw;
-    width: 5vw;
-}
-/* Toggle end */
+/* Footer end*/

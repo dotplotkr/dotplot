@@ -27,37 +27,39 @@
         "http://www.ftc.go.kr/bizCommPop.do?wrkr_no="+7662401352;
         window.open(url, "bizCommPop", "width=750, height=700;");
         }
-        </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <!-- Loader start -->
     <div class="loader cursor-big">
         how are you feeling today?
     </div>
-    <!-- 커서 시작 -->
+    <!-- Loader end -->
+    <!-- Cursor start -->
     <div class="cursor"></div>
-    <!-- 커서 끝 -->
+    <!-- Cursor end -->
 
-    <!-- 헤더 시작 -->
-<header class="top_bar">
-    <section class="header_logo-wrap">
+    <!-- Header start -->
+<header class="header">
+    <section class="header-logoBox">
         <a class="cursor-big" href="/index.html">
             DOTPLOT
         </a>
     </section>
     
-    <section class="header_right">
-        <ul class="menu_box">
+    <section class="header-menuBox">
+        <ul class="header-menuBox-wrapper">
             <li class="cursor-big"><a href="/film/film.html">Film</a></li>
-            <li class="cursor-big"><a href="/design/design.html">Design</a></li>
-            
-            
+            <li class="cursor-big"><a href="/design/design.html">Design</a></li> 
         </ul>
     </section>
 </header>
-    <!-- 헤더 끝 -->
+    <!-- Header end -->
+
+    <!-- 메인 정리 시작 -->
 
     <div class="main_box">
     
@@ -182,26 +184,20 @@
                         <label for="popup5" id="vpause5-1"><i class="fa-sharp fa-solid fa-xmark"></i></label>
                     </div>
                     <label for="popup5" id="vpause5-2"></label>
-                    </div>
                 </div>
-    
-                
-
-        </div>
-    
-    </div>
-
-    <!-- 푸터 시작 -->
-    <footer class="bottom_bar">
-        <section class="bottom_bar_box">
-            <div class="bottom_bar_inf">
-                    <div class="ftc_inf cursor-big" onclick="onopen();">ⓒ2022. Dotplot. all rights reserved.</div>
             </div>
-            
+    
+        </div>
+    </div>
+<!-- 메인 정리 끝 -->
+<!-- Footer start-->
+    <footer class="footer">
+        <section class="footer-infBox">
+                    <div class="co-inf cursor-big" onclick="onopen();">ⓒ2022. Dotplot. all rights reserved.
+                    </div>
         </section>
     </footer>
-    <!-- 푸터 끝 -->
-
+<!-- Footer end-->
 
 </body>
 </html>

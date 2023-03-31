@@ -1,12 +1,8 @@
-console.clear();
-
+//Plugin start
 gsap.registerPlugin(ScrollTrigger);
+//Plugin end
 
-$('.dot_second').click(function(){
-  $('.main_bar').toggleClass('showback');
-  $(this).toggleClass('big');
-});
-
+// Cusrsor start
 const $cursor = $('.cursor');
 
 $(window).mousemove(function(e) {
@@ -26,11 +22,13 @@ $('.cursor-big').mouseleave(function(){
     $('.cursor').css('background-color', 'white')
 });
 
+// Cusrsor start
+
+// Loader start
 window.onload = function(){
-  $('.loader').fadeOut();
-    
-    window.scrollTo(0,0);
-  };
+  $('.loader').delay('1000').fadeOut();
+        };
+// Loader end
 
         
 
