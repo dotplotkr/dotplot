@@ -159,26 +159,32 @@ body{
 
 /* Header end */
   /* 메인 박스 시작 */
-  .main_box{
+  .main{
     display:block;
     align-items: center;
     background-color:black;
 }
 
-.main_box > .title_wrapper{
+  .main > .titleBox{
     display:flex;
     justify-content: center;
-    
-
 }
-  .main_box > .title_wrapper > .title{
+  .main > .titleBox > .title{
     margin-top:15vh;
-    margin-bottom:10vh;
     position:relative;
     color:white;
     font-family:'Roboto', sans-serif;
     font-size:4rem;
     font-weight:700;
+  }
+.main > .subtitleBox{
+  display:flex;
+  color:white;
+  justify-content: center;
+}
+
+  .main > .subtitleBox > .subtitle-star{
+    font-size:0.9rem;
   }
 
   /* 워크 래퍼 시작 */

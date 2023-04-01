@@ -147,26 +147,33 @@ html{
 /* Header end */
 
 /* 메인 정리 시작 */
-  .main_box{
+  .main{
     display:block;
     align-items: center;
     background-color:black;
 }
 
-.main_box > .title_wrapper{
+  .main > .titleBox{
     display:flex;
     justify-content: center;
 }
-  .main_box > .title_wrapper > .title{
+  .main > .titleBox > .title{
     margin-top:15vh;
-    margin-bottom:10vh;
     position:relative;
     color:white;
     font-family:'Roboto', sans-serif;
     font-size:4rem;
     font-weight:700;
   }
+.main > .subtitleBox{
+  display:flex;
+  color:white;
+  justify-content: center;
+}
 
+  .main > .subtitleBox > .subtitle-star{
+    font-size:0.9rem;
+  }
   /* 모달 윈도우 시작 */
   input[id="popup"]{
     display:none;
@@ -510,7 +517,7 @@ input[id="popup4"] + label + div > label {
     z-index:1;}
   /* 모달 윈도우 끝 5 */
 
-  .work_wrapper > div{
+  .workBox > div{
     scroll-snap-align: start;
     position:relative;
     top:0;
@@ -522,11 +529,11 @@ input[id="popup4"] + label + div > label {
     box-sizing: border-box;
   }
 
-  .work_wrapper div:nth-of-type(5){
+  .workBox div:nth-of-type(5){
     margin-bottom:15vh;
 
   }
-  .work_wrapper div > .work{
+  .workBox div > .work{
     position:relative;
     margin-top:1vw;
     color:white;
@@ -536,7 +543,7 @@ input[id="popup4"] + label + div > label {
     text-align: center;
   }
   
-  .work_wrapper div > .work > img{
+  .workBox div > .work > img{
     opacity:30%;
     border-radius: 20px;
     width:60vw;
@@ -546,12 +553,12 @@ input[id="popup4"] + label + div > label {
     z-index:10;
   }
 
-  .work_wrapper div > .work:hover > img{
+  .workBox div > .work:hover > img{
     opacity:100%;
     transform: scale(0.8);
   }
 
-  .work_wrapper div > .work > .img_name{
+  .workBox div > .work > .img_name{
     font-family:'Roboto',sans-serif;
     font-weight:700;
     opacity:1;
@@ -563,25 +570,25 @@ input[id="popup4"] + label + div > label {
     
   }
 
-  .work_wrapper div > .work:hover > .img_name{
+  .workBox div > .work:hover > .img_name{
     opacity:0;
     transition: all 1s;
   }
 
 
   @media screen and (max-width:1000px){
-    .work_wrapper > div{
+    .workBox > div{
       width:100vw;
     }
 
-      .work_wrapper div > .work{
+      .workBox div > .work{
         position:relative;
         width:95vw;
         height:95vw;
         top:50%;
       }
       
-      .work_wrapper div > .work > img{
+      .workBox div > .work > img{
         border-radius: 20px;
         width:95vw;
         height:95vw;
@@ -590,7 +597,7 @@ input[id="popup4"] + label + div > label {
         z-index:10;
       }
     
-      .work_wrapper div > .work > .img_name{
+      .workBox div > .work > .img_name{
         opacity:100;
         font-size:3rem;
         position:absolute;

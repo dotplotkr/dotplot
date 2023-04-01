@@ -128,15 +128,13 @@ html{
 /* Marquee start */
 .marquee{
     position:absolute;
-    margin:5.5vh 12vw;
-    height:100px;
+    display:flex;
+    margin:0 12vw;
 }
 
 .text-wrapper{
     display:flex;
-    height:100px;
-    margin-top:-50px;
-    width:71vw;
+    width:72vw;
     overflow: hidden;
 }
 
@@ -162,15 +160,15 @@ html{
 
 @media screen and (max-width:1000px){
     .marquee{
-        margin:18vh 0;
+        margin:12vh 0;
     }
     
     .text-wrapper{
         width:100vw;
+        padding-top:5px;
     }
     
     .text-wrapper > h1{
-        height:98px;
         margin-top: 0;
         font-size: 6rem;
     }

@@ -1,3 +1,5 @@
+console.clear();
+
 //Plugin start
 gsap.registerPlugin(ScrollTrigger);
 //Plugin end
@@ -28,7 +30,7 @@ $('.cursor-big').mouseleave(function(){
 //Loader start
 window.onload = function(){
   $('.loader').delay('1000').fadeOut();
-  gsap.from('.title_wrapper > .title',{
+  gsap.from('.titleBox > .title',{
     y:60,
     opacity:0,
     duration:1,
@@ -42,7 +44,7 @@ gsap.from('.scroll1', {
   scrollTrigger:{
     trigger:'.scroll1',
     scrub:true,
-    start:"top +=33%",
+    start:"top +=23%",
     end:"bottom +=90%",
     markers:false
   },
