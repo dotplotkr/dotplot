@@ -151,13 +151,32 @@ body{
 }
 
 /* Header end */
-/* 메인 정리 시작 */
-.main_box{
+
+/* Main start */
+.mainBox{
   width:100%;
   overflow: hidden;
 }
 
-.main_box > .card1 > video{
+.mainBox-section{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+}
+
+.mainBox-section-title{
+  height:20vh;
+  padding-top:5vh;
+}
+
+.mainBox-section-title h5{
+  font-family:'Avalon';
+  font-size: 1.4rem;
+  font-style:italic;
+  text-align:center;
+}
+
+.card-1 > video{
   display:flex;
   object-fit: cover;
   width:100vw;
@@ -168,102 +187,79 @@ body{
   font-size:100rem;
   box-sizing:border-box;
 }
-.main_box_section{
-  width:100vw;
-  height:100vh;
-  overflow:hidden;
-}
 
-.card2{
+.card-2{
   display:flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  
+  color: black;  
 }
 
-.card2 > div{
+.card-2 > div{
   margin:0 30px;
 }
-.card2 h6{
+
+.card-2 img{
+  height:120px;
+}
+
+.card-2 h6{
   font-size: 1rem;
   font-family:'NotosansKr', Sans-serif;
   font-weight:500;
 }
 
-.card2 img{
-  height:120px;
-}
 
-.card3, .card4{
+
+.card-3, .card-4{
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
-.card3 > div,
-.card4 > div{
+.card-3 > div,
+.card-4 > div{
   margin:auto auto;
   text-align:center;
 }
 
-.card3 > div > video,
-.card4 > div > video{
+.card-3 > div > video,
+.card-4 > div > video{
   width:80%;
 }
 
-.card5{
+
+.card-5{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height:150vh;
 }
-.card5 > .fontStyle{
-  font-family:'Avalon';
-  font-style:italic;
-  font-size: 1.4rem;
-  height:20vh;
-  padding-top:3%;
-}
 
-.card5 > .font{
+.card-5 > .font-content{
   display:flex;
   justify-content: center;
   align-items: center;
   margin:30px;
 }
 
-.card5 > .font > img{
-  width:80%;
-}
-
-.card5 > .font > h5{
+.card-5 > .font-content > h5{
   font-family:'Avalon';
   font-size: 1rem;
   margin-bottom: 25px;
 }
 
-.card6 > .mainPhrase{
-  display:flex;
-  justify-content: center;
-  align-items: flex-end;
-  height:20vh;
-
+.card-5 > .font-content > img{
+  width:80%;
 }
-.card6 > .mainPhrase > h5{
-  font-family:'Avalon';
-  font-size: 1.4rem;
-  font-style:italic;
-  text-align:center;
 
-}
-.card6 > .videoBox-6{
+.card-6 > .card-6-videoBox{
   display:flex;
   justify-content: center;
   align-items: center;
 }
-.card6 > .videoBox-6 > video{
+.card-6 > .card-6-videoBox > video{
 width:100vw;
 height:80vh;
 transform:scale(1.5);
@@ -271,45 +267,25 @@ transform:translateY(-10vh);
 z-index: -1;
 }
 
-.card7 > .mainPhrase{
-  height:20vh;
-  padding-top:5vh;
-}
-.card7 > .mainPhrase > h5{
-  font-family:'Avalon';
-  font-size: 1.4rem;
-  font-style:italic;
-  text-align:center;
-}
-.main_box > .card7 > .videoBox{
-  width:100vw;
-  height:80vh;
-}
-.main_box > .card7 > .videoBox > video{
-  object-fit: cover;
+.card-7 > .card-7-videoBox{
+  display:flex;
+  justify-content: center;
   width:100vw;
   height:100vh;
 }
-
-.card8 > .audio > h5{
-  font-family:'Avalon';
-  font-size: 1.4rem;
-  font-style:italic;
-  text-align:center;
+.card-7 > .card-7-videoBox > video{
+  object-fit: cover;
+  width:80vw;
 }
-.card8{
+
+.card-8{
   display:block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.card8 > .audio{
-  padding-top:5vh;
-  height:20vh;
-}
-
-.card8 > .audioBox{
+.card-8 > .card-8-audioBox{
   border-radius: 3%;
   display:flex;
   align-items: flex-end;
@@ -324,36 +300,24 @@ z-index: -1;
   background-repeat: no-repeat;
 }
 
-.card8 > .audioBox > audio{
+.card-8 > .card-8-audioBox > audio{
   width:100%;
   margin-bottom:1vh;
 }
 
-.card9{
+.card-9{
   display:block;
   height:170vw;
 }
 
-.card9 > .locate{
-  font-family:'Avalon';
-  font-size: 1.4rem;
-  font-style:italic;
-  text-align: center;
-  height:20vh;
-  padding-top:5vh;
-  top:0;
-}
-.card9 > .locate > h5{
-  margin-bottom:100%;
-}
-.card9 > .imgWrapper{
+.card-9 > .card-9-imgBox-wrapper{
   display:block;
   width:100vw;
   height:80vh;
   text-align: center;
 }
 
-.card9 > .imgWrapper  .imgBox > img{
+.card-9 > .card-9-imgBox-wrapper  .card-9-imgBox > img{
   width:50vw;
   height:50vw;
 }
@@ -362,59 +326,64 @@ z-index: -1;
 
 
 @media screen and (max-width:1000px){
-  .card2{
+  .card-2{
   display:block;
   text-align: center;
   color: black;
     
   }
-  .card2 > div:first-child{
+  .card-2 > div:first-child{
     margin-top:50%;
   }
 
-  .card2 > div:last-child{
+  .card-2 > div:last-child{
     margin-top:100px;
   }
 
-  .card2 img{
+  .card-2 img{
     height:100px;
   }
 
-  .card2 h6{
+  .card-2 h6{
     text-align:justify;
   }
 
-  .card6 > video{
+  .card-6 > video{
     display:flex;
     object-fit: cover;
-    
-
-  width:100vw;
-  height:80vh;
-  z-index:1;
-  box-sizing:border-box;
+    width:100vw;
+    height:80vh;
+    z-index:1;
+    box-sizing:border-box;
   }
-  .card7 > .mainPhrase > h5{
+
+  .card-7 > .mainBox-section-title > h5{
     margin:auto auto;
   }
 
-  
-  .main_box > .card7 > .videoBox > video{
-    object-fit: cover;
+  .card-7 > .card-7-videoBox{
+    align-items: center;
   }
 
-  .card8 > .audioBox{
+  .card-7 > .card-7-videoBox > video{
+    object-fit: cover;
+    margin-top:-25vh;
+    width:80vw;
+    height:50vh;
+  }
+
+  .card-8 > .card-8-audioBox{
     width:70vw;
     height:70vw;
   }
 
-  .card9{
+  .card-9{
     height:200vw;
   }
 
   }
 
-  /* 메인 정리 끝 */
+/* Main end */
 
 /* Footer start*/
 .footer{
