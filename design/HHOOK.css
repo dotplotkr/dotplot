@@ -36,18 +36,6 @@ h3{
 /* Nomalize end */
 /* Lib start */
 
-.border_blue{
-border:3px solid blue;
-}
-
-.border_red{
-    border:3px solid red;
-}
-
-.border_green{
-    border:3px solid green;
-}
-
 /* Lib end */
 /* Loader start */
 .loader {

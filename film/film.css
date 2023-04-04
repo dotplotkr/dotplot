@@ -210,7 +210,6 @@ html{
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    /*background-color: white;*/
     z-index:2;
   }
 
@@ -280,7 +279,6 @@ html{
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    /*background-color: white;*/
     z-index:2;
   }
 
@@ -349,7 +347,6 @@ html{
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    /*background-color: white;*/
     z-index:2;
   }
 
@@ -417,7 +414,6 @@ input[id="popup4"] + label + div > div{
   transform:translate(-50%, -50%);
   width:72vw;
   height:40.5vw;
-  /*background-color: white;*/
   z-index:2;
 }
 
@@ -485,7 +481,6 @@ input[id="popup4"] + label + div > label {
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    /*background-color: white;*/
     z-index:2;
   }
 
