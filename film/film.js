@@ -159,7 +159,3 @@ $('#vpause5-2').click(function(){
 });
 
 //VideoPause end
-
-ChannelIO('boot', {
-  "pluginKey": "1f5c0ba8-0135-4a80-9d98-30d0906df7a7" // fill your plugin key
-});
