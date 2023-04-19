@@ -27,3 +27,9 @@ window.onload = function(){
   $('.loader').delay('1000').fadeOut();
         };
 // Loader end
+
+// ScroolTop start
+$('body').imagesLoaded( function(){
+  $('body,html').delay('1000').animate({scrollTop : 0}, 500);
+});
+// ScroolTop end

@@ -159,3 +159,9 @@ $('#vpause5-2').click(function(){
 });
 
 //VideoPause end
+
+// ScroolTop start
+$('body').imagesLoaded( function(){
+  $('body,html').delay('1000').animate({scrollTop : 0}, 500);
+});
+// ScroolTop end
