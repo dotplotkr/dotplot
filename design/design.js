@@ -65,9 +65,3 @@ gsap.from('.scroll2', {
   duration: 4
 });
 // scrollTrigger end
-
-// ScroolTop start
-$('body').imagesLoaded( function(){
-  $('body,html').delay('1000').animate({scrollTop : 0}, 500);
-});
-// ScroolTop end
