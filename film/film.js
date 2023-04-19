@@ -27,18 +27,6 @@ $('.cursor-big').mouseleave(function(){
 
 //Cursor end
 
-//Loader start
-window.onload = function(){
-  $('.loader').delay('1000').fadeOut();
-  gsap.from('.titleBox > .title',{
-    y:60,
-    opacity:0,
-    duration:1,
-    delay:1
-  });
-};
-//Loader end
-
 //ScrollTrigger start
 gsap.from('.scroll1', {
   scrollTrigger:{
@@ -159,6 +147,18 @@ $('#vpause5-2').click(function(){
 });
 
 //VideoPause end
+
+//Loader start
+window.onload = function(){
+  $('.loader').delay('1000').fadeOut();
+  gsap.from('.titleBox > .title',{
+    y:60,
+    opacity:0,
+    duration:1,
+    delay:1
+  });
+};
+//Loader end
 
 // ScroolTop start
 $('body').imagesLoaded( function(){
