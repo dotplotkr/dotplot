@@ -138,7 +138,7 @@ html{
     overflow: hidden;
 }
 
-.text-wrapper > h1{
+.text-wrapper > h2{
     color:white;
     font-family:'Avalon';
     font-style: italic;
@@ -168,7 +168,7 @@ html{
         padding-top:5px;
     }
     
-    .text-wrapper > h1{
+    .text-wrapper > h2{
         margin-top: 0;
         font-size: 6rem;
     }
