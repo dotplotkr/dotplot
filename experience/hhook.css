@@ -5,6 +5,8 @@
   font-family:'Avalon';
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100;300;400&display=swap');
+
 /* Nomalize start */
 * {
     box-sizing: border-box;
@@ -186,18 +188,83 @@ body{
   font-size:4rem;
   align-items: center;
   justify-content: center;
+  opacity: 0.8;
 }
 
-.card-2 > div:first-child{
+.card-2 > div:nth-of-type(1){
   font-style:italic;
 }
-
-.card-2 > div:last-child{
-  font-style:bold;
-  font-family:'roboto';
+.card-2 > div:nth-of-type(2){
+  font-size:4rem;
+}
+.card-2 > div:nth-of-type(3){
+  font-family:'Anton', sans-serif;
+  font-weight:bold;
+  
 }
 
-.HhookPage{
+.card-3{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:black;
+  color:white;
+  padding:150px 50px;
+}
+
+.card-3 > ul > li > h1{
+  margin:0;
+  font-family:'Anton', sans-serif;
+  font-size: 3rem;
+}
+
+.card-3 > ul > li > h2:nth-of-type(1){
+  margin:1.5px;
+  font-family: 'avalon';
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.card-3 > ul > li > h2:nth-of-type(2){
+  display:inline-block;
+  margin-top:50px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 1rem;
+  margin-right:3vw;
+}
+.card-3 > ul > li > h2:nth-of-type(3){
+  display:inline-block;
+  margin-top:50px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 1rem;
+}
+
+.card-4 > video{
+  display:flex;
+  object-fit: cover;
+  pointer-events: none;
+  z-index:1;
+  width:100vw;
+  color:white;
+  font-size:100rem;
+  box-sizing:border-box;
+}
+
+.card-5 > ul{
+  display:block;
+  background-color: black; 
+}
+
+.card-5 > ul li{
+  width:100vw;
+}
+
+.card-5 > ul li >img{
+  width:100vw;
+}
+  .HhookPage{
   position:absolute;
   width:102%;
   z-index:-1;
@@ -289,7 +356,16 @@ font-weight:lighter;
   .card-2{
     font-size:2rem;
   }
-
+  .card-4{
+    height:50vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    background-color:black;
+  }
+  .card-4 > video{
+    object-fit: contain;
+  }
   h1{
     font-size:1rem;
   }
