@@ -356,6 +356,9 @@ font-weight:lighter;
   .card-2{
     font-size:1.8rem;
   }
+  .card-2 > div:nth-of-type(2){
+    font-size:2.3rem;
+  }
   .card-4{
     height:50vh;
     width:100vw;
