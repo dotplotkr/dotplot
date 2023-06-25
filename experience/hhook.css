@@ -4,7 +4,6 @@
   src : url("/source/font/FontsFree-Net-Avalon.ttf");
   font-family:'Avalon';
 }
-/* 전체 정리 */
 
 /* Nomalize start */
 * {
@@ -157,17 +156,49 @@ body{
 
 /* Header end */
 /* Main start */
-.main_box{
-  width:100%;
+.mainBox{
+  width:100;
   overflow: hidden;
 }
-
-
-.HhookPage_1{
-  position:absolute;
-  width:100%;
-  z-index:-1;
+.card-1{
+  display:flex;
+  position:fixed;
+  color:white;
+  z-index: -1;
+}
+.card-1 > video{
+  display:flex;
   object-fit: cover;
+  width:100vw;
+  height:100vh;
+  pointer-events: none;
+  z-index:1;
+  color:white;
+  font-size:100rem;
+  box-sizing:border-box;
+}
+.card-2{
+  height:100vh;
+  display: flex;
+  color:white;
+  font-size:4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-2 > div:first-child{
+  font-style:italic;
+}
+
+.card-2 > div:last-child{
+  font-style:bold;
+  font-family:'roboto';
+}
+
+.HhookPage{
+  position:absolute;
+  width:102%;
+  z-index:-1;
 
 }
 
