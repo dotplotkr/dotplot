@@ -354,7 +354,7 @@ font-weight:lighter;
 }
 @media screen and (max-width:1000px){
   .card-2{
-    font-size:2rem;
+    font-size:1.8rem;
   }
   .card-4{
     height:50vh;
