@@ -284,6 +284,10 @@ font-weight:lighter;
   margin-bottom:20vw;
 }
 @media screen and (max-width:1000px){
+  .card-2{
+    font-size:2rem;
+  }
+
   h1{
     font-size:1rem;
   }
