@@ -42,8 +42,10 @@ border:3px solid blue;
 /* 로더 시작 */
 .loader {
   position:fixed;
-  width:99vw;
-  height:100vh;
+  top:-10vh;
+  left:-10vw;
+  width:120vw;
+  height:120vh;
   display:flex;
   align-items: center;
   justify-content: center;

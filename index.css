@@ -52,8 +52,10 @@ a{
 /* Loader start */
 .loader {
     position:absolute;
-    width:100vw;
-    height:100vh;
+    top:-10vh;
+    left:-10vw;
+    width:120vw;
+    height:120vh;
     display:flex;
     align-items: center;
     justify-content: center;
