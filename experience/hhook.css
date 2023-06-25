@@ -365,7 +365,6 @@ font-weight:lighter;
   }
   .card-4 > video{
     object-fit: contain;
-    scale:2.3;
   }
   h1{
     font-size:1rem;
