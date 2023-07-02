@@ -52,10 +52,8 @@ a{
 /* Loader start */
 .loader {
     position:absolute;
-    top:-10vh;
-    left:-10vw;
-    width:120vw;
-    height:120vh;
+    width:100vw;
+    height:100vh;
     display:flex;
     align-items: center;
     justify-content: center;
