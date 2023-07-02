@@ -204,42 +204,49 @@ body{
 }
 
 .card-3{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
   background-color:black;
   color:white;
   padding:150px 50px;
 }
 
-.card-3 > ul > li > h1{
+.title{
   margin:0;
   font-family:'Anton', sans-serif;
   font-size: 3rem;
+  font-weight:bold;
 }
 
-.card-3 > ul > li > h2:nth-of-type(1){
-  margin:1.5px;
+.subtitle{
+  margin:2px;
   font-family: 'avalon';
   font-weight: 100;
   font-size: 1rem;
 }
 
-.card-3 > ul > li > h2:nth-of-type(2){
+.card-3 > ul{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-3 > ul > li > .substanceKr{
   display:inline-block;
-  margin-top:50px;
+  margin-top:100px;
   font-family:'Noto Sans KR', sans-serif;
   font-weight:400;
   font-size: 1rem;
   margin-right:3vw;
 }
-.card-3 > ul > li > h2:nth-of-type(3){
+
+.card-3 > ul > li > .substanceEn{
   display:inline-block;
-  margin-top:50px;
+  margin-top:100px;
   font-family:'Noto Sans KR', sans-serif;
   font-weight:400;
   font-size: 1rem;
 }
+
+
 
 .card-4 > video{
   display:flex;
@@ -252,106 +259,51 @@ body{
   box-sizing:border-box;
 }
 
+
+
+.card-5{
+  background-color:black;
+  color:white;
+  padding:150px 50px;
+}
+
 .card-5 > ul{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-5 > ul > li > .substanceKr{
+  display:inline-block;
+  margin-top:100px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 1rem;
+  margin-right:3vw;
+}
+
+.card-5 > ul > li > .substanceEn{
+  display:inline-block;
+  margin-top:100px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-weight:400;
+  font-size: 1rem;
+}
+
+.card-6 > ul{
   display:block;
   background-color: black; 
 }
 
-.card-5 > ul li{
+.card-6 > ul li{
   width:100vw;
 }
 
-.card-5 > ul li >img{
+.card-6 > ul li >img{
   width:100vw;
 }
-  .HhookPage{
-  position:absolute;
-  width:102%;
-  z-index:-1;
 
-}
 
-.main_box_section{
-  display:block;
-  width:100%;
-  height:100%;
-  height:calc(100vw / 16 * 9);
-  color:white;
-}
-.card2, .card3, .card4, .card5, .card7, .card8, .card9{
-  padding:5vw;
-font-family:'NotoSans', sans-serif;
-font-weight:lighter;
-}
-.card2{
-  padding-top:2vw;
-}
-.card2 > h1, h2{
-  margin-top:2vw;
-}
-
-.card2 > h3{
-  margin-top:1vw;
-}
-
-.card2 > h3,
-.card3 > h3,
-.card4 > h3{
-  margin-top:1vw;
-}
-
-.card2 > h4{
-  font-size:2rem;
-   text-align:center;
-   margin-top:20vw;
-}
-
-.card4 > .elementWrapper{
-  margin-left:-3vw;
-}
-
-.card4 > .elementWrapper > element{
-  float:left;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width:15vw;
-  height:15vw;
-  border:3px solid #a90f29;
-  margin-left:3vw;
-  margin-top:10vw;
-  font-weight:bold;
-  font-size:1.5rem;
-}
-
-.card4 > .elementWrapper > element> span{
-  color:#a90f29;
-  display:block;
-  text-align: center;;
-}
-
-.card4 > div:first-child{
-  margin-left:-10vw;
-}
-
-.card5 > .elementWrapper{margin-top:7vw;
-}
-
-.card8{
-  display:flex;
-  align-items: center;
-  padding-top:30vw;
-}
-
-.card9{
-  display:flex;
-  align-items: flex-end;
-  padding-bottom:15vw;
-}
-
-.card11{
-  margin-bottom:20vw;
-}
 @media screen and (max-width:1000px){
   .card-2{
     font-size:1.8rem;
@@ -365,48 +317,16 @@ font-weight:lighter;
     display:flex;
     align-items: center;
     background-color:black;
+    scale:1.4;
   }
+
   .card-4 > video{
     object-fit: contain;
   }
-  h1{
-    font-size:1rem;
-  }
-  
-  h2{
-    font-size:.5rem;
-  }
-  
-  h3{
-    font-size:.5em;
-  }
-  
-  h4{
-    display:none;
-  }
-  .card4 > .elementWrapper > element{
-    float:left;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width:15vw;
-    height:15vw;
-    border:3px solid #a90f29;
-    margin-left:3vw;
-    margin-top:10vw;
-    font-weight:bold;
-    font-size:0.7rem;
-  }
-  
-  .card4 > .elementWrapper > element> span{
-    color:#a90f29;
-    display:block;
-    text-align: center;;
-  }
+}
 
-  
-  }
 /* Main end */
+
 /* Footer start*/
 .footer{
   bottom:0;  
@@ -421,7 +341,7 @@ font-weight:lighter;
   font-family: 'Noto Sans Kr', sans-serif;
   font-weight: 300;
   font-size:.6rem;
-  color:white;  
+  color:white;    
 }
 
 /* Footer end*/
