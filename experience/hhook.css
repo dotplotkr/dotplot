@@ -16,6 +16,7 @@ body, ul, li, h1, h2, h3{
     margin:0;
     padding:0;
     list-style:none;
+    color:#b9b9b9;
 }
 
 a{ 
@@ -160,10 +161,28 @@ body{
 
 /* Header end */
 /* Main start */
+
 .mainBox{
   width:100;
   overflow: hidden;
 }
+
+.title{
+  margin:0;
+  font-family:'Anton', sans-serif;
+  font-size: 3rem;
+  font-weight:bold;
+  color:#b9b9b9;
+}
+
+.subtitle{
+  margin:2px;
+  font-family: 'avalon';
+  font-weight: 100;
+  font-size: 1rem;
+  color:#b9b9b9;
+}
+
 .card-1{
   display:flex;
   position:fixed;
@@ -207,20 +226,6 @@ body{
   background-color:black;
   color:white;
   padding:150px 50px;
-}
-
-.title{
-  margin:0;
-  font-family:'Anton', sans-serif;
-  font-size: 3rem;
-  font-weight:bold;
-}
-
-.subtitle{
-  margin:2px;
-  font-family: 'avalon';
-  font-weight: 100;
-  font-size: 1rem;
 }
 
 .card-3 > ul{
@@ -290,21 +295,71 @@ body{
   font-size: 1rem;
 }
 
+.card-6{
+  display:flex;
+  width:100vw;
+  background-color:black;
+  color:white;
+}
 .card-6 > ul{
+  display:flex;
+  
+}
+.card-6 > div{
+  position:absolute;
+  margin:150px 50px;
+}
+
+.card-6 > ul > li{
+  margin-top:150px;
+}
+
+.card-6 > ul > li > img{
+  width:calc(100vw/3);
+}
+
+.card-7{
+  display:block;
+  background-color:black;
+  width:100vw;
+  padding:150px 50px;
+  color:white;
+}
+
+.card-7 > img{
+  object-fit: cover;
+  box-sizing: border-box;
+  width:calc(100vw - 100px);
+}
+
+.card-8 > ul{
   display:block;
   background-color: black; 
 }
 
-.card-6 > ul li{
+.card-8 > ul li{
   width:100vw;
 }
 
-.card-6 > ul li >img{
+.card-8 > ul li >img{
   width:100vw;
 }
 
 
 @media screen and (max-width:1000px){
+  .title{
+    margin:0;
+    font-family:'Anton', sans-serif;
+    font-size: 2rem;
+    font-weight:bold;
+  }
+  
+  .subtitle{
+    margin:2px;
+    font-family: 'avalon';
+    font-weight: 100;
+    font-size: .5rem;
+  }
   .card-2{
     font-size:1.8rem;
   }
@@ -323,7 +378,26 @@ body{
   .card-4 > video{
     object-fit: contain;
   }
-}
+  
+  .card-6 > ul{
+    display:block;
+  }
+  .card-6 > ul li{
+    margin:0;
+  }
+
+  .card-6 > ul li:first-child{
+    margin-top:150px;
+  }
+
+  .card-6 > ul li > img{
+    width:100vw;
+    display:block;
+    
+  }
+  }
+
+
 
 /* Main end */
 
