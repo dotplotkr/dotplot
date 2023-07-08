@@ -347,19 +347,7 @@ body{
 
 
 @media screen and (max-width:1000px){
-  .title{
-    margin:0;
-    font-family:'Anton', sans-serif;
-    font-size: 2rem;
-    font-weight:bold;
-  }
-  
-  .subtitle{
-    margin:2px;
-    font-family: 'avalon';
-    font-weight: 100;
-    font-size: .5rem;
-  }
+
   .card-2{
     font-size:1.8rem;
   }
@@ -395,6 +383,11 @@ body{
     display:block;
     
   }
+  .card-7{
+    margin:10% 0;
+    scale:1.2;
+  }
+
   }
 
 
