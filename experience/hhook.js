@@ -47,5 +47,6 @@ gsap.from('.card-6', {
     trigger:'.card-6',
     toggleActions: 'restart none none none',
     },
-  scale:1.3
+  scale:1.3,
+  opacity:0
 });
