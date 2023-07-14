@@ -8,6 +8,7 @@
 /* Nomalize start */
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, ul, li{
@@ -51,15 +52,17 @@ a{
 /* Cursor end */
 /* Loader start */
 .loader {
-    position:absolute;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color:black;
-    color:white;
-    z-index:200;
+  position:fixed;
+  top:-10vh;
+  left:-10vw;
+  width:120vw;
+  height:120vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+  color:white;
+  z-index:200;
 }
 /* Loader end */
 /* Lib end */
@@ -127,7 +130,7 @@ html{
 /* Header end */
 /* Marquee start */
 .marquee{
-    position:absolute;
+    position:fixed;
     display:flex;
     margin:0 12vw;
 }
@@ -161,10 +164,11 @@ html{
 @media screen and (max-width:1000px){
     .marquee{
         margin:12vh 0;
+        padding-left:1vw;
     }
     
     .text-wrapper{
-        width:100vw;
+        width:95vw;
         padding-top:5px;
     }
     
@@ -176,15 +180,43 @@ html{
 /* Marquee end */
 
 /* Main start */
+
 .mainBox{
     overflow: hidden;
 }
+
 .mainBox video{
     display:flex;
+    position:fixed;
     object-fit: cover;
     width:100vw;
     height:100vh;
     z-index:-1;
+}
+
+.blank > div{
+  height:100vh;
+}
+
+.about{
+  overflow: hidden;
+}
+
+.about > div{
+  overflow: hidden;
+  display:flex;
+  top:100%;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  color:white;
+  font-size:2rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.about > div > a{
+  padding:0 5px;
+  display:flex;
 }
 
 /* Main end */

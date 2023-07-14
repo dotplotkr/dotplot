@@ -30,5 +30,15 @@ window.onload = function(){
   $('body,html').delay('1000').animate({scrollTop : 0}, 500);
         };
 // Loader end
-        
+
+gsap.to('.card-1', {
+  scrollTrigger:{
+    trigger:'.card-1',
+    scrub:true,
+    start:"top",
+    end:"bottom",
+    markers:true
+    },
+  opacity:0,
+});
 
