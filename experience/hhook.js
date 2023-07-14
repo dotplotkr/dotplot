@@ -37,8 +37,15 @@ gsap.to('.card-1', {
     scrub:true,
     start:"top",
     end:"bottom",
-    markers:true
+    markers:false
     },
   opacity:0,
 });
 
+gsap.from('.card-6', {
+  scrollTrigger:{
+    trigger:'.card-6',
+    toggleActions: 'restart none none none',
+    },
+  scale:1.3
+});
