@@ -39,7 +39,7 @@ gsap.to('.card-1', {
     end:"bottom",
     markers:false
     },
-  opacity:0,
+  opacity:0
 });
 
 gsap.from('.card-6', {
