@@ -352,6 +352,10 @@ html{
     width: 99vw;
     z-index:103;
   }
+
+  .swiper-pagination{
+    margin-bottom: 10vh;
+  }
 }
 
   /* End Main */

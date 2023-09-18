@@ -70,7 +70,7 @@ var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  spaceBetween: -280,
+  spaceBetween: -270,
   slidesPerView: "1",
   coverflowEffect: {
     rotate: -50,
