@@ -47,3 +47,44 @@ gsap.from('.why', {
   color:'black'
   
 });
+
+$('.header-menuBox-Mo').click(function(){
+  $('.header-menuBox-Mo').addClass('displayNone')
+  $('.header-menuBox-Mos').addClass('displayFlex')
+  $('.menuBox-Mo').addClass('move')
+  $('.menuSelectorWrapper').addClass('displayBlock')
+  $('.menuSelector').addClass('opacity')
+  
+});
+
+
+$('.header-menuBox-Mos').click(function(){
+  $('.header-menuBox-Mos').removeClass('displayFlex')
+  $('.header-menuBox-Mo').removeClass('displayNone')
+  $('.menuBox-Mo').removeClass('move')
+  $('.menuSelectorWrapper').removeClass('displayBlock')
+  $('.menuSelector').removeClass('opacity')
+});
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  spaceBetween: -280,
+  slidesPerView: "1",
+  coverflowEffect: {
+    rotate: -50,
+    stretch: 0,
+    depth: 500,
+    modifier: 1,
+    slideShadows: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

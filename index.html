@@ -9,7 +9,7 @@
     <link rel="icon" href="/source/img/DotplotFavicon.png"/>
     <meta name="description" content="닷플랏. 스몰 브랜드의 성장과 연결을 지향합니다.">
 
-    <!-- opengraph -->
+<!-- opengraph -->
     <meta property="og:title" content="DOTPLOT">
     <meta property="og:image" content="https://github.com/dotplotinseoul/dotplot/blob/master/source/img/DotplotOpengraph.png?raw=true">
     <meta property="og:image:width" content="1200">
@@ -17,18 +17,20 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dotplot.kr">
     <meta property="og:description" content="스몰 브랜드의 성장과 연결을 지향합니다. #닷플랏 #브랜딩 #마케팅 #영상제작">
-    <!-- opengraph -->
-    <!-- Google Tag Manager -->
+<!-- End opengraph -->
+<!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-N95LQD2');</script>
-        <!-- End Google Tag Manager -->
-        
+<!-- End Google Tag Manager -->
+<!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- End jquery -->
     <link rel="stylesheet" href="index.css"/>
     <script src="index.js" defer></script>
+<!-- ftc -->
     <script language="JavaScript">
         function onopen()
         {
@@ -37,35 +39,58 @@
         window.open(url, "bizCommPop", "width=750, height=700;");
         }
     </script>
-
+<!-- End ftc -->
+<!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<!-- End gsap -->
+<!-- ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    
+<!-- End ScrollTrigger -->
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- End Swiper -->
 </head>
+
+
+
 <body>
-    <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N95LQD2"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+<!-- ChannelIO -->
     <script>
         (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.")}var ch=function(){ch.c(arguments)};ch.q=[];ch.c=function(args){ch.q.push(args)};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x)}}if(document.readyState==="complete"){l()}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l)}})();
 
         ChannelIO('boot', {
-  "pluginKey": "1f5c0ba8-0135-4a80-9d98-30d0906df7a7" // fill your plugin key
-});
+        "pluginKey": "1f5c0ba8-0135-4a80-9d98-30d0906df7a7" // fill your plugin key
+  
+        });
     </script>
-<!-- Loader start -->    
+<!-- End ChannelIO -->
+<!-- Loader -->    
     <div class="loader">
         hello. welcome to dotplot
     </div>
-<!-- Loader end -->
+<!-- End Loader -->
 
-<!-- Cursor start -->
+<!-- Cursor -->
     <div class="cursor"></div>
-<!-- Cursor end -->
+<!-- End Cursor -->
 
-<!-- Header start -->
+<div class="menuBox-Mo">
+
+</div>
+
+<!-- Header -->
     <header class="header">
         <section class="header-logoBox">
             <a class="cursor-big" href="/index">
@@ -79,10 +104,19 @@
                 <li class="cursor-big"><a href="/experience">Experience</a></li> 
             </ul>
         </section>
-    </header>
-<!-- Header end -->
 
-<!-- Marquee start -->
+        <div class="header-menuBox-Mo cursor-big" id="menuClick">
+            MENU
+        </div>
+
+        <div class="header-menuBox-Mos cursor-big">
+            CLOSE
+        </div>
+
+    </header>
+<!-- End Header -->
+
+<!-- Marquee -->
     <div class="marquee">
         <div class="text-wrapper">
         <h2>There is no perfection, Only perspective exist. We can do what we want to do.</h2>
@@ -91,34 +125,66 @@
         <h2>There is no perfection, Only perspective exist. We can do what we want to do.</h2>
         </div>
     </div>
-<!-- Marquee end -->
+<!-- End Marquee -->
 
-<!-- Main start -->
+<!-- Main -->
     <main class="main">
 
         <div class="mainBox">
             <video src="source/video/Connected.mp4" autoplay muted loop playsinline ></video>
         </div>
-        <div class="blank">
-            <div></div>
-        </div>
-        <div class="about">
-            <div>
-            <a href="#"><div class="why"> A</div>BOUT</a>
-            </div>
-        </div>
-
     </main>
-<!-- Main end -->
 
-<!-- Footer start-->
+    <div class="menuSelector">
+        <ul class="menuSelectorWrapper">
+            <li><a class="cursor-big" href="/film">Film</a></li>
+            <li><a class="cursor-big"href="/experience">Experience</a></li> 
+        </ul>
+    </div>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="/experience/Shellystreet.html">
+                <img src="/source/img/ShellyStreetThumbnail.png" />
+                </a>
+              </div>
+              <div class="swiper-slide"><a href="/experience/fior.html">
+                <img src="/source/img/FiorThumbnail.png" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/experience/likethatcoffee.html">
+                <img src="/source/img/LikethatcoffeeThumbnail.png" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/experience/chicken.html">
+                <img src="/source/img/ChickenThumbnail.png" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/experience/flashback.html">
+                <img src="/source/img/FlashbackThumbnail.png" />
+                </a>
+              </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev cursor-big"></div>
+        <div class="swiper-button-next cursor-big"></div>
+      </div>
+
+
+
+<!-- End Main -->
+
+<!-- Footer -->
     <footer class="footer">
         <section class="footer-infBox">
                     <div class="co-inf cursor-big" onclick="onopen();">ⓒ2022. Dotplot. all rights reserved.
                     </div>
         </section>
     </footer>
-<!-- Footer end-->
+<!-- End Footer -->
 
 </body>
 </html>
