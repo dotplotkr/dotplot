@@ -30,3 +30,17 @@ window.onload = function(){
   $('body,html').delay('1000').animate({scrollTop : 0}, 500);
         };
 // Loader end
+
+//gsap
+gsap.to('body', {
+  scrollTrigger:{
+    trigger:'body',
+    scrub:true,
+    start:"top +=100%",
+    end:"bottom +=100%",
+    markers:true
+  },
+  backgroundColor: "black",
+});
+
+//gsap End

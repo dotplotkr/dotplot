@@ -49,7 +49,7 @@ h3{
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color:white;
+  background-color:black;
   color:white;
   z-index:200;
 }
@@ -199,7 +199,7 @@ body{
   font-family: 'Noto Sans Kr', sans-serif;
   font-weight: 300;
   font-size:.6rem;
-  color:black;    
+  color:black;  
 }
 
 /* End Footer */
