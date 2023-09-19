@@ -71,6 +71,8 @@ a{
 html{
     background-color:black;
 }
+
+
   /* Header */
 .header{
     position:fixed;
@@ -127,7 +129,121 @@ html{
     transition:all .5s;
   }
   
+
+.header-menuBox-Mo{
+  display: none;
+}
+
+.header-menuBox-Mos{
+  display: none;
+}
+
+.menuBox-Mo{
+  display: none;
+}
+.menuSelector{
+  display:none;
+}
+
+.menuSelectorWrapper{
+  display:none;
+}
+
+@media screen and (max-width:1000px){
+  .header-menuBox{
+    display: none;
+  }
+
+  .header-menuBox-Mo{
+    display:flex;
+    margin-right: 10vw;
+    background-color:white;
+    border-radius:3px;
+    padding:4px 10px;
+    font-family:'Avalon';
+    font-size:1rem;
+  }
+
+  .header-menuBox-Mos{
+    display:none;
+    margin-right: 10vw;
+    background-color:black;
+    color:white;
+    border-radius:3px;
+    padding:5px 10px;
+    font-family:'Avalon';
+    font-size:1rem;
+
+  }
+
+  .menuBox-Mo{
+    display:flex;
+    position:fixed;
+    top:100vh;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    z-index: 100;
+    
+  }
+
+    .menuSelector{
+      color:white;
+      position:absolute;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:95vw;
+      height:70vh;
+      margin-top:10vh;
+      margin-left:-200vw;
+      opacity: 1;
+      z-index: 100;
+
+    }
+
+    .menuSelectorWrapper{
+      font-family:'Avalon';
+      font-size:4rem;
+      width:85vw;
+      height:50vh;
+      display:block;
+      z-index: 100;
+    }
+
+    .menuSelectorWrapper li{
+      margin-top:12px;
+    }
+    .experienceMenu{
+      margin-top:2vh;
+    }
+
+    .displayNone{
+      display:none;
+    }
+
+    .displayFlex{
+      display:flex;
+    }
+
+    .displayBlock{
+      display:block;
+    }
+
+    .move{
+      top:0vh;
+      transition: all 1s;
+    }
+
+    .opacity{
+      opacity: 1;
+      margin-left:0;
+      transition: all 1s;
+    }
+
+  }     
   /* End Header */
+
   /* Marquee */
 .marquee{
     position:fixed;
@@ -152,8 +268,6 @@ html{
 
 }
 
-
-
 @keyframes move-rt1{
     0%{
         transform: translateX(0);
@@ -163,24 +277,7 @@ html{
     }
 }
 
-.header-menuBox-Mo{
-  display: none;
-}
 
-.header-menuBox-Mos{
-  display: none;
-}
-
-.menuBox-Mo{
-  display: none;
-}
-.menuSelector{
-  display:none;
-}
-
-.menuSelectorWrapper{
-  display:none;
-}
 
 @media screen and (max-width:1000px){
     .marquee{
@@ -197,98 +294,6 @@ html{
         margin-top: 0;
         font-size: 6rem;
     }
-    .header-menuBox{
-      display: none;
-    }
-
-    .header-menuBox-Mo{
-      display:flex;
-      margin-right: 10vw;
-      background-color:white;
-      border-radius:3px;
-      padding:4px 10px;
-      font-family:'Avalon';
-      font-size:1rem;
-    }
-
-    .header-menuBox-Mos{
-      display:none;
-      margin-right: 10vw;
-      background-color:black;
-      color:white;
-      border-radius:3px;
-      padding:5px 10px;
-      font-family:'Avalon';
-      font-size:1rem;
-
-    }
-
-
-
-    .menuBox-Mo{
-      display:flex;
-      position:fixed;
-      top:100vh;
-      width:100vw;
-      height:100vh;
-      background-color:black;
-      z-index: 100;
-    }
-
-      .menuSelector{
-        color:white;
-        position:absolute;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        width:95vw;
-        height:70vh;
-        margin-top:10vh;
-        margin-left:-200vw;
-        opacity: 1;
-        z-index: 100;
-  
-      }
-
-      .menuSelectorWrapper{
-        font-family:'Avalon';
-        font-size:4rem;
-        width:85vw;
-        height:50vh;
-        display:block;
-        z-index: 100;
-      }
-
-      .menuSelectorWrapper li{
-        margin-top:12px;
-      }
-      .experienceMenu{
-        margin-top:2vh;
-      }
-
-      .displayNone{
-        display:none;
-      }
-  
-      .displayFlex{
-        display:flex;
-      }
-
-      .displayBlock{
-        display:block;
-      }
-
-      .move{
-        top:0vh;
-        transition: all 1s;
-      }
-
-      .opacity{
-        opacity: 1;
-        margin-left:0;
-        transition: all 1s;
-      }
-
     }     
   /* End Marquee */
 

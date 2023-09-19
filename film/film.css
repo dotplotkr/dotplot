@@ -87,66 +87,178 @@ html{
 }
 /* Scrollbar end */
 
-/* Header start */
-.header{
-  position:fixed;
-  display:flex;
-  align-items: flex-end;
-  justify-content:space-between;
-  width:100vw;
-  z-index:100;
+  /* Header */
+  .header{
+    position:fixed;
+    display:flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    width:100vw;
+    z-index:100;
+  }
+  
+  .header-logoBox{
+    margin-top:5vh;
+    margin-left:calc(2vw + 10px);
+  }
+  
+  .header-logoBox > a{
+    font-family:'Roboto','sans-serif';
+    font-weight: 700;
+    color:white;
+    vertical-align: middle;
+    font-size:1.2rem;
+    padding:3px;
+    transition:all .5s;
+  }
+  
+  .header-logoBox > a:hover{
+    color:#231f20;
+  }
+
+  .header-menuBox > ul{
+    display:flex;
+    margin-top:5vh;
+    margin-bottom:3px;
+    margin-right:2vw;
+  }
+  
+  .header-menuBox > .header-menuBox-wrapper > li{
+    margin:0 15px;
+  }
+  
+  .header-menuBox > ul > li > a{
+    color:white;
+    font-family:'Avalon';
+    font-size:1rem;
+    padding:3px;
+    transition:all .5s;
+  }
+  
+  .header-menuBox > ul > li > a:hover{
+    background-color:white;
+    padding:3px;
+    border-radius:10%;
+    color:black;
+    transition:all .5s;
+  }
+  
+
+.header-menuBox-Mo{
+  display: none;
 }
 
-.header-logoBox{
-  margin-top:5vh;
-  margin-left:calc(2vw + 10px);
+.header-menuBox-Mos{
+  display: none;
 }
 
-.header-logoBox > a{
-  font-family:'Roboto','sans-serif';
-  font-weight: 700;
-  color:white;
-  vertical-align: middle;
-  border-radius:3px;
-  font-size:1.2rem;
-  width:10px;
-  height:10px;
-  padding:3px;
-  transition:all .5s;
+.menuBox-Mo{
+  display: none;
+}
+.menuSelector{
+  display:none;
 }
 
-.header-logoBox > a:hover{
-  color:#231f20;
-  transition:all .5s;
+.menuSelectorWrapper{
+  display:none;
 }
 
-.header-menuBox > ul{
-  display:flex;
-  margin-top:5vh;
-  margin-bottom:3px;
-  margin-right:2vw;
-}
-.header-menuBox > .header-menuBox-wrapper > li{
-  margin:0 15px;
-}
+@media screen and (max-width:1000px){
+  .header-menuBox{
+    display: none;
+  }
 
-.header-menuBox > ul > li > a{
-  color:white;
-  font-family:'Avalon';
-  font-size:1rem;
-  padding:3px;
-  transition:all .5s;
-}
+  .header-menuBox-Mo{
+    display:flex;
+    margin-right: 10vw;
+    background-color:white;
+    border-radius:3px;
+    padding:4px 10px;
+    font-family:'Avalon';
+    font-size:1rem;
+  }
 
-.header-menuBox > ul > li > a:hover{
-  background-color:white;
-  padding:3px;
-  border-radius:10%;
-  color:black;
-  transition:all .5s;
-}
+  .header-menuBox-Mos{
+    display:none;
+    margin-right: 10vw;
+    background-color:black;
+    color:white;
+    border-radius:3px;
+    padding:5px 10px;
+    font-family:'Avalon';
+    font-size:1rem;
 
-/* Header end */
+  }
+
+  .menuBox-Mo{
+    display:flex;
+    position:fixed;
+    top:100vh;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    z-index: 100;
+    
+  }
+
+    .menuSelector{
+      color:white;
+      position:fixed;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:95vw;
+      height:70vh;
+      margin-top:-10vh;
+      margin-left:-200vw;
+      opacity: 1;
+      z-index: 100;
+    }
+
+    .menuSelectorWrapper{
+      font-family:'Avalon';
+      font-size:4rem;
+      width:85vw;
+      height:50vh;
+      display:block;
+      z-index: 100;
+    }
+
+    .menuSelectorWrapper li{
+      margin-top:12px;
+    }
+    .experienceMenu{
+      margin-top:2vh;
+    }
+
+
+
+  }     
+  @media screen and (max-width:1000px){
+  .displayNone{
+    display:none;
+  }
+
+  .displayFlex{
+    display:flex;
+  }
+
+  .displayBlock{
+    display:block;
+  }
+
+  .move{
+    top:0vh;
+    transition: all 1s;
+  }
+
+  .opacity{
+    opacity: 1;
+    margin-left:0;
+    transition: all 1s;
+  }
+}
+  /* End Header */
 
 /* 메인 정리 시작 */
   .main{
@@ -514,6 +626,75 @@ input[id="popup4"] + label + div > label {
     z-index:1;}
   /* 모달 윈도우 끝 5 */
 
+  /* modal 6 */
+  input[id="popup6"]{
+    display:none;
+  }
+
+  input[id="popup6"] + label + div{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:100;
+  }
+
+  input[id*="popup6"] + label + div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    visibility:hidden;
+    transition:all .5s;
+  }
+
+  input[id*="popup6"]:checked + label + div{
+    opacity:1;
+    visibility:visible;
+    
+  }
+
+  input[id="popup6"] + label + div > div{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:72vw;
+    height:40.5vw;
+    z-index:2;
+  }
+
+  input[id="popup6"] + label + div > div > iframe{
+    width:100%;
+    height:100%;
+  }
+
+  input[id="popup6"] + label + div > div > label{
+    position:absolute;
+    color:white;
+    font-size:3rem;
+    top:50%;
+    right:-5%;
+    transform:translate(40%, -40%);
+    padding:20px;
+    border-radius:100%;
+    z-index:1;
+
+  }
+
+  input[id="popup6"] + label + div > label {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.9);
+    z-index:1;
+  }
+
+  /* modal6 End */
+
   .workBox > div{
     scroll-snap-align: start;
     position:relative;
@@ -526,7 +707,7 @@ input[id="popup4"] + label + div > label {
     box-sizing: border-box;
   }
 
-  .workBox div:nth-of-type(5){
+  .workBox div:nth-of-type(6){
     margin-bottom:15vh;
 
   }
@@ -603,6 +784,11 @@ input[id="popup4"] + label + div > label {
         transform: translateY(-50%);
         
       }
+      }
+      
+
+
+
 /* 모달 윈도우 1 시작 */
       input[id="popup"] + label + div > div{
         position:fixed;
@@ -723,6 +909,30 @@ input[id="popup5"] + label + div > div > label{
 
 }
 /* 모달 윈도우 5 끝 */
+/* modal 6 */
+input[id="popup6"] + label + div > div{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:96vw;
+  height:54vw;
+  /*background-color: white;*/
+  z-index:2;
+}
+
+input[id="popup6"] + label + div > div > label{
+  position:absolute;
+  color:white;
+  font-size:2rem;
+  top:-10%;
+  right:4%;
+  padding:20px;
+  border-radius:100%;
+  z-index:1;
+
+}
+/* modal 6 End*/
 }
 
 /* 메인 정리 끝 */

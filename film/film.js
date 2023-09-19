@@ -1,5 +1,3 @@
-console.clear();
-
 //Plugin start
 gsap.registerPlugin(ScrollTrigger);
 //Plugin end
@@ -26,6 +24,25 @@ $('.cursor-big').mouseleave(function(){
 });
 
 //Cursor end
+
+$('.header-menuBox-Mo').click(function(){
+  $('.header-menuBox-Mo').addClass('displayNone')
+  $('.header-menuBox-Mos').addClass('displayFlex')
+  $('.menuBox-Mo').addClass('move')
+  $('.menuSelectorWrapper').addClass('displayBlock')
+  $('.menuSelector').addClass('opacity')
+  
+});
+
+
+$('.header-menuBox-Mos').click(function(){
+  $('.header-menuBox-Mos').removeClass('displayFlex')
+  $('.header-menuBox-Mo').removeClass('displayNone')
+  $('.menuBox-Mo').removeClass('move')
+  $('.menuSelectorWrapper').removeClass('displayBlock')
+  $('.menuSelector').removeClass('opacity')
+});
+
 
 //ScrollTrigger start
 gsap.from('.scroll1', {
@@ -92,6 +109,20 @@ gsap.from('.scroll5', {
   x: -1000,
   duration: 4,
 });
+
+gsap.from('.scroll6', {
+  scrollTrigger:{
+    trigger:'.scroll6',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4,
+});
+
 //ScrollTriger end
 
 //VideoPause Start
@@ -146,6 +177,15 @@ $('#vpause5-2').click(function(){
   video5.setAttribute('src','https://player.vimeo.com/video/811759385?h=752ba1777b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 });
 
+const video6 = document.getElementById('video6');
+
+$('#vpause6-1').click(function(){
+  video6.setAttribute('src','https://player.vimeo.com/video/865837820?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+});
+
+$('#vpause6-2').click(function(){
+  video6.setAttribute('src','https://player.vimeo.com/video/865837820?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+});
 //VideoPause end
 
 //Loader start
@@ -160,3 +200,4 @@ window.onload = function(){
   });
 };
 //Loader end
+
