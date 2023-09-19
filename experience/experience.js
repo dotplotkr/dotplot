@@ -37,7 +37,24 @@ window.onload = function(){
   });
 };
 //Loader end
-      
+$('.header-menuBox-Mo').click(function(){
+  $('.header-menuBox-Mo').addClass('displayNone')
+  $('.header-menuBox-Mos').addClass('displayFlex')
+  $('.menuBox-Mo').addClass('move')
+  $('.menuSelectorWrapper').addClass('displayBlock')
+  $('.menuSelector').addClass('opacity')
+  
+});
+
+
+$('.header-menuBox-Mos').click(function(){
+  $('.header-menuBox-Mos').removeClass('displayFlex')
+  $('.header-menuBox-Mo').removeClass('displayNone')
+  $('.menuBox-Mo').removeClass('move')
+  $('.menuSelectorWrapper').removeClass('displayBlock')
+  $('.menuSelector').removeClass('opacity')
+});
+
 // scrollTrigger start
 gsap.from('.scroll1', {
   scrollTrigger:{

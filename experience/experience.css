@@ -100,8 +100,8 @@ body{
   background-color:black;
 }
 
-/* Header start */
-.header{
+ /* Header */
+ .header{
   position:fixed;
   display:flex;
   align-items: flex-end;
@@ -120,17 +120,13 @@ body{
   font-weight: 700;
   color:white;
   vertical-align: middle;
-  border-radius:3px;
   font-size:1.2rem;
-  width:10px;
-  height:10px;
   padding:3px;
   transition:all .5s;
 }
 
 .header-logoBox > a:hover{
   color:#231f20;
-  transition:all .5s;
 }
 
 .header-menuBox > ul{
@@ -139,6 +135,7 @@ body{
   margin-bottom:3px;
   margin-right:2vw;
 }
+
 .header-menuBox > .header-menuBox-wrapper > li{
   margin:0 15px;
 }
@@ -159,7 +156,122 @@ body{
   transition:all .5s;
 }
 
-/* Header end */
+
+.header-menuBox-Mo{
+display: none;
+}
+
+.header-menuBox-Mos{
+display: none;
+}
+
+.menuBox-Mo{
+display: none;
+}
+.menuSelector{
+display:none;
+}
+
+.menuSelectorWrapper{
+display:none;
+}
+
+@media screen and (max-width:1000px){
+.header-menuBox{
+  display: none;
+}
+
+.header-menuBox-Mo{
+  display:flex;
+  margin-right: 10vw;
+  background-color:white;
+  border-radius:3px;
+  padding:4px 10px;
+  font-family:'Avalon';
+  font-size:1rem;
+}
+
+.header-menuBox-Mos{
+  display:none;
+  margin-right: 10vw;
+  background-color:black;
+  color:white;
+  border-radius:3px;
+  padding:5px 10px;
+  font-family:'Avalon';
+  font-size:1rem;
+
+}
+
+.menuBox-Mo{
+  display:flex;
+  position:fixed;
+  top:100vh;
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  z-index: 100;
+  
+}
+
+  .menuSelector{
+    color:white;
+    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:95vw;
+    height:70vh;
+    margin-top:-10vh;
+    margin-left:-200vw;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .menuSelectorWrapper{
+    font-family:'Avalon';
+    font-size:4rem;
+    width:85vw;
+    height:50vh;
+    display:block;
+    z-index: 100;
+  }
+
+  .menuSelectorWrapper li{
+    margin-top:12px;
+  }
+  .experienceMenu{
+    margin-top:2vh;
+  }
+
+
+
+}     
+@media screen and (max-width:1000px){
+.displayNone{
+  display:none;
+}
+
+.displayFlex{
+  display:flex;
+}
+
+.displayBlock{
+  display:block;
+}
+
+.move{
+  top:0vh;
+  transition: all 1s;
+}
+
+.opacity{
+  opacity: 1;
+  margin-left:0;
+  transition: all 1s;
+}
+}
+/* End Header */
   /* 메인 박스 시작 */
   .main{
     display:block;
