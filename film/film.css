@@ -170,7 +170,7 @@ html{
 
   .header-menuBox-Mo{
     display:flex;
-    margin-right: 10vw;
+    margin-right: 5vw;
     background-color:white;
     border-radius:3px;
     padding:4px 10px;
@@ -180,7 +180,7 @@ html{
 
   .header-menuBox-Mos{
     display:none;
-    margin-right: 10vw;
+    margin-right: 5vw;
     background-color:black;
     color:white;
     border-radius:3px;
