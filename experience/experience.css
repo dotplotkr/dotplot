@@ -270,6 +270,8 @@ display:none;
   margin-left:0;
   transition: all 1s;
 }
+
+
 }
 /* End Header */
   /* 메인 박스 시작 */
@@ -390,6 +392,20 @@ display:none;
       }
     }
   /* 워크 래퍼 끝 */
+  /* cursor auto */
+@media screen and (max-width:1000px){
+  *{
+    cursor:auto;
+  }
+  .cursor {
+    display:none;
+  }
+    
+    .need-to-cursor-big{
+      display:none;
+  }
+}
+/* cursor auto End*/
 /* 메인 정리 끝 */
 
 /* Footer start*/

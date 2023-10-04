@@ -933,7 +933,20 @@ input[id="popup6"] + label + div > div > label{
 
 }
 /* modal 6 End*/
+/* cursor auto */
+@media screen and (max-width:1000px){
+  *{
+    cursor:auto;
+  }
+  .cursor {
+    display:none;
+  }
+    
+    .need-to-cursor-big{
+      display:none;
+  }
 }
+/* cursor auto End*/
 
 /* 메인 정리 끝 */
 

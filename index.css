@@ -364,6 +364,21 @@ html{
   }
 }
 
+/* cursor auto */
+@media screen and (max-width:1000px){
+  *{
+    cursor:auto;
+  }
+  .cursor {
+    display:none;
+  }
+    
+    .need-to-cursor-big{
+      display:none;
+  }
+}
+/* cursor auto End*/
+
   /* End Main */
 
   /* Footer */
