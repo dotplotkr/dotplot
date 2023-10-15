@@ -399,6 +399,11 @@ html{
     font-size:.6rem;
     color:white;  
   }
-  
+  .footer > .footer-infBox > .blog{
+    font-family: 'Noto Sans Kr', sans-serif;
+    font-weight: 300;
+    font-size:.6rem;
+    color:white;
+  }
   /* End Footer */
 /* Custom end */
