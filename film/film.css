@@ -915,8 +915,10 @@ input[id="popup6"] + label + div > div{
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  width:96vw;
-  height:54vw;
+  height:80vh;
+  width:25vw;
+  
+  
   /*background-color: white;*/
   z-index:2;
 }
@@ -925,12 +927,24 @@ input[id="popup6"] + label + div > div > label{
   position:absolute;
   color:white;
   font-size:2rem;
-  top:-10%;
-  right:4%;
+  top:-30px;
+  right:18px;
   padding:20px;
   border-radius:100%;
   z-index:1;
 
+}
+
+@media screen and (max-width:1000px){
+  input[id="popup6"] + label + div > div{
+    height:90vh;
+    width:80vw;
+  }
+
+  input[id="popup6"] + label + div > div > label{
+    top:40px;
+    right:18px;
+}
 }
 /* modal 6 End*/
 /* cursor auto */
