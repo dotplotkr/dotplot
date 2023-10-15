@@ -795,8 +795,8 @@ input[id="popup4"] + label + div > label {
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        width:96vw;
-        height:54vw;
+        width:80vw;
+        height:80vh;
         /*background-color: white;*/
         z-index:2;
       }
@@ -805,12 +805,23 @@ input[id="popup4"] + label + div > label {
         position:absolute;
         color:white;
         font-size:2rem;
-        top:-10%;
-        right:4%;
+        top:-30px;
+        right:40px;
         padding:20px;
         border-radius:100%;
         z-index:1;
     
+      }
+      @media screen and (max-width:1000px){
+        input[id="popup"] + label + div > div{
+          width:96vw;
+          height:54vw;
+        }
+        
+        input[id="popup"] + label + div > div > label{
+          top:-30px;
+          right:18px;
+        }
       }
 /* 모달 윈도우 1 끝 */
 /* 모달 윈도우 2 시작 */
@@ -819,8 +830,8 @@ input[id="popup4"] + label + div > label {
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        width:96vw;
-        height:54vw;
+        width:80vw;
+        height:80vh;
         /*background-color: white;*/
         z-index:2;
       }
@@ -829,12 +840,23 @@ input[id="popup4"] + label + div > label {
         position:absolute;
         color:white;
         font-size:2rem;
-        top:-10%;
-        right:4%;
+        top:-30px;
+        right:40px;
         padding:20px;
         border-radius:100%;
         z-index:1;
     
+      }
+      @media screen and (max-width:1000px){
+        input[id="popup2"] + label + div > div{
+          width:96vw;
+          height:54vw;
+        }
+        
+        input[id="popup2"] + label + div > div > label{
+          top:-30px;
+          right:18px;
+        }
       }
 /* 모달 윈도우 2 끝 */
 /* 모달 윈도우 3 시작 */
@@ -843,8 +865,8 @@ input[id="popup3"] + label + div > div{
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  width:96vw;
-  height:54vw;
+  width:80vw;
+  height:80vh;
   /*background-color: white;*/
   z-index:2;
 }
@@ -853,12 +875,24 @@ input[id="popup3"] + label + div > div > label{
   position:absolute;
   color:white;
   font-size:2rem;
-  top:-10%;
-  right:4%;
+  top:-30px;
+  right:40px;
   padding:20px;
   border-radius:100%;
   z-index:1;
 
+}
+
+@media screen and (max-width:1000px){
+  input[id="popup3"] + label + div > div{
+    width:96vw;
+    height:54vw;
+  }
+  
+  input[id="popup3"] + label + div > div > label{
+    top:-30px;
+    right:18px;
+  }
 }
 /* 모달 윈도우 3 끝 */
 /* 모달 윈도우 4 시작 */
@@ -867,8 +901,8 @@ input[id="popup4"] + label + div > div{
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  width:96vw;
-  height:54vw;
+  width:80vw;
+  height:80vh;
   /*background-color: white;*/
   z-index:2;
 }
@@ -877,12 +911,24 @@ input[id="popup4"] + label + div > div > label{
   position:absolute;
   color:white;
   font-size:2rem;
-  top:-10%;
-  right:4%;
+  top:-30px;
+  right:40px;
   padding:20px;
   border-radius:100%;
   z-index:1;
 
+}
+
+@media screen and (max-width:1000px){
+  input[id="popup4"] + label + div > div{
+    width:96vw;
+    height:54vw;
+  }
+  
+  input[id="popup4"] + label + div > div > label{
+    top:-30px;
+    right:18px;
+  }
 }
 /* 모달 윈도우 4 끝 */
 /* 모달 윈도우 5 시작 */
@@ -891,22 +937,35 @@ input[id="popup5"] + label + div > div{
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  width:96vw;
-  height:54vw;
+  width:80vw;
+  height:80vh;
   /*background-color: white;*/
   z-index:2;
+  border:solid 1px red;
 }
 
 input[id="popup5"] + label + div > div > label{
   position:absolute;
   color:white;
   font-size:2rem;
-  top:-10%;
-  right:4%;
+  top:-30px;
+  right:40px;
   padding:20px;
   border-radius:100%;
   z-index:1;
 
+}
+
+@media screen and (max-width:1000px){
+  input[id="popup5"] + label + div > div{
+    width:96vw;
+    height:54vw;
+  }
+  
+  input[id="popup5"] + label + div > div > label{
+    top:-30px;
+    right:18px;
+  }
 }
 /* 모달 윈도우 5 끝 */
 /* modal 6 */
