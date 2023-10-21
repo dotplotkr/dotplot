@@ -941,7 +941,6 @@ input[id="popup5"] + label + div > div{
   height:80vh;
   /*background-color: white;*/
   z-index:2;
-  border:solid 1px red;
 }
 
 input[id="popup5"] + label + div > div > label{
@@ -1001,7 +1000,7 @@ input[id="popup6"] + label + div > div > label{
   }
 
   input[id="popup6"] + label + div > div > label{
-    top:40px;
+    top:30px;
     right:18px;
 }
 }
