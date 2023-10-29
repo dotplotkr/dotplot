@@ -76,7 +76,7 @@ html{
     mix-blend-mode:difference;
     pointer-events:none;
     transform:translateX(-50%) translateY(-50%);
-    z-index:200;
+    z-index:601;
     transition:width .1s, height .1s, background-color 1s;
   }
 
@@ -166,6 +166,7 @@ html{
     font-size:1.2rem;
     padding:3px;
     z-index: 300;
+    
   }
 
 
@@ -178,6 +179,7 @@ html{
     width:30px;
     position: relative;
     z-index: 201;
+
   }
 
 
@@ -336,12 +338,12 @@ html{
     position:fixed;
     top:0;
     left:0;
-    height:100%;
     width:100%;
-    z-index:100;
+    height:100%;
+    z-index:501;
   }
 
-  input[id="popup"] + label + div{
+  input[id*="popup"] + label + div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,6 +355,7 @@ html{
   input[id*="popup"]:checked + label + div{
     opacity:1;
     visibility:visible;
+    
   }
 
   input[id="popup"] + label + div > div{
@@ -362,15 +365,13 @@ html{
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    z-index:2;
+    z-index:1;
   }
 
   input[id="popup"] + label + div > div > iframe{
     width:100%;
     height:100%;
-    
   }
-
 
   input[id="popup"] + label + div > div > label{
     position:absolute;
@@ -381,8 +382,7 @@ html{
     transform:translate(40%, -40%);
     padding:20px;
     border-radius:100%;
-    z-index:1;
-
+    z-index:501;
   }
 
   input[id="popup"] + label + div > label {
@@ -392,7 +392,7 @@ html{
     width:100%;
     height:100%;
     background:rgba(0,0,0,.9);
-    z-index:1;
+    z-index:0;
   }
 
   /* 모달 윈도우 끝 */
@@ -408,7 +408,7 @@ html{
     left:0;
     width:100%;
     height:100%;
-    z-index:100;
+    z-index:501;
   }
 
   input[id*="popup2"] + label + div{
@@ -433,7 +433,7 @@ html{
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    z-index:2;
+    z-index:1;
   }
 
   input[id="popup2"] + label + div > div > iframe{
@@ -450,7 +450,7 @@ html{
     transform:translate(40%, -40%);
     padding:20px;
     border-radius:100%;
-    z-index:1;
+    z-index:501;
 
   }
 
@@ -465,6 +465,9 @@ html{
   }
 
   /* 모달 윈도우 끝 2 */
+
+
+
   /* 모달 윈도우 시작 3 */
   input[id="popup3"]{
     display:none;
@@ -476,7 +479,7 @@ html{
     left:0;
     width:100%;
     height:100%;
-    z-index:100;
+    z-index:501;
   }
 
   input[id*="popup3"] + label + div{
@@ -501,7 +504,7 @@ html{
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    z-index:2;
+    z-index:1;
   }
 
   input[id="popup3"] + label + div > div > iframe{
@@ -518,7 +521,7 @@ html{
     transform:translate(40%, -40%);
     padding:20px;
     border-radius:100%;
-    z-index:1;
+    z-index:501;
 
   }
 
@@ -543,7 +546,7 @@ input[id="popup4"] + label + div{
   left:0;
   width:100%;
   height:100%;
-  z-index:100;
+  z-index:501;
 }
 
 input[id*="popup4"] + label + div{
@@ -568,7 +571,7 @@ input[id="popup4"] + label + div > div{
   transform:translate(-50%, -50%);
   width:72vw;
   height:40.5vw;
-  z-index:2;
+  z-index:1;
 }
 
 input[id="popup4"] + label + div > div > iframe{
@@ -585,7 +588,7 @@ input[id="popup4"] + label + div > div > label{
   transform:translate(40%, -40%);
   padding:20px;
   border-radius:100%;
-  z-index:1;
+  z-index:501;
 
 }
 
@@ -610,7 +613,7 @@ input[id="popup4"] + label + div > label {
     left:0;
     width:100%;
     height:100%;
-    z-index:100;
+    z-index:501;
   }
 
   input[id*="popup5"] + label + div{
@@ -635,7 +638,7 @@ input[id="popup4"] + label + div > label {
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    z-index:2;
+    z-index:1;
   }
 
   input[id="popup5"] + label + div > div > iframe{
@@ -652,7 +655,7 @@ input[id="popup4"] + label + div > label {
     transform:translate(40%, -40%);
     padding:20px;
     border-radius:100%;
-    z-index:1;
+    z-index:501;
 
   }
 
@@ -677,7 +680,7 @@ input[id="popup4"] + label + div > label {
     left:0;
     width:100%;
     height:100%;
-    z-index:100;
+    z-index:501;
   }
 
   input[id*="popup6"] + label + div{
@@ -702,7 +705,7 @@ input[id="popup4"] + label + div > label {
     transform:translate(-50%, -50%);
     width:72vw;
     height:40.5vw;
-    z-index:2;
+    z-index:1;
   }
 
   input[id="popup6"] + label + div > div > iframe{
@@ -719,7 +722,7 @@ input[id="popup4"] + label + div > label {
     transform:translate(40%, -40%);
     padding:20px;
     border-radius:100%;
-    z-index:1;
+    z-index:501;
 
   }
 
@@ -862,7 +865,7 @@ input[id="popup4"] + label + div > label {
         width:80vw;
         height:80vh;
         /*background-color: white;*/
-        z-index:2;
+        z-index:1;
       }
 
       input[id="popup"] + label + div > div > label{
