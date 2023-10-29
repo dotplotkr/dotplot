@@ -1,9 +1,14 @@
-//Plugin start
+//Plugin
 gsap.registerPlugin(ScrollTrigger);
 
-//Plugin end
+//End Plugin
 
-//Cursor start
+
+
+
+
+
+//Cursor
 const $cursor = $('.cursor');
 
 $(window).mousemove(function(e) {
@@ -23,39 +28,66 @@ $('.cursor-big').mouseleave(function(){
     $('.cursor').css('background-color', 'white')
 });
 
-//Cursor end
+//End Cursor
 
-//Loader start
-window.onload = function(){
-  $('.loader').delay('1000').fadeOut();
-  $('body,html').delay('1000').animate({scrollTop : 0}, 500);
-  gsap.from('.titleBox > .title',{
-    y:60,
-    opacity:0,
-    duration:1,
-    delay:1
-  });
+
+
+
+
+
+//Loader
+var $container = $('#progress'),
+$progressBar = $container.find('.progress-bar'),
+$progressText = $container.find('.progress-text'),
+//$progressText = $container.find('.progress-text'),
+
+imgLoad = imagesLoaded('body'),
+imgTotal = imgLoad.images.length,
+imgLoaded = 0,
+current = 0,
+
+progressTimer = setInterval(updateProgress, 1000/60);
+
+
+imgLoad.on('progress', function(){
+  imgLoaded++;
+  console.log(imgLoaded);
+});
+
+
+function updateProgress(){
+  var target = (imgLoaded/imgTotal) * 100;
+  $progressBar.css({width:target + 90 +'px'});
+  //$progressText.text(Math.floor(target) + '%');
+
+  if(target == 100){
+    clearInterval(progressTimer);
+    $progressBar.delay(500).animate({opacity:100}, 250, function(){
+    $container.animate({left:'-100%', opacity:'0'}, 300);
+      });
+  }
 };
-//Loader end
-$('.header-menuBox-Mo').click(function(){
-  $('.header-menuBox-Mo').addClass('displayNone')
-  $('.header-menuBox-Mos').addClass('displayFlex')
-  $('.menuBox-Mo').addClass('move')
-  $('.menuSelectorWrapper').addClass('displayBlock')
-  $('.menuSelector').addClass('opacity')
+//$progressBar.add($progressText).delay(500).animate
+
+// End loader
+
+
+
+
+
+// Header
+$('.header-menubox').click(function(){
+  $('.menu-second').toggleClass('scale')
+  $('.menuSelector').toggleClass('opacity')
+  $('.menuSelectorWrapper').toggleClass('displayFlex')
   
 });
+//End header
 
 
-$('.header-menuBox-Mos').click(function(){
-  $('.header-menuBox-Mos').removeClass('displayFlex')
-  $('.header-menuBox-Mo').removeClass('displayNone')
-  $('.menuBox-Mo').removeClass('move')
-  $('.menuSelectorWrapper').removeClass('displayBlock')
-  $('.menuSelector').removeClass('opacity')
-});
 
-// scrollTrigger start
+
+// ScrollTrigger
 gsap.from('.scroll1', {
   scrollTrigger:{
     trigger:'.scroll1',
@@ -81,4 +113,4 @@ gsap.from('.scroll2', {
   x: -1000,
   duration: 4
 });
-// scrollTrigger end
+// End scrollTrigger

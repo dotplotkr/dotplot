@@ -1,9 +1,15 @@
-//Plugin start
+//Plugin
 gsap.registerPlugin(ScrollTrigger);
-//Plugin end
+//End Plugin
 
-//Cursor start
+
+
+
+
+
+//Cursor
 const $cursor = $('.cursor');
+const $cursorShadow = $('.cursor-shadow')
 
 $(window).mousemove(function(e) {
   $cursor.css({
@@ -21,52 +27,90 @@ $('.cursor-big').mouseleave(function(){
     $('.cursor').removeClass('need-to-cursor-big')
     $('.cursor').css('background-color', 'white')
 });
-//Cursor end
+//End cursor
 
-// Loader start
-window.onload = function(){
-  $('.loader').delay('1000').fadeOut();
-  $('body,html').delay('1000').animate({scrollTop : 0}, 500);
-  gsap.from('.titleBox > .title',{
-    y:60,
+
+
+
+//Loader
+  var $container = $('#progress'),
+      $progressBar = $container.find('.progress-bar'),
+      $progressText = $container.find('.progress-text'),
+      //$progressText = $container.find('.progress-text'),
+
+      imgLoad = imagesLoaded('body'),
+      imgTotal = imgLoad.images.length,
+      imgLoaded = 0,
+      current = 0,
+
+      progressTimer = setInterval(updateProgress, 1000/60);
+
+
+      imgLoad.on('progress', function(){
+        imgLoaded++;
+        console.log(imgLoaded);
+      });
+
+
+      function updateProgress(){
+        var target = (imgLoaded/imgTotal) * 100;
+        $progressBar.css({width:target + 90 +'px'});
+        //$progressText.text(Math.floor(target) + '%');
+
+        if(target == 100){
+          clearInterval(progressTimer);
+          $progressBar.delay(500).animate({opacity:100}, 250, function(){
+          $container.animate({left:'-100%', opacity:'0'}, 300);
+            });
+        }
+      };
+      //$progressBar.add($progressText).delay(500).animate
+      
+// End loader
+
+
+
+
+// Header 
+$('.header-menubox').click(function(){
+  $('.menu-second').toggleClass('scale')
+  $('.menuSelector').toggleClass('opacity')
+  $('.menuSelectorWrapper').toggleClass('displayFlex')
+  
+});
+// End header
+
+
+
+
+
+// GSAP
+gsap.from('.lets', {
+  y:100,
+  opacity:0,
+  duration:1,
+  delay:1
+ });
+ 
+ gsap.from('.make', {
+   y:100,
+   opacity:0,
+   duration:1,
+   delay:1.8
+  });
+
+  gsap.from('.menu-experience', {
+    y:100,
+    delay: 2,
     opacity:0,
-    duration:1,
-    delay:1
-    });
-  };
-// Loader end
-
-gsap.from('.why', {
-  scrollTrigger:{
-    trigger:'.why',
-    toggleActions: 'restart none none none',
-  },
-  x: -2,
-  y: -10,
-  duration: 0.5,
-  color:'black'
-  
-});
-
-$('.header-menuBox-Mo').click(function(){
-  $('.header-menuBox-Mo').addClass('displayNone')
-  $('.header-menuBox-Mos').addClass('displayFlex')
-  $('.menuBox-Mo').addClass('move')
-  $('.menuSelectorWrapper').addClass('displayBlock')
-  $('.menuSelector').addClass('opacity')
-  
-});
+    duration:1
+    
+   });
+  // End GSAP
 
 
-$('.header-menuBox-Mos').click(function(){
-  $('.header-menuBox-Mos').removeClass('displayFlex')
-  $('.header-menuBox-Mo').removeClass('displayNone')
-  $('.menuBox-Mo').removeClass('move')
-  $('.menuSelectorWrapper').removeClass('displayBlock')
-  $('.menuSelector').removeClass('opacity')
-});
 
-var swiper = new Swiper(".mySwiper", {
+/* var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
@@ -88,3 +132,4 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: '.swiper-button-prev',
   },
 });
+*/

@@ -30,3 +30,13 @@ window.onload = function(){
   $('body,html').delay('1000').animate({scrollTop : 0}, 500);
         };
 // Loader end
+
+
+// Header
+$('.header-menubox').click(function(){
+  $('.menu-second').toggleClass('scale')
+  $('.menuSelector').toggleClass('opacity')
+  $('.menuSelectorWrapper').toggleClass('displayFlex')
+  
+});
+//End header

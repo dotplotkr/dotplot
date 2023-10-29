@@ -23,55 +23,23 @@ a{
     text-decoration: none;
 }
 
+
+
+/* Nomalize end */
+
+
+
+
+
+
 html{
   background-color:black;
 }
 
-/* Nomalize end */
 
-/* Loader start */
-.loader {
-  position:fixed;
-  top:-10vh;
-  left:-10vw;
-  width:120vw;
-  height:120vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background-color:black;
-  color:white;
-  z-index:200;
-}
-/* Loader end */
-/* Cursor start */
-* {
-    cursor:none;
-}
 
-body{
-    background-color:black;
-}
-.cursor {
-    top:-300px;
-    left:-300px;
-    position:fixed;
-    width:15px;
-    height:15px;
-    border-radius:50%;
-    background-color:white;
-    mix-blend-mode:difference;
-    pointer-events:none;
-    transform:translateX(-50%) translateY(-50%);
-    z-index:200;
-    transition:width .1s, height .1s, background-color 1s;
-  }
 
-  .need-to-cursor-big{
-    width:50px;
-    height:50px;
-  }
-/* Cursor end */
+
 
 /* Scrollbar start */
 html{
@@ -87,178 +55,240 @@ html{
 }
 /* Scrollbar end */
 
+
+
+
+
+
+   /* Cursor */
+   * {
+    cursor:none;
+}
+
+.cursor {
+    top:-300px;
+    left:-300px;
+    position:fixed;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background-color:white;
+    mix-blend-mode:difference;
+    pointer-events:none;
+    transform:translateX(-50%) translateY(-50%);
+    z-index:200;
+    transition:width .1s, height .1s, background-color 1s;
+  }
+
+
+  .need-to-cursor-big{
+    width:50px;
+    height:50px;
+  }
+
+  @media screen and (max-width:1000px){
+    *{
+      cursor:auto;
+    }
+    .cursor {
+      display:none;
+    }
+      
+      .need-to-cursor-big{
+        display:none;
+    }
+  }
+
+  /* End Cursor */
+
+
+
+
+
+
+  /* Loader */
+  .progress{
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index:300;
+  }
+  
+  .progress-text{
+    font-family:'roboto','sans-serif';
+    font-size:15px;
+    position: absolute;
+    z-index:300;
+    color:white;
+    top:50%;
+    left:5%;
+  }
+  
+  .progress-bar{
+    position: absolute;
+    background-color:#0540F2;
+    top:52.5%;
+    left:5%;
+    width:190px;
+    height:3px;
+  }
+
+
+  /* End Loader */
+
+
+
+
+
   /* Header */
-  .header{
+    .header{
     position:fixed;
     display:flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content:space-between;
-    width:100vw;
-    z-index:100;
-  }
+    width:100%;
+    height:100px;
+    z-index: 101;
+    padding:0 30px;
+    }
   
-  .header-logoBox{
-    margin-top:5vh;
-    margin-left:calc(2vw + 10px);
+  .header-logobox{
+    z-index: 300;
   }
-  
-  .header-logoBox > a{
+
+  .header-logobox > a{
     font-family:'Roboto','sans-serif';
     font-weight: 700;
     color:white;
     vertical-align: middle;
     font-size:1.2rem;
     padding:3px;
-    transition:all .5s;
-  }
-  
-  .header-logoBox > a:hover{
-    color:#231f20;
+    z-index: 300;
   }
 
-  .header-menuBox > ul{
+
+  .header-menubox{
     display:flex;
-    margin-top:5vh;
-    margin-bottom:3px;
-    margin-right:2vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    height:30px;
+    width:30px;
+    position: relative;
+    z-index: 201;
   }
-  
-  .header-menuBox > .header-menuBox-wrapper > li{
-    margin:0 15px;
-  }
-  
-  .header-menuBox > ul > li > a{
-    color:white;
-    font-family:'Avalon';
-    font-size:1rem;
-    padding:3px;
-    transition:all .5s;
-  }
-  
-  .header-menuBox > ul > li > a:hover{
+
+
+
+  .menu-first{
+    height:5px;
+    width:5px;
     background-color:white;
-    padding:3px;
-    border-radius:10%;
-    color:black;
-    transition:all .5s;
+    border-radius: 100%;
+    z-index: 200;
+    transition: all 1s;
   }
-  
 
-.header-menuBox-Mo{
-  display: none;
-}
+  .menu-second{
+    height:5px;
+    width:5px;
+    background-color:white;
+    border-radius: 100%;
+    z-index: 199;
+    transition: all .3s;
+  }
 
-.header-menuBox-Mos{
-  display: none;
-}
+  .menu-third{
+    height:5px;
+    width:5px;
+    background-color:white;
+    border-radius: 100%;
+    z-index: 200;
+    transition: all 1s;
+  }
 
-.menuBox-Mo{
-  display: none;
-}
+  .header-menubox:hover > div:nth-child(1){
+    display:none;
+  }
+
+  .header-menubox:hover > div:nth-child(3){
+    display:none;
+  }
+
+  .header-menubox:hover > div:nth-child(2){
+    width:25px;
+    height:25px;
+    border-radius: 100%;
+  }
+
 .menuSelector{
-  display:none;
+  color:white;
+  position:absolute;
+  display:flex;
+  position:fixed;
+  opacity:0;
+  top:-100%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+  z-index: 200;
+}
+
+.opacity{
+  top:45%;
+  opacity:100;
+  transition: 
+  top .1s, 
+  opacity 2s ease-in-out;
 }
 
 .menuSelectorWrapper{
   display:none;
+  font-family:'roboto','sans-serif';
+  justify-content: center;
+  align-items: center;
+  font-size:4rem;
+  z-index: 100;
 }
 
-@media screen and (max-width:1000px){
-  .header-menuBox{
-    display: none;
-  }
-
-  .header-menuBox-Mo{
-    display:flex;
-    margin-right: 5vw;
-    background-color:white;
-    border-radius:3px;
-    padding:4px 10px;
-    font-family:'Avalon';
-    font-size:1rem;
-  }
-
-  .header-menuBox-Mos{
-    display:none;
-    margin-right: 5vw;
-    background-color:black;
-    color:white;
-    border-radius:3px;
-    padding:5px 10px;
-    font-family:'Avalon';
-    font-size:1rem;
-
-  }
-
-  .menuBox-Mo{
-    display:flex;
-    position:fixed;
-    top:100vh;
-    width:100vw;
-    height:100vh;
-    background-color:black;
-    z-index: 100;
-    
-  }
-
-    .menuSelector{
-      color:white;
-      position:fixed;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      width:95vw;
-      height:70vh;
-      margin-top:-10vh;
-      margin-left:-200vw;
-      opacity: 1;
-      z-index: 100;
-    }
-
-    .menuSelectorWrapper{
-      font-family:'Avalon';
-      font-size:4rem;
-      width:85vw;
-      height:50vh;
-      display:block;
-      z-index: 100;
-    }
-
-    .menuSelectorWrapper li{
-      margin-top:20px;
-    }
-    .experienceMenu{
-      margin-top:2vh;
-    }
-
-
-
-  }     
-  @media screen and (max-width:1000px){
-  .displayNone{
-    display:none;
-  }
-
-  .displayFlex{
-    display:flex;
-  }
-
-  .displayBlock{
-    display:block;
-  }
-
-  .move{
-    top:0vh;
-    transition: all 1s;
-  }
-
-  .opacity{
-    opacity: 1;
-    margin-left:0;
-    transition: all 1s;
-  }
+.menuSelectorWrapper > li:hover {
+  text-decoration: underline wavy;
+  text-decoration-color: #0540F2;
+  font-size:4.5rem;
+  transition:
+  all 0s,
+  font-size .5s;
 }
+
+.displayFlex{
+  display:flex;
+  flex-direction: column;
+}
+
+.menuSelectorWrapper li{
+  margin-top:20px;
+}
+
+.experienceMenu{
+  margin-top:2vh;
+}
+
+.scale{
+  scale:1000;
+  background-color:black;
+  transition: 
+  scale 1s ease-in-out,
+  background-color 1.5s;
+  
+}
+  
   /* End Header */
+
+
+
+
+
 
 /* 메인 정리 시작 */
   .main{
@@ -284,10 +314,19 @@ html{
   color:white;
   justify-content: center;
 }
-
+.main > .subtitleBox > .subtitle:hover{
+  text-decoration: underline wavy;
+  text-decoration-color: #0540F2;;
+  text-underline-position: under;
+}
   .main > .subtitleBox > .icon{
     font-size:0.9rem;
   }
+
+
+
+
+
   /* 모달 윈도우 시작 */
   input[id="popup"]{
     display:none;
@@ -297,12 +336,12 @@ html{
     position:fixed;
     top:0;
     left:0;
-    width:100%;
     height:100%;
+    width:100%;
     z-index:100;
   }
 
-  input[id*="popup"] + label + div{
+  input[id="popup"] + label + div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +353,6 @@ html{
   input[id*="popup"]:checked + label + div{
     opacity:1;
     visibility:visible;
-    
   }
 
   input[id="popup"] + label + div > div{
@@ -330,7 +368,9 @@ html{
   input[id="popup"] + label + div > div > iframe{
     width:100%;
     height:100%;
+    
   }
+
 
   input[id="popup"] + label + div > div > label{
     position:absolute;
@@ -1029,22 +1069,17 @@ input[id="popup6"] + label + div > div > label{
 }
 }
 /* modal 6 End*/
-/* cursor auto */
-@media screen and (max-width:1000px){
-  *{
-    cursor:auto;
-  }
-  .cursor {
-    display:none;
-  }
-    
-    .need-to-cursor-big{
-      display:none;
-  }
-}
-/* cursor auto End*/
+
+
+
+
 
 /* 메인 정리 끝 */
+
+
+
+
+
 
 /* Footer start*/
 .footer{
