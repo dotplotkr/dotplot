@@ -98,14 +98,6 @@ gsap.from('.lets', {
    duration:1,
    delay:1.8
   });
-
-  gsap.from('.menu-experience', {
-    y:100,
-    delay: 2,
-    opacity:0,
-    duration:1
-    
-   });
   // End GSAP
 
 
