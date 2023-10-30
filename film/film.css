@@ -250,14 +250,14 @@ html{
   font-family:'roboto','sans-serif';
   justify-content: center;
   align-items: center;
-  font-size:4rem;
+  font-size:3.5rem;
   z-index: 100;
 }
 
 .menuSelectorWrapper > li:hover {
   text-decoration: underline wavy;
   text-decoration-color: #0540F2;
-  font-size:4.5rem;
+  font-size:4rem;
   transition:
   all 0s,
   font-size .5s;
