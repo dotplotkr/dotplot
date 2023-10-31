@@ -113,7 +113,7 @@ html{
       display:none;
     }
       
-      .need-to-cursor-big{
+    .need-to-cursor-big{
         display:none;
     }
   }
@@ -314,72 +314,128 @@ html{
 
 
   /* Main */
-.mainBox{
+
+
+
+
+
+
+    /* card-1 */
+.card-1 {
+    height:100vh;
+    width:100vw;
+  }
+
+.card-1 > .video-box{
   overflow: hidden;
   height:100vh;
 }
 
-.mainBox video{
+.card-1 > .video-box video{
     display:flex;
-    opacity:10%;
-    position:fixed;
+    opacity:20%;
+    position:absolute;
     object-fit: cover;
     width:100vw;
     height:100vh;
     z-index:-1;
 }
 
-.slogan{
+
+.card-1 > .slogan-box{
   display:flex;
   flex-direction: column;
   position:absolute;
   font-family:'roboto', 'sans-serif';
   font-weight:700;
   font-size:12rem;
-  left:10%;
-  top:24%;
+  left:10vw;
+  top:24vh;
   color:white;
+  
 }
 
-.slogan > div:first-child{
+.card-1 > .slogan-box > .lets-container{
   height:220px;
   overflow: hidden;
   
 }
-.lets{
+
+.card-1 > .slogan-box > .lets-container > .lets{
   margin-left: 0%;
 }
 
-
-
-.slogan > div:last-child{
-  margin-top:-200px;
+.card-1 > .slogan-box > .make-container{
+  margin-top:-25vh;
   padding:0;
 }
 
-.make:hover{
+.card-1 > .slogan-box > .make-container > .make:hover{
   text-decoration: underline wavy;
   text-decoration-color: #0540F2;;
   text-underline-position: under;
 }
 
+/*
+.subtitle-box{
+  width:150px;
+  height:150px;
+  position:absolute;
+  font-family:'roboto';
+  text-align: right;
+  margin-top:-35%;
+  margin-left:35%;
+  font-size:1rem;
+  font-weight:100;
+  color:white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  
+  text-align: right;
+}
+
+*/
+
+.card-2{
+  color:white;
+  font-size:3rem;
+}
 @media screen and (max-width:1000px){
-  .slogan{
+.card-1 > .slogan-box{
     top:30%;
     font-size:5.8rem;
     left:20px;
 }
 
-.lets-container{
+.card-1 > .slogan-box > .lets-container{
   margin-bottom:-120px;
   
 }
 
-.slogan > div:last-child{
+.card-1 > .slogan-box > .make-container{
   margin-top:-95px;
   padding:0;
 }
 }
+/* End card-1 */
+
+
+
+
+
+/* card-2 */
+.card-2{
+  height:100vh;
+  width:100vw;
+  border:1px solid red;
+}
+
+/* End card-2 */
+
+
+
+
+
 
   /* End Main */
 
@@ -390,7 +446,7 @@ html{
 
   /* Footer */
 .footer{
-    position:relative;
+    position:absolute;
     bottom:0;
   }
   
@@ -405,6 +461,7 @@ html{
     font-size:.6rem;
     color:white;  
   }
+
   .footer > .footer-infBox > .blog{
     font-family: 'Noto Sans Kr', sans-serif;
     font-weight: 300;
