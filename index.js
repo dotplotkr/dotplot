@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-
 //Cursor
 const $cursor = $('.cursor');
 const $cursorShadow = $('.cursor-shadow')
@@ -48,7 +47,6 @@ $('.cursor-big').mouseleave(function(){
 
       imgLoad.on('progress', function(){
         imgLoaded++;
-        console.log(imgLoaded);
       });
 
 
@@ -89,39 +87,49 @@ gsap.from('.lets', {
   y:100,
   opacity:0,
   duration:1,
-  delay:1
+  delay:.5
  });
  
  gsap.from('.make', {
    y:100,
    opacity:0,
    duration:1,
-   delay:1.8
+   delay:1
   });
-  // End GSAP
+
+
+  function SectionGroup_init() {
+    $('.section-group-horizontal-right').each(function(index, node) {
+      var $group = $(node);
+      var $section = $group.find('.section-group-first');
+  
+      gsap.to('.value-background', {
+        scale:150,
+        ease:"none",
+        scrollTrigger: {
+          trigger: $group,
+          start:"top top",
+          end:"+=" + ($section.length) + "00%",
+          pin: true,
+          scrub: true,
+          markers:false,
+        }
+      });
+    });
+  }
+
+  SectionGroup_init();
+
+  
+// End GSAP
 
 
 
-/* var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  spaceBetween: -250,
-  slidesPerView: "1",
-  coverflowEffect: {
-    rotate: -50,
-    stretch: 0,
-    depth: 500,
-    modifier: 1,
-    slideShadows: false,
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+(function () {
+  var scroll = new LocomotiveScroll();
+})();
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
 });
-*/

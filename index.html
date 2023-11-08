@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>닷플랏 스튜디오</title>
-    <link rel="icon" href="/source/img/DotplotFavicon.png"/>
+    <link rel="icon" href="/source/img/DotplotFavicon.avif"/>
     <meta name="description" content="닷플랏. 인디브랜드의 성장과 연결을 지향합니다. #광고기획 #브랜딩 #마케팅 #영상 #디자인">
-    <link rel="stylesheet" href="index.css"/>
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="/index.css"/>
+    <script src="/source/js/locomotive-scroll.min.js" defer></script>
+    <script src="/index.js" defer></script>
+    
+
 
 
 
@@ -59,21 +62,17 @@
 
 
 <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
 <!-- End gsap -->
 
 
-
-
-
-
-<!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-<!-- End ScrollTrigger -->
-
-
-
-
+<!-- FontAwsome-->
+<script src="https://kit.fontawesome.com/f3e798bd84.js" crossorigin="anonymous"></script>
+<!-- End fontAwsome-->
 
 <!-- ftc -->
 <script language="JavaScript">
@@ -89,6 +88,11 @@
 <!-- Web font-->
 
 <!-- End Web font-->
+
+
+
+
+
 </head>
 
 
@@ -179,10 +183,11 @@
 
 
 <!-- Main -->
-<main class="main">
-    
-    <section class="card-1">
+<main class="main" data-scroll-conatianer data-scroll="" data-scroll-delay="5" data-scroll-speed="33">
 
+
+    <div class="card-1">
+ 
 
         <div class="video-box">
 
@@ -204,102 +209,118 @@
 
         </div>
         
-
-
-    </section>
-
-    <!--
-
-        <div class="subtitle-box">IF THERE'S A HAPPENING,</div>
-        <div class="subtitle-box-second">IT'S AN OPPORTUNITY FOR A STORY.</div>
-
-
-
-    <section class="card-2">
-        <div></div>
-    </section>
-
--->
+        <a href="#card-2" class="subtitle-box" >
+            <div>HAPPENING? IT'S A DOT</div>
+            <div class="arrow"></div>
+        </a>
+    </div>
 
 
 
 
+
+        <div class="card-2 section-group-horizontal-right" id="card-2">
+            <section class="section-group-first section-first"></section>
+            <section class="section-group-first section-second"></section>
+            <section class="section-group-first section-third"></section>
+
+            <div class="value-background-box">
+                <div class="value-background"></div>
+            </div>
+
+            <div class="value-container">
+                <div class="image-box">
+                    <img src="/source/img/main/mainNomal.avif" alt="">
+                </div>
+
+                <div class="value-describe-box">
+
+                    <div class="value-describe-first-en">
+                        it's getting deeper. look forward to it
+                    </div>
+                    <div class="value-describe-first-ko">
+                        깊어지는 중. 기대해주세요
+                    </div>
+
+
+                    <div class="value-describe-deco">&#40;WE'RE SURE THERE'S A &nbsp; <span>TIGER</span> &nbsp; &#41; </div>
+
+                    <div class="value-describe-second">
+                        <div><i class="fa-solid fa-star-of-life"></i></div>
+                        <div class="wekeep">TO STORY</div>
+                    </div>
+
+
+                    </a>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+            
 </main>
 <!-- End Main -->
 
 <!-- Footer -->
     <footer class="footer">
-        <section class="footer-infBox">
+        <div class="footer-infBox">
                     <div class="co-inf cursor-big" onclick="onopen();">ⓒ2022. Dotplot. all rights reserved.
                     </div>
                     <a class="blog cursor-big" href="https://blog.naver.com/dotplotstudio">blog</a>
-        </section>
+            </div>
     </footer>
     <img src="" alt="">
 <!-- End Footer -->
 
+
 </body>
 </html>
 
-<!-- Loader 
-<div class="loader">
-    hello. welcome to dotplot
-</div>
--->
 
-<!-- Marquee
-    <div class="marquee">
-        <div class="text-wrapper">
-        <h2>Let's Make A Plot</h2>
-        <h2>Let's Make A Plot</h2>
-        <h2>Let's Make A Plot</h2>
-        <h2>Let's Make A Plot</h2>
+
+ 
+
+
+
+<!--
+
+        <div class="card-4">
+            <div class="method">
+                WE USE
+            </div>
         </div>
-    </div>
-End Marquee -->
 
-
-    <!-- Swiper
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="/experience/hhook">
-                <img src="/source/img/designHhookBx.png" />
-                </a>
-              </div>
-            <div class="swiper-slide">
-                <a href="/experience/shellystreet">
-                <img src="/source/img/ShellyStreetThumbnail.png" />
-                </a>
-              </div>
-              
-              <div class="swiper-slide">
-                <a href="/experience/likethatcoffee">
-                <img src="/source/img/LikethatcoffeeThumbnail.png" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="/experience/chicken">
-                <img src="/source/img/ChickenThumbnail.png" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="/experience/flashback">
-                <img src="/source/img/FlashbackThumbnail.png" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="/experience/ultimatepotential">
-                <img src="/source/img/UltimatePotentialAd.png" />
-                </a>
-              </div>
-              <div class="swiper-slide"><a href="/experience/fior">
-                <img src="/source/img/FiorThumbnail.png" /></a>
-              </div>
+            <div class="method-first">
+                Communication
+            </div>
+            <div class="method-second">
+                Data    
+            </div>
+            <div class="method-third">
+                Strategy    
+            </div>    
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev cursor-big"></div>
-        <div class="swiper-button-next cursor-big"></div>
-      </div>
 
+        <div>
+            Right there are many difficults
+            But We survive from wasteland for years and we build something and dream comes true  
+        </div>
+
+
+
+
+
+
+        <div>
+        AND ITS THE TIME 
+            LET'S MAKE A STORY
+        </div>
 -->
