@@ -436,7 +436,7 @@ html{
 }
 
 .card-1 > .slogan-box > .make-container{
-  margin-top:-65px;
+  margin-top: -5vh;
 }
 }
 /* End card-1 */
@@ -583,6 +583,7 @@ font-size:12rem;
 margin-top:10vh;
 margin-right:10vw;
 }
+
 
 @media screen and (max-width:1000px){
   .card-2 > .value-container > .value-describe-box > .value-describe-first-en{
