@@ -525,7 +525,7 @@ html{
 .area-2{
   display:block;
   position:relative;
-  height:280vh;
+  height:300vh;
   width:100vw;
   overflow:hidden;
   background-color: #F2F0F0;
@@ -918,7 +918,7 @@ html{
     }
 
     .area-3 > .value-deco-container{
-      margin-top: -120vh;
+      margin-top: -105vh;
       margin-left: 80vw;
       display:flex;
       position:absolute;
@@ -1094,7 +1094,7 @@ html{
 @media screen and (max-width:1600px){
 .circular-slider{ 
   position: relative;
-  top: 42vh;
+  top: 60vh;
   width: var(--slider-height-min);
   height: var(--slider-height-min);
   color: #fff;
