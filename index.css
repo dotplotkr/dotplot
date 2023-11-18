@@ -895,7 +895,7 @@ html{
     }
 
     .area-3 > .value-container > .value-title{
-      font-size:5rem;
+      font-size:4.5rem;
       line-height: 75px;
       padding-top:0;
       
@@ -916,6 +916,9 @@ html{
     .area-3 > .value-container > .value-explain > div:last-child{
       font-size:1rem;
       margin-top:5vh;
+    }
+    .value-img-container{
+      display:none;
     }
     }
 
