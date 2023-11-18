@@ -1,14 +1,17 @@
+
+
 //Plugin
-gsap.registerPlugin(ScrollTrigger);
-//End Plugin
+gsap.registerPlugin(ScrollTrigger) 
+//End plugin
+
 
 
 
 
 
 //Cursor
+
 const $cursor = $('.cursor');
-const $cursorShadow = $('.cursor-shadow')
 
 $(window).mousemove(function(e) {
   $cursor.css({
@@ -26,45 +29,52 @@ $('.cursor-big').mouseleave(function(){
     $('.cursor').removeClass('need-to-cursor-big')
     $('.cursor').css('background-color', 'white')
 });
-//End cursor
+
+//End Cursor
+
 
 
 
 
 //Loader
-  var $container = $('#progress'),
-      $progressBar = $container.find('.progress-bar'),
-      $progressText = $container.find('.progress-text'),
-      //$progressText = $container.find('.progress-text'),
+var $container = $('#progress'),
+$progressBar = $container.find('.progress-bar'),
+$progressText = $container.find('.progress-text'),
+//$progressText = $container.find('.progress-text'),
 
-      imgLoad = imagesLoaded('body'),
-      imgTotal = imgLoad.images.length,
-      imgLoaded = 0,
-      current = 0,
+imgLoad = imagesLoaded('body'),
+imgTotal = imgLoad.images.length,
+imgLoaded = 0,
+current = 0,
 
-      progressTimer = setInterval(updateProgress, 1000/60);
+progressTimer = setInterval(updateProgress, 1000/60);
 
 
-      imgLoad.on('progress', function(){
-        imgLoaded++;
+imgLoad.on('progress', function(){
+  imgLoaded++;
+});
+
+
+function updateProgress(){
+  var target = (imgLoaded/imgTotal) * 100;
+  var imageBox = $(".image-box");
+  $progressBar.css({width:target + 90 +'px'});
+  imageBox.css({scale:"4", rotate:"360deg"})
+  //$progressText.text(Math.floor(target) + '%');
+
+  if(target == 100){
+    clearInterval(progressTimer);
+
+    $progressBar.delay(500).animate({opacity:100}, 250, function(){
+    $container.animate({left:'-100%', opacity:'0'}, 300);
+    imageBox.css({scale:"1", rotate:"0deg"}, 300);
       });
+    
+  }
+};
+//$progressBar.add($progressText).delay(500).animate
 
-
-      function updateProgress(){
-        var target = (imgLoaded/imgTotal) * 100;
-        $progressBar.css({width:target + 90 +'px'});
-        //$progressText.text(Math.floor(target) + '%');
-
-        if(target == 100){
-          clearInterval(progressTimer);
-          $progressBar.delay(500).animate({opacity:100}, 250, function(){
-          $container.animate({left:'-100%', opacity:'0'}, 300);
-            });
-        }
-      };
-      //$progressBar.add($progressText).delay(500).animate
-      
-// End loader
+// End Loader
 
 
 
@@ -83,53 +93,135 @@ $('.header-menubox').click(function(){
 
 
 // GSAP
-gsap.from('.lets', {
+gsap.from('.slogan-box-up', {
   y:100,
   opacity:0,
   duration:1,
   delay:.5
  });
  
- gsap.from('.make', {
+ gsap.from('.slogan-box-down', {
    y:100,
    opacity:0,
    duration:1,
    delay:1
   });
 
-
-  function SectionGroup_init() {
-    $('.section-group-horizontal-right').each(function(index, node) {
-      var $group = $(node);
-      var $section = $group.find('.section-group-first');
-  
-      gsap.to('.value-background', {
-        scale:150,
-        ease:"none",
-        scrollTrigger: {
-          trigger: $group,
-          start:"top top",
-          end:"+=" + ($section.length) + "00%",
-          pin: true,
-          scrub: true,
-          markers:false,
-        }
-      });
-    });
-  }
-
-  SectionGroup_init();
-
   
 // End GSAP
 
 
-
 (function () {
-  var scroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll();
 })();
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+
+let tl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".area-2",
+    markers:false,
+    scrub:1,
+    start:"20% center",
+    end:"20% center"
+  }
+})
+
+tl.to(".intro-background-container",{backgroundColor:"#F2F0F0"});
+
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".intro-box",
+    markers:false,
+    scrub:true,
+    start:"top center",
+    end:"50% center"
+  }
+})
+
+const introVideo = $(".video-box > .intro-video")
+
+tl2.to(introVideo, {opacity:1, y:150, height:1080});
+tl2.to(".intro-explain",{opacity:1
+});
+
+
+let tl3 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".area-4",
+    markers:false,
+    scrub:true,
+    start:"top center",
+    end:"20% center"
+  }
+})
+
+let tl4 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".area-4",
+    markers:false,
+    scrub:true,
+    start:"40% center",
+    end:"80% center"
+  }
+})
+
+tl3.to(".works-bg",{height:4000, width:4000});
+tl4.to(".works-bg",{height:0, width:0, y:-100});
+
+
+
+
+const circularSlider = document.querySelector('.wrapper'),
+slides = document.querySelectorAll('.slides'),
+descriptionsBox = document.querySelectorAll('.descriptions-box'),
+images = document.querySelectorAll('.slides img');
+
+slides.forEach((slide, i) => {
+  slide.onclick = () => {
+    circularSlider.style.transform = `rotateZ(-${360 / 24 * (i + 15.695)}deg)`;
+
+
+    images.forEach((img , i) => {
+      img.style.setProperty('--img-no', 1);
+      img.classList.remove('active');
+      descriptionsBox[i].classList.remove('active');
+    }) 
+    
+
+    descriptionsBox[i].classList.add('active');
+    slide.querySelector('img').classList.add('active');    
+  }
+})
+
+
+document.addEventListener("mousemove", parallax);
+
+function parallax(e){
+  document.querySelectorAll(".main-image").forEach(function(move){
+
+    var movingValue = move.getAttribute("data-value");
+    var x = e.clientX * movingValue;
+    var y = e.clientY * movingValue;
+
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+
+  });
+}
+
+
+
+const vimeoClose = $('.showreel > div');
+const vimeo = document.getElementById('vimeo');
+const vimeoBg = $('.showreel-bg');
+
+introVideo.click(function(){
+  $('.showreel').addClass('displayFlex')
+});
+
+
+vimeoClose.click(function(){
+  $('.showreel').removeClass('displayFlex');
+  vimeoBg.removeClass('displayFlex');
+
+  vimeo.setAttribute('src','https://player.vimeo.com/video/885910647?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479');
 });
