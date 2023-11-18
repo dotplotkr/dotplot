@@ -1010,7 +1010,7 @@ html{
   --key-blue: #0439D9;
   --slider-height: 145rem; /*135*/
   --half-slider-height: calc(var(--slider-height)/2);
-  --slider-height-min: 105rem; /*100*/
+  --slider-height-min: 90rem; /*100*/
   --half-slider-height-min: calc(var(--slider-height-min)/2);
 }
 
