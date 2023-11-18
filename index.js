@@ -112,7 +112,16 @@ gsap.from('.slogan-box-up', {
 
 
 (function () {
-  const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll({
+    el: document.querySelector("*"),
+    smooth: true,
+    mobile:{
+      smooth:true
+    },
+    tablet:{
+      smooth:true
+    }
+  });
 })();
 
 

@@ -69,6 +69,7 @@ html{
   overflow: scroll;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   width:0px;
 }
@@ -325,7 +326,6 @@ html{
     position:relative;
     height:100vh;
     width:100vw;
-    overflow:hidden;
     background-color: #0d0d0d;
   }
 
@@ -336,8 +336,8 @@ html{
     height:100vh;
     z-index: 100;
     transition: 1s ease-in-out;
-    overflow:hidden;
-    
+    overflow-x: hidden;
+
   }
 
   .area-1 > .image-box img{
@@ -396,25 +396,26 @@ html{
     top:-10vh;
     }
 
-.area-1 > .image-box img.img-lotus{
+  .area-1 > .image-box img.img-lotus{
     scale:0.5;
     left:-67vw;
     top:-14vh;
     }
 
-    .area-1 > .image-box img.img-samurai{
+  .area-1 > .image-box img.img-samurai{
       scale:0.5;
       left:-67vw;
       top:-17vh;
       }
-      .area-1 > .image-box img.img-dragon{
+  
+  .area-1 > .image-box img.img-dragon{
         scale:0.3;
         left:-67vw;
         top:-30vh;
         
         }
 
-        .area-1 > .image-box img.img-public{
+  .area-1 > .image-box img.img-public{
           scale:0.5;
           left:-120vw;
           top:15vh;
@@ -475,7 +476,7 @@ html{
   display:flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
+  z-index: 1;
 }
 
 .area-1 > .guide-container > .guide-box > .dot{
@@ -486,6 +487,7 @@ html{
   background-color: #F2F0F0;
   transform: rotate(45deg);
   animation: scroll 2s infinite;
+  z-index: 1;
 }
 
 @keyframes scroll{
@@ -957,7 +959,7 @@ html{
   width:10px;
   height:10px;
   border-radius: 100%;
- background-color: #0d0d0d;
+  background-color: #0d0d0d;
    
 }
 
