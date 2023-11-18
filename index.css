@@ -14,14 +14,9 @@
     box-sizing: border-box;
     border: none;
     list-style:none;
-    overflow-x: hidden;
 
 }
 
-body{
-  
-
-}
 
 a{
     color:inherit;
@@ -67,7 +62,6 @@ html{
 
 /* Scrollbar start */
 html{
-  overflow: scroll;
   overflow-x: hidden;
 }
 
