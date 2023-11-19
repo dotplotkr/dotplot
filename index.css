@@ -1135,7 +1135,7 @@ html{
 }
 
 .circular-slider > .wrapper{
-  margin-top:80vh;
+  margin-top:30vh;
 }
 
 .slides{
@@ -1194,7 +1194,7 @@ html{
 @media screen and (max-width:1600px){
   .descriptions{
     position: absolute;
-    top:-5vh;
+    top:0vh;
     height:var(--half-slider-height);
     z-index: 100;
   }
