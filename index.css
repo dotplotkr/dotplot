@@ -481,11 +481,12 @@ html{
   border-radius: 100%;
   background-color: #F2F0F0;
   transform: rotate(45deg);
-  animation: scroll 2s infinite;
+  animation: blink 1s infinite;
   z-index: 1;
 }
 
-@keyframes scroll{
+
+@keyframes blink{
   0%{
     opacity:0;
   }

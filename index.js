@@ -121,7 +121,7 @@ let tl = gsap.timeline({
   scrollTrigger:{
     trigger:".area-2",
     markers:false,
-    scrub:1,
+    scrub:.5,
     start:"20% center",
     end:"20% center"
   }
@@ -130,9 +130,18 @@ let tl = gsap.timeline({
 tl.to(".intro-background-container",{backgroundColor:"#F2F0F0"});
 
 
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".intro-background-container",
+    markers:false,
+    scrub:.3,
+    start:"-10% center",
+    end:"50% center"
+  }
+})
 
 
-
+tl2.to(".dot",{y:400});
 
 
 let tl3 = gsap.timeline({
