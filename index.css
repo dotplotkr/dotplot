@@ -570,7 +570,7 @@ html{
   display:block;
   width:100vw;
   height:90vh;
-  overflow: hidden;
+  w
 
 }
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper > .video-box{
@@ -1037,6 +1037,8 @@ html{
   transition: 1s ease-in-out;
 
   z-index: 10;
+
+  
 }
 
 .img-explain{
@@ -1060,7 +1062,6 @@ html{
   width:18vw;
 
   cursor: pointer;
-  
   
 }
 
@@ -1088,17 +1089,18 @@ html{
 
 .slides img.active{
   --scale: 1.1;
-  
+  display:flex;
 }
 
 @media screen and (max-width:1600px){
 .circular-slider{ 
   position: relative;
-  top: 60vh;
+  top: 40vh;
   width: var(--slider-height-min);
   height: var(--slider-height-min);
   color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 
 
