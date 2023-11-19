@@ -979,9 +979,13 @@ html{
 
 .work-bg-box{
   display:flex;
+  position:absolute;
   justify-content: center;
   align-items: center;
   overflow:hidden;
+  width:100vw;
+  height:400vh;
+  margin-top:-100vh;
 }
 
 .work-bg-box > .works-bg{

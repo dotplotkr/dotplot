@@ -167,7 +167,7 @@ let tl4 = gsap.timeline({
 })
 
 
-tl3.to(".works-bg",{height:4000, width:4000});
+tl3.to(".works-bg",{height:5000, width:5000});
 tl4.to(".works-bg",{height:0, width:0});
 
 
