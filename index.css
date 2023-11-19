@@ -1147,14 +1147,16 @@ html{
   position:absolute;
   flex-direction: column;
   margin-top:30vh;
-  overflow-x:visible;
+
 }
 
 
 
 
 .slides{
+  display:flex;
   position:absolute;
+  flex-direction: column;
   left: 0;
   transform: rotateZ(calc(360deg / 24 * var(--img-no))) translateY(var(--half-slider-height-min));
   transform-origin: var(--half-slider-height-min);
