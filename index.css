@@ -64,6 +64,7 @@ body{
 
 /* Scrollbar start */
 html{
+  width:100vw;
   overflow-x: hidden;
 }
 
