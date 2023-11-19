@@ -1104,7 +1104,8 @@ html{
   transition: .4s ease;
   
   border-radius: 5%;
- opacity:.9; 
+  opacity:.9; 
+
 }
 
 
@@ -1119,11 +1120,15 @@ html{
   display:flex;
 }
 
+
+
+
 @media screen and (max-width:1600px){
   .area-4 > .works-container{
     margin-top:0;
-    
+    overflow:hidden;
   }
+
 
 .circular-slider{ 
   position: relative;
@@ -1132,11 +1137,21 @@ html{
   color: #fff;
   text-align: center;
   margin-top:80vh;
+  overflow: hidden;
 }
 
+
+/* problem */
 .circular-slider > .wrapper{
   margin-top:30vh;
+  overflow-wrap: break-word;
+  text-overflow: clip;
+  white-space:nowrap;
+
 }
+
+
+
 
 .slides{
   position:absolute;
@@ -1145,10 +1160,22 @@ html{
   transform-origin: var(--half-slider-height-min);
   width:50vw;
   cursor: pointer;
-  
-}
+
+
+
+
+
+
 
 }
+
+/* problem */
+}
+
+
+
+
+
 
 
 
@@ -1198,7 +1225,12 @@ html{
     height:var(--half-slider-height);
     z-index: 100;
   }
-}
+  }
+
+
+
+
+
 
 
 
@@ -1231,6 +1263,11 @@ html{
   height:var(--half-slider-height);
 }
 }
+
+
+
+
+
 
 
 .area-5{

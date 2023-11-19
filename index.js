@@ -178,7 +178,7 @@ images = document.querySelectorAll('.slides img');
 slides.forEach((slide, i) => {
   slide.onclick = () => {
     circularSlider.style.transform = `rotateZ(-${360 / 24 * (i + 15.695)}deg)`;
-
+    
 
     images.forEach((img , i) => {
       img.style.setProperty('--img-no', 1);
