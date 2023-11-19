@@ -56,7 +56,9 @@ html{
 }
 
 
-
+body{
+  overflow: hidden;
+}
 
 
 
@@ -1002,6 +1004,7 @@ html{
   text-align: center;
   color:transparent;
   z-index: 1;
+  margin-top:20vh;
 }
 
 
@@ -1009,6 +1012,7 @@ html{
   .area-4 >  .works-title{
     font-size: 5rem;
     align-items: center;
+    margin-top:-90vh;
   }
 }
 
@@ -1031,13 +1035,15 @@ html{
   --half-slider-height-min: calc(var(--slider-height-min)/2);
 }
 
+
+
 .area-4 > .works-container{
   display:flex;
   flex-direction: column;
   position:flex;
   width:100vw;
   height:100vh;
-  margin-top:100vh;
+  margin-top:150vh;
   z-index: 1;
   overflow: hidden;
 }
@@ -1058,7 +1064,7 @@ html{
   color: #fff;
   text-align: center;
   padding-top:150vh;
-  margin-top:-50vh;
+  margin-top:-100vh;
   overflow:hidden;
   
 }
@@ -1116,7 +1122,7 @@ html{
 @media screen and (max-width:1600px){
   .area-4 > .works-container{
     margin-top:0;
-    height:200vh;
+    
   }
 
 .circular-slider{ 
@@ -1125,12 +1131,12 @@ html{
   height: var(--slider-height-min);
   color: #fff;
   text-align: center;
+  margin-top:80vh;
 }
 
 .circular-slider > .wrapper{
   margin-top:80vh;
 }
-
 
 .slides{
   position:absolute;
@@ -1188,7 +1194,7 @@ html{
 @media screen and (max-width:1600px){
   .descriptions{
     position: absolute;
-    top:50vh;
+    top:-5vh;
     height:var(--half-slider-height);
     z-index: 100;
   }
@@ -1229,7 +1235,7 @@ html{
 
 .area-5{
   width:100vw;
-  height:100vh;
+  height:110vh;
   background-color: #f2f0f0;
   margin-top:-70vh;
   z-index: 1;
