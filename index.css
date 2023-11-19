@@ -978,6 +978,7 @@ html{
   justify-content: center;
   align-items: center;
   background-color:#F2F0F0;
+  overflow:hidden;
 }
 
 
@@ -1144,8 +1145,8 @@ html{
 /* problem */
 .circular-slider > .wrapper{
   display:flex;
-  position:absolute;
   flex-direction: column;
+  position:absolute;
   margin-top:30vh;
 
 }
@@ -1155,17 +1156,13 @@ html{
 
 .slides{
   display:flex;
-  position:absolute;
   flex-direction: column;
+  position:absolute;
   left: 0;
   transform: rotateZ(calc(360deg / 24 * var(--img-no))) translateY(var(--half-slider-height-min));
   transform-origin: var(--half-slider-height-min);
   width:50vw;
   cursor: pointer;
-
-
-
-
 
 }
 

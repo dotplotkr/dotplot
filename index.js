@@ -52,6 +52,7 @@ progressTimer = setInterval(updateProgress, 1000/60);
 
 imgLoad.on('progress', function(){
   imgLoaded++;
+  console.log(imgLoaded);
 });
 
 
@@ -154,6 +155,7 @@ let tl3 = gsap.timeline({
   }
 })
 
+
 let tl4 = gsap.timeline({
   scrollTrigger:{
     trigger:".area-4",
@@ -163,6 +165,7 @@ let tl4 = gsap.timeline({
     end:"80% center"
   }
 })
+
 
 tl3.to(".works-bg",{height:4000, width:4000});
 tl4.to(".works-bg",{height:0, width:0});
