@@ -831,11 +831,12 @@ html{
 
     .area-3 > .value-img-container > .value-img-box-2{
       
-      width:300px;
-      height:450px;
-      margin-left:33vw;
+      width:200px;
+      height:200px;
+      margin-left:45vw;
+      margin-top:-23vh;
       
-      display:none;
+      display:flex;
       
     }
     .area-3 > .value-img-container > .value-img-box-3{
@@ -899,6 +900,7 @@ html{
   .area-3 > .value-deco-container > .value-explain-deco{
     font-family: 'Roboto', 'Sans-serif';
     font-weight:300;
+    
   }
 
 
@@ -936,7 +938,9 @@ html{
       margin-top:5vh;
     }
 
- 
+    .area-3 > .value-deco-container > .value-explain-deco{
+      color:#f2f0f0;
+    }
 
     }
 
