@@ -148,7 +148,7 @@ tl2.to(".dot",{y:400});
 let tl3 = gsap.timeline({
   scrollTrigger:{
     trigger:".area-4",
-    markers:false,
+    markers:true,
     scrub:1,
     start:"top center",
     end:"20% center"
@@ -159,15 +159,15 @@ let tl3 = gsap.timeline({
 let tl4 = gsap.timeline({
   scrollTrigger:{
     trigger:".area-4",
-    markers:false,
+    markers:true,
     scrub:1,
     start:"40% center",
-    end:"80% center"
+    end:"100% center"
   }
 })
 
 
-tl3.to(".works-bg",{height:5000, width:5000});
+tl3.to(".works-bg",{height:4000, width:4000, y:300});
 tl4.to(".works-bg",{height:0, width:0});
 
 
