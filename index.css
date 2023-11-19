@@ -1144,9 +1144,10 @@ html{
 /* problem */
 .circular-slider > .wrapper{
   display:flex;
+  position:absolute;
   flex-direction: column;
   margin-top:30vh;
-  overflow-wrap: break-word;
+  overflow-x:visible;
 }
 
 

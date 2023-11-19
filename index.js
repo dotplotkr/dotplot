@@ -148,7 +148,7 @@ let tl3 = gsap.timeline({
   scrollTrigger:{
     trigger:".area-4",
     markers:false,
-    scrub:true,
+    scrub:1,
     start:"top center",
     end:"20% center"
   }
@@ -158,14 +158,14 @@ let tl4 = gsap.timeline({
   scrollTrigger:{
     trigger:".area-4",
     markers:false,
-    scrub:true,
+    scrub:1,
     start:"40% center",
     end:"80% center"
   }
 })
 
 tl3.to(".works-bg",{height:4000, width:4000});
-tl4.to(".works-bg",{height:0, width:0, y:-100});
+tl4.to(".works-bg",{height:0, width:0});
 
 
 
@@ -174,6 +174,7 @@ const circularSlider = document.querySelector('.wrapper'),
 slides = document.querySelectorAll('.slides'),
 descriptionsBox = document.querySelectorAll('.descriptions-box'),
 images = document.querySelectorAll('.slides img');
+
 
 slides.forEach((slide, i) => {
   slide.onclick = () => {
