@@ -115,6 +115,7 @@ gsap.from('.slogan-box-up', {
   const locomotiveScroll = new LocomotiveScroll();
 })();
 
+const introVideo = $(".video-box > .intro-video")
 
 let tl = gsap.timeline({
   scrollTrigger:{
@@ -128,21 +129,10 @@ let tl = gsap.timeline({
 
 tl.to(".intro-background-container",{backgroundColor:"#F2F0F0"});
 
-let tl2 = gsap.timeline({
-  scrollTrigger:{
-    trigger:".intro-box",
-    markers:false,
-    scrub:true,
-    start:"top center",
-    end:"50% center"
-  }
-})
 
-const introVideo = $(".video-box > .intro-video")
 
-tl2.to(introVideo, {opacity:1, y:150, height:1080});
-tl2.to(".intro-explain",{opacity:1
-});
+
+
 
 
 let tl3 = gsap.timeline({

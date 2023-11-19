@@ -535,7 +535,7 @@ html{
   display:flex;
   flex-direction: column;
   position:block;
-  height:280vh;
+  height:200vh;
   width:100vw;
   background-color: #0d0d0d;
   align-items: center;
@@ -554,38 +554,43 @@ html{
 .area-2 > .intro-background-container > .intro-box > .intro-explain{
   display: inline;
   position:absolute;
-  margin-top:-30px;
+  margin-top:-50px;
   margin-left:3vw;
   width:100vw;
   height:20px;
   color:#0d0d0d;
   font-family: 'Roboto', 'Sans-serif';
-  font-weight:300;
-  font-size:1rem;
+  font-weight:500;
+  font-size:1.2rem;
   vertical-align: baseline;
-  opacity:0;
 }
 
+.area-2 > .intro-background-container > .intro-box > .intro-explain > span{
+  color:#f2f0f0;
+}
+
+@media screen and (max-width: 1600px){
+  .area-2 > .intro-background-container > .intro-box > .intro-explain{
+    font-size:1rem;
+  }
+}
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper{
   display:block;
   width:100vw;
-  height:90vh;
-  w
+  height:100vh;
 
 }
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper > .video-box{
   display:flex;
   width:100vw;
-  height:100vw;
+  height:100vh;
+  overflow: hidden;
   
 }
 
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper > .video-box > video{
   width:100vw;
   object-fit: cover;
-  scale:1;
-  opacity:0;
-  margin-top:-50vh;
 
 }
 
@@ -632,7 +637,18 @@ html{
     left:40vw;
   }
 }
-  
+
+
+
+
+
+
+/*view more make*/
+
+
+
+
+
 
 .showreel-close-box > .close-first{
   width:100%;
@@ -720,14 +736,13 @@ html{
   }
   
   .area-2 > .intro-background-container > .intro-define-box > .define-2 >div:first-child{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 22px;
   }
   
   .area-2 > .intro-background-container > .intro-define-box > .define-2 >div:last-child{
     font-size: 1rem;
     margin-top:30px;
-    padding-left:10px;
   }
   }
 /* End Card-2 */
@@ -807,9 +822,11 @@ html{
 
   @media screen and (max-width:1000px){
     .area-3 > .value-img-container > .value-img-box-1{
-      width:300px;
+      width:150px;
       height:450px;
-      margin-left:5vw;
+      margin-left:3.5vw;
+      margin-top:-80vh;
+      display:flex;
     }
 
     .area-3 > .value-img-container > .value-img-box-2{
@@ -817,15 +834,19 @@ html{
       width:300px;
       height:450px;
       margin-left:33vw;
-
+      
+      display:none;
+      
     }
     .area-3 > .value-img-container > .value-img-box-3{
       
       width:300px;
       height:450px;
-      
-      margin-left:20vw;
+      justify-self: center;
+      margin-top:110vh;
+      display:flex;
     }
+
   }
 
 
@@ -907,14 +928,16 @@ html{
       font-family: 'Roboto', 'Sans-serif';
       font-size:1.5rem;
     }  
-
+    .area-3 > .value-container > .value-explain > div:first-child{
+      font-size:1.2rem;
+    }
     .area-3 > .value-container > .value-explain > div:last-child{
       font-size:1rem;
       margin-top:5vh;
     }
-    .value-img-container{
-      display:none;
-    }
+
+ 
+
     }
 
     .area-3 > .value-deco-container{
@@ -1095,12 +1118,11 @@ html{
 @media screen and (max-width:1600px){
 .circular-slider{ 
   position: relative;
-  top: 40vh;
+  top: 100vh;
   width: var(--slider-height-min);
   height: var(--slider-height-min);
   color: #fff;
   text-align: center;
-  overflow: hidden;
 }
 
 
@@ -1204,7 +1226,7 @@ html{
   width:100vw;
   height:100vh;
   background-color: #f2f0f0;
-  margin-top:-100vh;
+  margin-top:-70vh;
   z-index: 1;
 }
 
