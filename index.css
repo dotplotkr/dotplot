@@ -977,8 +977,14 @@ html{
   overflow:hidden;
 }
 
+.work-bg-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
 
-.area-4 > .works-bg{
+.work-bg-box > .works-bg{
   position:absolute;
   width:10px;
   height:10px;
