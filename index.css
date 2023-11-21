@@ -1272,7 +1272,7 @@ html{
   flex-direction: column;
   position:absolute;
   left: 0;
-  transform: rotateZ(calc(360deg / 24.15 * var(--img-no))) translateY(var(--half-slider-height-min));
+  transform: rotateZ(calc(360deg / 24.1 * var(--img-no))) translateY(var(--half-slider-height-min));
   transform-origin: var(--half-slider-height-min);
   width:50vw;
   cursor: pointer;
@@ -1280,12 +1280,12 @@ html{
 }
 
 .area-4 > .works-container > .circular-slider > .wrapper > .slides img{
-  transform: rotateZ(calc(360deg / 24 * 14.75)) scale(var(--scale, .8));
+  transform: rotateZ(calc(360deg / 24 * 14.7)) scale(var(--scale, .8));
 }
 
   .area-4 > .works-container > .circular-slider > .descriptions{
   position: absolute;
-  top:0vh;
+  top:10vh;
   height:var(--half-slider-height);
   z-index: 100;
 }

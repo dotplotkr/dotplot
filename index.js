@@ -229,3 +229,5 @@ vimeoClose.click(function(){
   vimeo.setAttribute('src','https://player.vimeo.com/video/885910647?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479');
 });
 
+const workBgBox = $('.work-bg-box')
+document.workBgBox.style.overflow='hidden';
