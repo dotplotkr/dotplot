@@ -91,7 +91,7 @@ $('.header-menubox').click(function(){
 
 
 
-
+document.querySelector('.work-bg-box').style.overflow='hidden';
 
 // GSAP
 gsap.from('.slogan-box-up', {
@@ -234,7 +234,7 @@ vimeoClose.click(function(){
 });
 
 
-document.querySelector('.work-bg-box').style.overflow='hidden';
+
 
 
 

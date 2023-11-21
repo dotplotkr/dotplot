@@ -318,7 +318,7 @@ html{
 
 
 
-  
+
     /* card-1 */
 .area-1 {
     position:relative;
@@ -342,7 +342,6 @@ html{
     position:absolute;
     object-fit: cover;
     width:80%;
-    transition: .1s;
   }
   
   .area-1 > .image-box img.img-hand{
