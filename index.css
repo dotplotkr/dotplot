@@ -1130,7 +1130,7 @@ html{
 
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1600px){
   .area-4 > .works-container{
     margin-top:0;
     overflow:hidden;
@@ -1150,7 +1150,6 @@ html{
 
 .circular-slider > .wrapper{
   display:flex;
-  flex-direction: column;
   position:absolute;
   margin-top:30vh;
 
