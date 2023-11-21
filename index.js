@@ -155,6 +155,7 @@ let tl3 = gsap.timeline({
   }
 })
 
+tl3.to(".works-bg",{height:4000, width:4000, y:300});
 
 
 let tl4 = gsap.timeline({
@@ -168,7 +169,7 @@ let tl4 = gsap.timeline({
 })
 
 
-
+tl4.to(".works-bg",{height:0, width:0});
 
 
 
@@ -230,8 +231,7 @@ vimeoClose.click(function(){
 });
 
 
-tl3.to(".works-bg",{height:4000, width:4000, y:300});
-tl4.to(".works-bg",{height:0, width:0});
+
 
 const workBgBox = $('.work-bg-box')
 document.workBgBox.style.overflow='hidden';
