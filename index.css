@@ -1130,10 +1130,9 @@ html{
 
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1600px){
   .area-4 > .works-container{
     margin-top:0;
-    overflow:hidden;
   }
 
 
