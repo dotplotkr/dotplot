@@ -1052,7 +1052,7 @@ html{
   height:100vh;
   margin-top:150vh;
   z-index: 1;
-  overflow: hidden;
+
 }
 
 
@@ -1072,8 +1072,6 @@ html{
   text-align: center;
   padding-top:150vh;
   margin-top:-100vh;
-  overflow:hidden;
-  
 }
 
 .wrapper{
@@ -1086,6 +1084,8 @@ html{
   transition: 1s ease-in-out;
   
   z-index: 30;
+
+  
 }
 
 
