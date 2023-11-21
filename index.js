@@ -156,6 +156,7 @@ let tl3 = gsap.timeline({
 })
 
 
+
 let tl4 = gsap.timeline({
   scrollTrigger:{
     trigger:".area-4",
@@ -167,8 +168,7 @@ let tl4 = gsap.timeline({
 })
 
 
-tl3.to(".works-bg",{height:4000, width:4000, y:300});
-tl4.to(".works-bg",{height:0, width:0});
+
 
 
 
@@ -229,5 +229,10 @@ vimeoClose.click(function(){
   vimeo.setAttribute('src','https://player.vimeo.com/video/885910647?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479');
 });
 
+
+tl3.to(".works-bg",{height:4000, width:4000, y:300});
+tl4.to(".works-bg",{height:0, width:0});
+
 const workBgBox = $('.work-bg-box')
 document.workBgBox.style.overflow='hidden';
+
