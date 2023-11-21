@@ -133,7 +133,7 @@ tl.to(".intro-background-container",{backgroundColor:"#F2F0F0"});
 let tl2 = gsap.timeline({
   scrollTrigger:{
     trigger:".intro-background-container",
-    markers:true,
+    markers:false,
     scrub:true,
     start:"-10% center",
     end:"30% center"
