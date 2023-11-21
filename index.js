@@ -60,7 +60,7 @@ function updateProgress(){
   var target = (imgLoaded/imgTotal) * 100;
   var imageBox = $(".image-box");
   $progressBar.css({width:target + 90 +'px'});
-  imageBox.css({scale:"4", rotate:"360deg"})
+  imageBox.css({scale:"4"})
   //$progressText.text(Math.floor(target) + '%');
 
   if(target == 100){
@@ -68,7 +68,7 @@ function updateProgress(){
 
     $progressBar.delay(500).animate({opacity:100}, 250, function(){
     $container.animate({left:'-100%', opacity:'0'}, 300);
-    imageBox.css({scale:"1", rotate:"0deg"}, 300);
+    imageBox.css({scale:"1"}, 300);
       });
     
   }
@@ -155,6 +155,9 @@ let tl3 = gsap.timeline({
   }
 })
 
+
+
+
 tl3.to(".works-bg",{height:4000, width:4000, y:300});
 
 
@@ -231,8 +234,7 @@ vimeoClose.click(function(){
 });
 
 
+document.querySelector('.work-bg-box').style.overflow='hidden';
 
 
-const workBgBox = $('.work-bg-box')
-document.workBgBox.style.overflow='hidden';
 
