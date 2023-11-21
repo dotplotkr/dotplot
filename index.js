@@ -1,4 +1,5 @@
 document.querySelector('.work-bg-box').style.overflow='hidden';
+document.querySelector('.image-box').style.overflow='hidden';
 
 //Plugin
 gsap.registerPlugin(ScrollTrigger) 
