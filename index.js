@@ -1,4 +1,4 @@
-
+document.querySelector('.work-bg-box').style.overflow='hidden';
 
 //Plugin
 gsap.registerPlugin(ScrollTrigger) 
@@ -91,7 +91,7 @@ $('.header-menubox').click(function(){
 
 
 
-document.querySelector('.work-bg-box').style.overflow='hidden';
+
 
 // GSAP
 gsap.from('.slogan-box-up', {
