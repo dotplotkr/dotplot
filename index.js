@@ -1,5 +1,3 @@
-document.querySelector('.work-bg-box').style.overflow='hidden';
-document.querySelector('.image-box').style.overflow='hidden';
 
 //Plugin
 gsap.registerPlugin(ScrollTrigger) 
@@ -135,15 +133,15 @@ tl.to(".intro-background-container",{backgroundColor:"#F2F0F0"});
 let tl2 = gsap.timeline({
   scrollTrigger:{
     trigger:".intro-background-container",
-    markers:false,
-    scrub:.3,
+    markers:true,
+    scrub:true,
     start:"-10% center",
-    end:"50% center"
+    end:"30% center"
   }
 })
 
 
-tl2.to(".dot",{y:400});
+tl2.to(".dot",{y:500});
 
 
 let tl3 = gsap.timeline({
