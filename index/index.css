@@ -113,7 +113,7 @@ html{
     }
       
     .need-to-cursor-big{
-        display:none;
+      display:none;
     }
   }
 
@@ -331,85 +331,58 @@ html{
   .area-1 > .image-box img{
     position:absolute;
     object-fit: cover;
-    width:80%;
+    width:30%;
   }
   
   .area-1 > .image-box img.img-hand{
-    scale:.8;
-    left:30%;
-    top:-50%;
+    scale:1.2;
+    left:60vw;
+    top:5vh;
   }
   .area-1 > .image-box img.img-public{
-    left:20vw;
-    top: 8vh;
+    scale:0.8;
+    left:72vw;
+    top: 45vh;
     
   }
 
   .area-1 > .image-box img.img-couple{
+    scale:0.2;
+    top:50vh;
     left:20vw;
     
   }
 
   .area-1 > .image-box img.img-telescope{
-    top:-10vh;
-    
-  }
-  @media screen and (max-width:1650px){
-    .area-1 > .image-box img{
-      position:absolute;
-      object-fit: cover;
-      width:300%;
-      top:-10vh;
-  
-    }
-    
-    .area-1 > .image-box img.img-hand{
-      scale:.8;
-      left:0;
-    }
-
-    .area-1 > .image-box img.img-car{
-      scale:.8;
-      left:-70vw;
-      top:-5vh;
-    }
-    .area-1 > .image-box img.img-telescope{
-      left:-27vw;
-      top:-11vh;
-    }
-
-    .area-1 > .image-box img.img-couple{
-    left:-72vw;
-    top:-10vh;
-    }
-
-  .area-1 > .image-box img.img-lotus{
     scale:0.5;
-    left:-67vw;
-    top:-14vh;
-    }
-
-  .area-1 > .image-box img.img-samurai{
-      scale:0.5;
-      left:-67vw;
-      top:-17vh;
-      }
-  
-  .area-1 > .image-box img.img-dragon{
-        scale:0.3;
-        left:-67vw;
-        top:-30vh;
-        
-        }
-
-  .area-1 > .image-box img.img-public{
-          scale:0.5;
-          left:-120vw;
-          top:15vh;
-        }
+    left:12vw;
+    top:-18vh;
+    
   }
 
+  .area-1 > .image-box > img.img-car{
+    scale:0.5;
+    top:55vh;
+    left:5vw;
+  }
 
+  .area-1 > .image-box > img.img-samurai{
+    scale:0.25;
+    top:15vh;
+    left:29vw;
+  }
+
+  .area-1 > .image-box > img.img-dragon{
+    scale:0.5;
+    top:-5vh;
+    left:40vw;
+  }
+
+  .area-1 > .image-box > img.img-lotus{
+    scale:0.6;
+    top:28vh;
+    left:-1vw;
+  }
 
 .area-1 > .slogan-container{
   display:flex;
@@ -440,7 +413,7 @@ html{
   display:flex;
   position:relative;
 
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   
   width:100vw;
@@ -454,30 +427,178 @@ html{
   font-weight:300;
   color:#F2F0F0;
 
-  margin-top: -10px;
   z-index: 1;
 }
 
 
 .area-1 > .guide-container > .guide-box{
   display:flex;
-  align-items: center;
+  position:absolute;
+  justify-items: center;
+  text-align: center;
+  padding-bottom:10px;
   z-index: 1;
 }
 
 
+@media screen and (max-width:960px){
+  .area-1 > .image-box img{
+    position:absolute;
+    object-fit: cover;
+    width:60%;
+    top:-10vh;
 
-@media screen and (max-width:1650px){
-.area-1 > .slogan-container{
-    font-size:5.8rem;
+  }
+
+  .area-1 > .image-box img.img-hand{
+    scale:0.8;
+    left:60vw;
+    top:-15vh;
+  }
+  .area-1 > .image-box img.img-public{
+    scale:0.5;
+    left:55vw;
+    top: 35vh;
+    
+  }
+
+  .area-1 > .image-box img.img-couple{
+    scale:0.15;
+    top:25vh;
+    left:10vw;
+    
+  }
+
+  .area-1 > .image-box img.img-telescope{
+    scale:0.3;
+    left:24vw;
+    top:-33vh;
+    
+  }
+
+  .area-1 > .image-box > img.img-car{
+    scale:0.4;
+    top:30vh;
+    left:-10vw;
+  }
+
+  .area-1 > .image-box > img.img-samurai{
+    scale:0.15;
+    top:-3vh;
+    left:20vw;
+  }
+
+  .area-1 > .image-box > img.img-dragon{
+    scale:0.3;
+    top:-17vh;
+    left:35vw;
+  }
+
+  .area-1 > .image-box > img.img-lotus{
+    scale:0.3;
+    top:8vh;
+    left:-6vw;
+  }
+
+  .area-1 > .slogan-container{
+  
+    font-size:5rem;
     text-align: center;
     margin-left:-5vw;
+    margin-top:10vh;
 }
 
 .area-1 > .slogan-container > .slogan-box-down{
-  margin-top: -10vh;
+  margin-top: -11vh;
 }
 
+.area-1 > .guide-container > .guide-box{
+  display:flex;
+  position:absolute;
+  justify-items: center;
+  text-align: center;
+  padding-bottom:100px;
+}
+}
+
+
+@media screen and (max-width:480px){
+  .area-1 > .image-box img{
+    position:absolute;
+    object-fit: cover;
+    width:100%;
+    top:-10vh;
+
+  }
+  .area-1 > .image-box img.img-hand{
+    scale:1.2;
+    left:60vw;
+    top:5vh;
+  }
+  .area-1 > .image-box img.img-public{
+    scale:0.5;
+    left:30vw;
+    top: 42vh;
+    
+  }
+
+  .area-1 > .image-box img.img-couple{
+    scale:0.15;
+    top:50vh;
+    left:-10vw;
+    
+  }
+
+  .area-1 > .image-box img.img-telescope{
+    scale:0.5;
+    left:12vw;
+    top:-18vh;
+    
+  }
+
+  .area-1 > .image-box > img.img-car{
+    scale:0.4;
+    top:62vh;
+    left:-23vw;
+  }
+
+  .area-1 > .image-box > img.img-samurai{
+    scale:0.15;
+    top:15vh;
+    left:-5vw;
+  }
+
+  .area-1 > .image-box > img.img-dragon{
+    scale:0.3;
+    top:3vh;
+    left:0vw;
+  }
+
+  .area-1 > .image-box > img.img-lotus{
+    scale:0.4;
+    top:23vh;
+    left:-40vw;
+  }
+
+  .area-1 > .slogan-container{
+  
+    font-size:5rem;
+    text-align: center;
+    margin-left:-5vw;
+    margin-top:10vh;
+}
+
+.area-1 > .slogan-container > .slogan-box-down{
+  margin-top: -11vh;
+}
+
+.area-1 > .guide-container > .guide-box{
+  display:flex;
+  position:absolute;
+  justify-items: center;
+  text-align: center;
+  padding-bottom:100px;
+}
 }
 /* End area-1 */
 
@@ -524,6 +645,8 @@ html{
     opacity:1;
   }
 }
+
+
 .area-2 > .intro-background-container{
   display:flex;
   flex-direction: column;
@@ -561,11 +684,6 @@ html{
   color:#f2f0f0;
 }
 
-@media screen and (max-width: 1600px){
-  .area-2 > .intro-background-container > .intro-box > .intro-explain{
-    font-size:1rem;
-  }
-}
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper{
   display:block;
   width:100vw;
@@ -621,27 +739,6 @@ html{
   z-index:100;
 }
 
-@media screen and (max-width: 1650px){
-  .showreel-close-box{
-    width:30px;
-    height:30px;
-    top:22vh;
-    left:40vw;
-  }
-}
-
-
-
-
-
-
-/*view more make*/
-
-
-
-
-
-
 .showreel-close-box > .close-first{
   width:100%;
   position:absolute;
@@ -673,15 +770,6 @@ html{
   text-align: right;
   padding-top: 10px;
   padding-right:30px;
-}
-
-@media screen and (max-width:1650px){
-  .area-2 > .intro-background-container > .intro-box > .intro-explain-2{
-    font-size:5rem;
-    padding-right:10px;
-    line-height: 75px;
-    padding-top:60px;
-  }
 }
 
 .area-2 > .intro-background-container > .intro-define-box{
@@ -718,7 +806,25 @@ html{
   font-weight: 400;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:960px){
+  .area-2 > .intro-background-container > .intro-box > .intro-explain{
+    font-size:1rem;
+  }
+
+  .showreel-close-box{
+    width:30px;
+    height:30px;
+    top:22vh;
+    left:40vw;
+  }
+
+  .area-2 > .intro-background-container > .intro-box > .intro-explain-2{
+    font-size:4rem;
+    padding-right:10px;
+    line-height: 75px;
+    padding-top:60px;
+  }
+
   .area-2 > .intro-background-container > .intro-define-box{
     margin-top:100px;
   }
@@ -730,11 +836,59 @@ html{
   .area-2 > .intro-background-container > .intro-define-box > .define-2 >div:first-child{
     font-size: 1.2rem;
     line-height: 22px;
+    margin-left:2vw;
+    width:50vw;
+    
   }
   
   .area-2 > .intro-background-container > .intro-define-box > .define-2 >div:last-child{
     font-size: 1rem;
     margin-top:30px;
+    margin-left:2vw;
+    width:50vw;
+  }
+  }
+
+@media screen and (max-width:480px){
+  .area-2 > .intro-background-container > .intro-box > .intro-explain{
+    font-size:1rem;
+  }
+
+  .showreel-close-box{
+    width:30px;
+    height:30px;
+    top:22vh;
+    left:40vw;
+  }
+
+  .area-2 > .intro-background-container > .intro-box > .intro-explain-2{
+    font-size:4rem;
+    padding-right:10px;
+    line-height: 75px;
+    padding-top:60px;
+  }
+
+  .area-2 > .intro-background-container > .intro-define-box{
+    margin-top:100px;
+  }
+
+  .area-2 > .intro-background-container > .intro-define-box > .define-1{
+      font-size:.8rem;
+  }
+  
+  .area-2 > .intro-background-container > .intro-define-box > .define-2 >div:first-child{
+    font-size: 1.2rem;
+    line-height: 22px;
+    margin-left:2vw;
+    width:50vw;
+    
+  }
+  
+  .area-2 > .intro-background-container > .intro-define-box > .define-2 >div:last-child{
+    font-size: 1rem;
+    margin-top:30px;
+    margin-left:2vw;
+    width:50vw;
   }
   }
 /* End Card-2 */
@@ -801,7 +955,7 @@ html{
     height:700px;
     position:absolute;
     overflow:hidden;
-    margin-top:0vh;
+    margin-top:12vh;
     margin-left:15vw;
   }
 
@@ -812,35 +966,7 @@ html{
   }
 
 
-  @media screen and (max-width:1000px){
-    .area-3 > .value-img-container > .value-img-box-1{
-      width:150px;
-      height:450px;
-      margin-left:3.5vw;
-      margin-top:-80vh;
-      display:flex;
-    }
-
-    .area-3 > .value-img-container > .value-img-box-2{
-      
-      width:200px;
-      height:200px;
-      margin-left:45vw;
-      margin-top:-23vh;
-      
-      display:flex;
-      
-    }
-    .area-3 > .value-img-container > .value-img-box-3{
-      
-      width:300px;
-      height:450px;
-      justify-self: center;
-      margin-top:110vh;
-      display:flex;
-    }
-
-  }
+  
 
 
 
@@ -895,9 +1021,110 @@ html{
     
   }
 
+  .area-3 > .value-deco-container{
+    margin-top: -105vh;
+    margin-left: 80vw;
+    display:flex;
+    position:absolute;
+  }
+
+  @media screen and (max-width:960px){
+    .area-3 > .value-img-container > .value-img-box-1{
+      width:380px;
+      height:450px;
+      margin-left:3.5vw;
+      margin-top:-80vh;
+      display:flex;
+    }
+
+    .area-3 > .value-img-container > .value-img-box-2{
+      
+      width:400px;
+      height:450px;
+      margin-left:50vw;
+      margin-top:-50vh;
+      
+      display:flex;
+      
+    }
+    .area-3 > .value-img-container > .value-img-box-3{
+      
+      width:600px;
+      height:450px;
+      justify-self: center;
+      margin-top:100vh;
+      margin-left:18vw;
+      display:flex;
+    }
+
+  .area-3 > .value-container{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+  }
+
+  .area-3 > .value-container > .value-title{
+    font-size:4rem;
+    line-height: 75px;
+    padding-top:0;
+    
+  }
+
+  .area-3 > .value-container > .value-explain{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    padding-top:0;
+    padding-left: 50px;
+    padding-right: 100px;
+    font-family: 'Roboto', 'Sans-serif';
+    font-size:1.5rem;
+  }  
+  .area-3 > .value-container > .value-explain > div:first-child{
+    font-size:1.2rem;
+  }
+  .area-3 > .value-container > .value-explain > div:last-child{
+    font-size:1rem;
+    margin-top:5vh;
+  }
+
+  .area-3 > .value-deco-container > .value-explain-deco{
+    color:#f2f0f0;
+  }
+
+  }
 
 
-  @media screen and (max-width:1600px){
+  @media screen and (max-width:480px){
+      .area-3 > .value-img-container > .value-img-box-1{
+        width:150px;
+        height:450px;
+        margin-left:3.5vw;
+        margin-top:-80vh;
+        display:flex;
+      }
+  
+      .area-3 > .value-img-container > .value-img-box-2{
+        
+        width:200px;
+        height:200px;
+        margin-left:45vw;
+        margin-top:-23vh;
+        
+        display:flex;
+        
+      }
+      .area-3 > .value-img-container > .value-img-box-3{
+        
+        width:300px;
+        height:450px;
+        justify-self: center;
+        margin-top:110vh;
+        margin-left:10vw;
+        display:flex;
+      }
+
     .area-3 > .value-container{
       display:flex;
       flex-direction: column;
@@ -905,7 +1132,7 @@ html{
     }
 
     .area-3 > .value-container > .value-title{
-      font-size:4.5rem;
+      font-size:4rem;
       line-height: 75px;
       padding-top:0;
       
@@ -936,12 +1163,7 @@ html{
 
     }
 
-    .area-3 > .value-deco-container{
-      margin-top: -105vh;
-      margin-left: 80vw;
-      display:flex;
-      position:absolute;
-    }
+
   
 
 
