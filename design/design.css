@@ -385,10 +385,10 @@ html{
     font-weight:300;
     margin:1px;
   }
-  .work_wrapper div > .work:hover > .img_name{
-    opacity:0;
-    transition: all 1s;
-  }
+
+
+
+  
   @media screen and (max-width:960px){
     .work_wrapper > div{
       width:100vw;

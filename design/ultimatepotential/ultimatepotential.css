@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 
 @font-face{
-    src : url("/source/font/FontsFree-Net-Avalon.ttf");
-    font-family:'Avalon';
-}
-
-@font-face{
   src : url("/source/font/LibreBarcode128-Regular.ttf");
   font-family:'Libre';
 }
@@ -331,7 +326,6 @@ html{
 }
 
 .mainBox-section-title h5{
-  font-family:'Avalon';
   font-size: 1.4rem;
   font-style:italic;
   text-align:center;
@@ -406,7 +400,6 @@ html{
 }
 
 .card-5 > .font-content > h5{
-  font-family:'Avalon';
   font-size: 1rem;
   margin-bottom: 25px;
 }
@@ -511,9 +504,11 @@ z-index: -1;
   .card-3 > div, .card-4 > div{
       width:30%;
     }
+
   .card-5 div{
     width:30%;
   }
+
   .card-6{
     margin-top:20vh;
   }
@@ -580,6 +575,12 @@ z-index: -1;
     text-align:justify;
   }
 
+  .card-3{
+    margin-top:10vh;
+  }
+  .card-3 > div, .card-4 > div{
+    width:100%;
+  }
   .card-6 > video{
     display:flex;
     object-fit: cover;
@@ -587,6 +588,10 @@ z-index: -1;
     height:80vh;
     z-index:1;
     box-sizing:border-box;
+  }
+
+  .card-5 div{
+    width:90%;
   }
 
   .card-7 > .mainBox-section-title > h5{
