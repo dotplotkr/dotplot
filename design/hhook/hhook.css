@@ -496,7 +496,7 @@ html{
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:480px){
 
   .card-2{
     font-size:1.6rem;

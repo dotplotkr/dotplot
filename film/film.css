@@ -784,6 +784,7 @@ input[id="popup4"] + label + div > label {
     justify-content: flex-end;
     flex-direction: column;
   }
+
   .workBox div > .work > .img_name h5{
     font-weight:700;
     margin-bottom:5px;
@@ -799,7 +800,14 @@ input[id="popup4"] + label + div > label {
   }
 
 
-  @media screen and (max-width:1000px){
+
+
+
+
+  @media screen and (max-width:960px){
+    .workBox{
+      margin-top:35vh;
+    }
     .workBox > div{
       width:100vw;
     }
@@ -807,14 +815,65 @@ input[id="popup4"] + label + div > label {
       .workBox div > .work{
         position:relative;
         width:95vw;
-        height:95vw;
+        height:60vw;
+        top:50%;
+        margin-top:55vh;
+  
+      }
+      
+      .workBox div > .work > img{
+        border-radius: 20px;
+        width:95vw;
+        height:60vw;
+        object-fit: cover;
+        transition: all 0.5s;
+        z-index:10;
+      }
+    
+      .workBox div > .work > .img_name{
+        opacity:100;
+        font-size:1rem;
+        position:absolute;
+        height:90%;
+        width:90%;
+        top:50%;
+        transform: translateX(-50%), translateY(-50%);
+        
+      }
+
+      .workBox div > .work > .img_name h5{
+        font-weight:700;
+        margin-bottom:5px;
+      }
+      .workBox div > .work > .img_name h6{
+        font-family:'Roboto',sans-serif;
+        font-weight:300;
+        margin:1px;
+      }
+      }
+
+
+
+  @media screen and (max-width:480px){
+    .workBox{
+      margin-top:55vh;
+    }
+    .workBox > div{
+      width:100vw;
+    }
+
+      .workBox div > .work{
+        position:relative;
+        width:95vw;
+        height:95vh;
+        margin-top:10vh;
         top:50%;
       }
       
       .workBox div > .work > img{
         border-radius: 20px;
         width:95vw;
-        height:95vw;
+        height:95vh;
         object-fit: cover;
         transition: all 0.5s;
         z-index:10;

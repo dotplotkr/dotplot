@@ -93,7 +93,7 @@ gsap.from('.scroll1', {
   scrollTrigger:{
     trigger:'.scroll1',
     scrub:true,
-    start:"top +=23%",
+    start:"top +=80%",
     end:"bottom +=90%",
     markers:false
   },

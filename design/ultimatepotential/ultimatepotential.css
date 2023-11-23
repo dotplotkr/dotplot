@@ -485,8 +485,79 @@ z-index: -1;
 
 
 
+@media screen and (max-width:960px){
+  .card-2{
+  display:block;
+  text-align: center;
+  color: black;
+    
+  }
+  .card-2 > div:first-child{
+    margin-top:10%;
+  }
 
-@media screen and (max-width:1000px){
+  .card-2 > div:last-child{
+    margin-top:100px;
+  }
+
+  .card-2 img{
+    height:100px; 
+  }
+
+  .card-2 h6{
+    text-align:justify;
+  }
+
+  .card-3 > div, .card-4 > div{
+      width:30%;
+    }
+  .card-5 div{
+    width:30%;
+  }
+  .card-6{
+    margin-top:20vh;
+  }
+    .card-6 > video{
+    display:flex;
+    object-fit: cover;
+    width:100vw;
+    height:80vh;
+    z-index:1;
+    box-sizing:border-box;
+  }
+
+  .card-7 > .mainBox-section-title > h5{
+    margin:auto auto;
+  }
+
+  .card-7 > .card-7-videoBox{
+    align-items: center;
+  }
+
+  .card-7 > .card-7-videoBox > video{
+    object-fit: cover;
+    margin-top:-25vh;
+    width:80vw;
+    height:50vh;
+  }
+
+  .card-8 > .card-8-audioBox{
+    width:30vw;
+    height:30vw;
+  }
+
+  .card-9{
+    margin-top:20vh;
+    height:200vw;
+  }
+
+  }
+
+
+
+
+
+@media screen and (max-width:480px){
   .card-2{
   display:block;
   text-align: center;
