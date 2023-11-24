@@ -1284,9 +1284,8 @@ html{
   font-family: 'Roboto', 'Sans-serif';
   font-weight:900;
   font-size:13rem;
-  -webkit-text-stroke:1px white;
   text-align: center;
-  color:transparent;
+  color:#f2f0f0;
   z-index: 1;
   margin-top:20vh;
 }
