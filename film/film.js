@@ -18,14 +18,18 @@ $(window).mousemove(function(e) {
   });
 });
 
+
+
+
+
 $('.cursor-big').mouseenter(function(){
-    $('.cursor').addClass('need-to-cursor-big'),
-    $('.cursor').css('background-color', 'red')
+  $cursor.addClass('need-to-cursor-big'),
+  $cursor.css('background-color', 'red')
 });
 
 $('.cursor-big').mouseleave(function(){
-    $('.cursor').removeClass('need-to-cursor-big')
-    $('.cursor').css('background-color', 'white')
+  $cursor.removeClass('need-to-cursor-big')
+  $cursor.css('background-color', 'white')
 });
 
 //End Cursor
@@ -94,8 +98,8 @@ gsap.from('.scroll1', {
     trigger:'.scroll1',
     scrub:true,
     start:"top +=80%",
-    end:"bottom +=90%",
-    markers:false
+    end:"bottom +=100%",
+    markers:false,
   },
 opacity:0,
 x: -1000,

@@ -30,7 +30,8 @@ h3{
 }
 
 h5{
-  font-family:
+  font-family: 'Noto Sans Kr', 'Sans-serif';
+  font-style:normal;
 }
 
 /* End Nomalize */
@@ -461,6 +462,7 @@ z-index: -1;
 .card-9{
   display:block;
   height:170vw;
+  
 }
 
 .card-9 > .card-9-imgBox-wrapper{
@@ -615,8 +617,6 @@ z-index: -1;
 
   .card-9{
     height:200vw;
-  }
-
   }
 
 /* Main end */

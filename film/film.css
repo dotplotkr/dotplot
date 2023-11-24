@@ -81,7 +81,7 @@ html{
     height:50px;
   }
 
-  @media screen and (max-width:1000px){
+  @media screen and (max-width:960px){
     *{
       cursor:auto;
     }
@@ -695,7 +695,6 @@ input[id="popup4"] + label + div > label {
   input[id="popup6"] + label + div > div > iframe{
     width:100%;
     height:100%;
-    border:1px solid red;
   }
 
   input[id="popup6"] + label + div > div > label{
@@ -848,7 +847,7 @@ input[id="popup4"] + label + div > label {
 
   @media screen and (max-width:480px){
     .workBox{
-      margin-top:55vh;
+      margin-top:0vh;
     }
     .workBox > div{
       width:100vw;
@@ -919,7 +918,21 @@ input[id="popup4"] + label + div > label {
         z-index:1;
     
       }
-      @media screen and (max-width:1000px){
+
+
+      @media screen and (max-width:960px){
+        input[id="popup"] + label + div > div{
+          width:96vw;
+          height:48vw;
+        }
+        
+        input[id="popup"] + label + div > div > label{
+          top:-25px;
+          right:18px;
+        }
+      }
+
+      @media screen and (max-width:480px){
         input[id="popup"] + label + div > div{
           width:96vw;
           height:54vw;
@@ -954,7 +967,20 @@ input[id="popup4"] + label + div > label {
         z-index:1;
     
       }
-      @media screen and (max-width:1000px){
+
+      @media screen and (max-width:960px){
+        input[id="popup2"] + label + div > div{
+          width:96vw;
+          height:48vw;
+        }
+        
+        input[id="popup2"] + label + div > div > label{
+          top:-25px;
+          right:18px;
+        }
+      }
+
+      @media screen and (max-width:480px){
         input[id="popup2"] + label + div > div{
           width:96vw;
           height:54vw;
@@ -990,7 +1016,21 @@ input[id="popup3"] + label + div > div > label{
 
 }
 
-@media screen and (max-width:1000px){
+
+@media screen and (max-width:960px){
+  input[id="popup3"] + label + div > div{
+    width:96vw;
+    height:48vw;
+  }
+  
+  input[id="popup3"] + label + div > div > label{
+    top:-25px;
+    right:18px;
+  }
+}
+
+
+@media screen and (max-width:480px){
   input[id="popup3"] + label + div > div{
     width:96vw;
     height:54vw;
@@ -1025,8 +1065,19 @@ input[id="popup4"] + label + div > div > label{
   z-index:1;
 
 }
+@media screen and (max-width:960px){
+  input[id="popup4"] + label + div > div{
+    width:96vw;
+    height:48vw;
+  }
+  
+  input[id="popup4"] + label + div > div > label{
+    top:-25px;
+    right:18px;
+  }
+}
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:480px){
   input[id="popup4"] + label + div > div{
     width:96vw;
     height:54vw;
@@ -1062,7 +1113,20 @@ input[id="popup5"] + label + div > div > label{
 
 }
 
-@media screen and (max-width:1000px){
+
+@media screen and (max-width:960px){
+  input[id="popup5"] + label + div > div{
+    width:96vw;
+    height:48vw;
+  }
+  
+  input[id="popup5"] + label + div > div > label{
+    top:-25px;
+    right:18px;
+  }
+}
+
+@media screen and (max-width:960px){
   input[id="popup5"] + label + div > div{
     width:96vw;
     height:54vw;

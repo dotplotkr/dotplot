@@ -19,6 +19,25 @@ $(window).mousemove(function(e) {
   });
 });
 
+
+$('.view').mouseenter(function(){
+  $cursor.text('PLAY');
+  $('.cursor').css({
+    'width':'75px',
+    'height':'75px',
+    'mix-blend-mode':'normal'
+    });
+});
+
+$('.view').mouseleave(function(){
+  $('.cursor').text('')
+  $('.cursor').css({
+    'width':'15px',
+    'height':'15px',
+    'mix-blend-mode':'difference'
+  });
+});
+
 $('.cursor-big').mouseenter(function(){
     $('.cursor').addClass('need-to-cursor-big'),
     $('.cursor').css('background-color', 'red')

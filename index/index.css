@@ -96,13 +96,15 @@ html{
     transform:translateX(-50%) translateY(-50%);
     z-index:200;
     transition:width .1s, height .1s, background-color 1s;
+    text-align: center;
+    vertical-align: center;
+    line-height:75px;
+    font-family:'roboto','sans-serif';
+    font-weight:400;
   }
 
 
-  .need-to-cursor-big{
-    width:50px;
-    height:50px;
-  }
+
 
   @media screen and (max-width:1000px){
     *{
@@ -558,7 +560,7 @@ html{
 
   .area-1 > .image-box > img.img-car{
     scale:0.4;
-    top:62vh;
+    top:58vh;
     left:-23vw;
   }
 
@@ -713,6 +715,8 @@ html{
   z-index: 100;
   justify-content: center;
   align-items: center;
+  
+
 }
 
 .showreel > .showreel-bg{
@@ -723,38 +727,53 @@ html{
   top:0;
   left:0;
   opacity:.9;
-  z-index: -1;
+  z-index: 1;
 }
 
 .showreel-close-box{
+  
   width:50px;
   height:50px;
-  position:relative;
+  position:absolute;
   display:flex;
   justify-content: center;
   align-items: center;
   top:45vh;
-  left:45vw;
+  left:92vw;
   transform:translateY(-50%);
   z-index:100;
+  overflow:hidden;
+  
+
 }
 
 .showreel-close-box > .close-first{
   width:100%;
   position:absolute;
   transform:rotate(45deg);
-  border-bottom:5px solid white;
-  left:0;
-  z-index:501;
+  border:2px solid white;
+  background-color:white;
+  padding:1px;
+  border-radius: 20%;
 
 }
 .showreel-close-box > .close-second{
   width:100%;
   position:absolute;
   transform:rotate(135deg);
-  border-bottom:5px solid white;
+  border:2px solid white;
+  background-color:white;
+  padding:1px;
+  border-radius: 20%;
 
 }
+
+.showreel > iframe{
+  width:80vw;
+  height:90vh;
+  z-index: 1;
+}
+
 .displayFlex{
   display:flex;
 }
@@ -806,6 +825,9 @@ html{
   font-weight: 400;
 }
 
+
+
+
 @media screen and (max-width:960px){
   .area-2 > .intro-background-container > .intro-box > .intro-explain{
     font-size:1rem;
@@ -847,6 +869,17 @@ html{
     margin-left:2vw;
     width:50vw;
   }
+  .showreel > iframe{
+    width:85vw;
+    height:90vh;
+    z-index: 1;
+  }
+
+  .showreel-close-box{
+    left:94vw;
+    top:50vh;
+  }
+
   }
 
 @media screen and (max-width:480px){
@@ -889,6 +922,19 @@ html{
     margin-top:30px;
     margin-left:2vw;
     width:50vw;
+  }
+
+  .showreel > iframe{
+    width:95vw;
+    height:35vh;
+    z-index: 1;
+
+  }
+
+  .showreel-close-box{
+    left:87vw;
+    top:30vh;
+
   }
   }
 /* End Card-2 */
@@ -1611,6 +1657,9 @@ html{
  
   /* End Footer */
 
-
+  .need-to-cursor-big{
+    width:50px;
+    height:50px;
+  }
 
 /* Custom end */
