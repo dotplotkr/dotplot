@@ -1626,32 +1626,28 @@ html{
   /* Footer */
 
 .footer{
-    display:block;
+    display:flex;
     height:10vh;
     position:relative;
     width:100vw;
     background-color: #f2f0f0;
+    z-index: 100;
   }
   
-  .footer-infBox{
+.footer > .footer-infBox{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Kr', sans-serif;
+    font-weight: 300;
+    font-size:.6rem;
     margin-bottom:3vh;
     margin-left:calc(2vw + 10px);
-  }
-  
-  .footer > .footer-infBox > .co-inf{
-    font-family: 'Noto Sans Kr', sans-serif;
-    font-weight: 300;
-    font-size:.6rem;
-    color:#0d0d0d;  
-  }
-
-  .footer > .footer-infBox > .blog{
-    font-family: 'Noto Sans Kr', sans-serif;
-    font-weight: 300;
-    font-size:.6rem;
     color:#0d0d0d;
   }
-
+  
+  .footer > .footer-infBox > .web-inf{
+    display:flex;
+  }
 
  
   /* End Footer */
