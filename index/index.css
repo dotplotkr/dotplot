@@ -1607,16 +1607,6 @@ html{
   scale:0.2;
 }
 
-.area-5 > .outro-container > .outro-body > a{
-  font-family: 'roboto', 'sans-serif';
-  font-weight:500;
-  z-index: 5;
-}
-
-.area-5 > .outro-container > .outro-body > a:hover{
-  text-decoration: underline;
-}
-
 @media screen and (max-width:960px){
   .area-5 > .outro-container{
     flex-direction: column;
@@ -1627,9 +1617,6 @@ html{
     text-align: center;
     line-height:80px;
   } 
-
-  .area-5 > .outro-container > .outro-body > a{
-    font-size:1.5rem;}
 }
   /* End Main */
 
