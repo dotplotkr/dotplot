@@ -477,6 +477,7 @@ html{
         position:absolute;
         width:20%;
         left:10%;
+        top:40%;
     }
     .main > .contact-container > .contact-box > a{
         position:relative;
@@ -484,7 +485,7 @@ html{
         height:30px;
         color:#f2f0f0;
         top:50%;
-        left:0%;
+        left:-10%;
         font-family: 'roboto', 'sans-serif';
         font-weight: 400;
         font-size:.8rem;
