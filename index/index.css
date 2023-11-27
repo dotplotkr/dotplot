@@ -1395,7 +1395,7 @@ html{
   top:-4vh;
 }
 
-.area-4 > .works-container > .circular-slider > .descriptions > .descriptions-box .description-head h1{
+.area-4 > .works-container > .circular-slider > .descriptions > .descriptions-box .description-head div{
   font-size: 3rem;
   font-weight: 600;
 }
