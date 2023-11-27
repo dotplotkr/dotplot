@@ -514,9 +514,11 @@ html{
         flex-direction: column;
         justify-content: center;
     }
-    
+    .main >.contact-container > .contact-scope > .contact-inf-section div{
+        font-size:0.7rem;
+    }
     .main >.contact-container > .contact-scope > .contact-inf-section div:first-child{
-        margin-top:70px;
+        margin-top:35px;
     }
 }
   /* Footer */
