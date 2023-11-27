@@ -843,7 +843,7 @@ html{
   .area-2 > .intro-background-container > .intro-box > .intro-explain-2{
     font-size:4rem;
     padding-right:10px;
-    line-height: 75px;
+    line-height: 65px;
     padding-top:60px;
   }
 
@@ -897,7 +897,7 @@ html{
   .area-2 > .intro-background-container > .intro-box > .intro-explain-2{
     font-size:4rem;
     padding-right:10px;
-    line-height: 75px;
+    line-height: 60px;
     padding-top:60px;
   }
 
@@ -1037,6 +1037,7 @@ html{
     color:#0d0d0d;
     text-align: left;
     align-items: center;
+    line-height: 150px;
 
   }
 
@@ -1111,7 +1112,7 @@ html{
 
   .area-3 > .value-container > .value-title{
     font-size:4rem;
-    line-height: 75px;
+    line-height: 65px;
     padding-top:0;
     
   }
@@ -1179,7 +1180,7 @@ html{
 
     .area-3 > .value-container > .value-title{
       font-size:4rem;
-      line-height: 75px;
+      line-height: 65px;
       padding-top:0;
       
     }
@@ -1624,7 +1625,7 @@ html{
     margin-top:10vh;
     font-size:5rem;
     text-align: center;
-    line-height:100px;
+    line-height:80px;
   } 
 
   .area-5 > .outro-container > .outro-body > a{
