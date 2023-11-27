@@ -51,7 +51,7 @@ a{
 
 
 html{
-  background-color: #0d0d0d;
+  background-color: #f2f0f0;
   width:100vw;
 }
 
@@ -1288,6 +1288,7 @@ html{
   color:#f2f0f0;
   z-index: 1;
   margin-top:20vh;
+  line-height:180px;
 }
 
 
@@ -1441,6 +1442,8 @@ html{
     font-size: 4rem;
     align-items: center;
     margin-top:-90vh;
+    line-height:70px;
+    
   }
 
   .area-4 > .works-container{
@@ -1582,18 +1585,10 @@ html{
   color: #0d0d0d;
   z-index: 3;
   margin-left:3vw;
+  line-height:200px;
 }
 
-@media screen and (max-width:1600px){
-  .area-5 > .outro-container{
-    flex-direction: column;
-  }
-  .area-5 > .outro-container > .outro-title{
-    margin-top:10vh;
-    font-size:5rem;
-    text-align: center;
-  } 
-}
+
 
 .area-5 > .outro-container > .outro-body {
   display:flex;
@@ -1602,6 +1597,13 @@ html{
   font-size:3rem;
   align-items: center;
   justify-content: center;
+}
+
+.area-5 > .outro-container > .outro-body > img{
+  position:absolute;
+  object-fit: cover;
+  width:100%;
+  scale:0.2;
 }
 
 .area-5 > .outro-container > .outro-body > a{
@@ -1614,10 +1616,19 @@ html{
   text-decoration: underline;
 }
 
-@media screen and (max-width:1600px){
-  .area-5 > .outro-container > .outro-body > a{
-    font-size:1.5rem;
+@media screen and (max-width:960px){
+  .area-5 > .outro-container{
+    flex-direction: column;
   }
+  .area-5 > .outro-container > .outro-title{
+    margin-top:10vh;
+    font-size:5rem;
+    text-align: center;
+    line-height:100px;
+  } 
+
+  .area-5 > .outro-container > .outro-body > a{
+    font-size:1.5rem;}
 }
   /* End Main */
 
