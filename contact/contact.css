@@ -475,7 +475,7 @@ html{
     .main > .contact-container > .contact-box > img{
         margin-left:10vw;
         position:absolute;
-        width:20%;
+        width:30%;
         left:10%;
         top:40%;
     }
@@ -518,7 +518,7 @@ html{
         font-size:0.7rem;
     }
     .main >.contact-container > .contact-scope > .contact-inf-section div:first-child{
-        margin-top:35px;
+        margin-top:55px;
     }
 }
   /* Footer */
