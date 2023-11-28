@@ -319,6 +319,7 @@ html{
     display:flex;
     width:80vw;
 }
+
 .main > .contact-container > .contact-box{
     width:50vw;
     height:50vh;
@@ -328,8 +329,10 @@ html{
     margin-left:10vw;
     position:absolute;
     width:20%;
-    left:15%;
+    left:10%;
+    top:20%;
 }
+
 .main > .contact-container > .contact-box > a{
     position:relative;
     width:30px;
@@ -350,8 +353,8 @@ html{
     top:-50%;
     left:50%;
     transform:translateX(-50%) translateY(-50%);
-    
 }
+
 .main > .contact-container > .contact-scope{
     width:50vw;
     height:50vh;
@@ -370,6 +373,7 @@ html{
     text-align: justify;
 
 }
+
 .main >.contact-container > .contact-scope > .contact-inf-section div{
     margin-top:20px;
 }
@@ -381,6 +385,7 @@ html{
 .main >.contact-container > .contact-scope > .contact-inf-section div:last-child > span{
     font-weight:900;
 }
+
 .main >.contact-container > .contact-scope > .contact-inf-section > .contact-inf-mail:hover{
     text-decoration: underline;
 }
