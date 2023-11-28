@@ -9,58 +9,38 @@
 
 <url>
   <loc>https://dotplot.kr/</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://dotplot.kr/index</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dotplot.kr/film</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dotplot.kr/experience</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
+  <loc>https://dotplot.kr/design</loc>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dotplot.kr/experience/hhook</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
+  <loc>https://dotplot.kr/contact</loc>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dotplot.kr/experience/shellystreet</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://dotplot.kr/design/hhook</loc>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://dotplot.kr/experience/likethatcoffee</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dotplot.kr/experience/chicken</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dotplot.kr/experience/flashback</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dotplot.kr/experience/ultimatepotential</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dotplot.kr/experience/fior</loc>
-  <lastmod>2023-10-15T07:48:32+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://dotplot.kr/design/ultimatepotential</loc>
+  <lastmod>2023-11-28T03:19:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
