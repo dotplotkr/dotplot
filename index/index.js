@@ -78,15 +78,14 @@ function updateProgress(){
   var target = (imgLoaded/imgTotal) * 100;
   var imageBox = $(".image-box");
   $progressBar.css({width:target + 90 +'px'});
-  imageBox.css({scale:"4"})
-  //$progressText.text(Math.floor(target) + '%');
+  imageBox.css({scale:"4", rotate:"540deg", scale:"20"})
 
   if(target == 100){
     clearInterval(progressTimer);
 
     $progressBar.delay(500).animate({opacity:100}, 250, function(){
     $container.animate({left:'-100%', opacity:'0'}, 300);
-    imageBox.css({scale:"1"}, 300);
+    imageBox.css({scale:"1", rotate:"0deg", scale:"1"}, 500);
       });
     
   }

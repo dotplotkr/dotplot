@@ -462,7 +462,7 @@ html{
         color:#f2f0f0;
         font-family: 'roboto','sans-serif';
         font-weight:900;
-        font-size:3rem;
+        font-size:4rem;
         width:80vw;
         text-align: center;
     }
@@ -477,7 +477,7 @@ html{
         position:absolute;
         width:30%;
         left:10%;
-        top:40%;
+        top:45%;
     }
     .main > .contact-container > .contact-box > a{
         position:relative;
