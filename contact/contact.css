@@ -344,7 +344,7 @@ html{
     font-weight: 400;
 }
 
-.main > .contact-container > .contact-box > a > .contact-brief{
+.main > .contact-container > .contact-box > a > .contact-ot{
     width:10px;
     height:10px;
     background-color: #f2f0f0;
@@ -353,6 +353,7 @@ html{
     top:-50%;
     left:50%;
     transform:translateX(-50%) translateY(-50%);
+    transition: .3s ease-in;
 }
 
 .main > .contact-container > .contact-scope{
@@ -389,6 +390,16 @@ html{
 .main >.contact-container > .contact-scope > .contact-inf-section > .contact-inf-mail:hover{
     text-decoration: underline;
 }
+
+
+.main > .contact-container > .contact-box > a:hover > .contact-ot{
+  width:100px;
+  height:100px;
+  mix-blend-mode: difference;
+
+  
+}
+
 
 @media screen and (max-width: 960px){
     .main{
@@ -429,7 +440,7 @@ html{
         font-size:.8rem;
     }
     
-    .main > .contact-container > .contact-box > a > .contact-brief{
+    .main > .contact-container > .contact-box > a > .contact-ot{
         width:10px;
         height:10px;
         background-color: #f2f0f0;
@@ -497,7 +508,7 @@ html{
         font-size:.8rem;
     }
     
-    .main > .contact-container > .contact-box > a > .contact-brief{
+    .main > .contact-container > .contact-box > a > .contact-ot{
         width:10px;
         height:10px;
         background-color: #f2f0f0;
@@ -508,6 +519,8 @@ html{
         transform:translateX(-50%) translateY(-50%);
         
     }
+
+
 
     .main > .contact-container > .contact-scope{
         width:50vw;
