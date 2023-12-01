@@ -341,7 +341,12 @@ html{
     top:70%;
     left:20%;
     font-family: 'roboto', 'sans-serif';
-    font-weight: 400;
+    font-weight: 900;
+}
+
+.main > .contact-container > .contact-box > a > span{
+  font-size:.8rem;
+  font-weight: 400;
 }
 
 .main > .contact-container > .contact-box > a > .contact-ot{
@@ -355,6 +360,21 @@ html{
     transform:translateX(-50%) translateY(-50%);
     transition: .3s ease-in;
 }
+
+.main > .contact-container > .contact-box > a:hover > .contact-ot{
+  width:130px;
+  height:130px;
+  mix-blend-mode: difference;
+  
+  
+  }
+
+  
+.main >.contact-container > .contact-scope > .contact-inf-section > .contact-inf-mail:hover{
+  text-decoration: underline;
+}
+
+
 
 .main > .contact-container > .contact-scope{
     width:50vw;
@@ -387,18 +407,7 @@ html{
     font-weight:900;
 }
 
-.main >.contact-container > .contact-scope > .contact-inf-section > .contact-inf-mail:hover{
-    text-decoration: underline;
-}
 
-
-.main > .contact-container > .contact-box > a:hover > .contact-ot{
-  width:100px;
-  height:100px;
-  mix-blend-mode: difference;
-
-  
-}
 
 
 @media screen and (max-width: 960px){
@@ -436,7 +445,6 @@ html{
         top:70%;
         left:10%;
         font-family: 'roboto', 'sans-serif';
-        font-weight: 400;
         font-size:.8rem;
     }
     
@@ -504,7 +512,6 @@ html{
         top:50%;
         left:-10%;
         font-family: 'roboto', 'sans-serif';
-        font-weight: 400;
         font-size:.8rem;
     }
     
