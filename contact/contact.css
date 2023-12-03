@@ -347,6 +347,21 @@ html{
 .main > .contact-container > .contact-box > a > span{
   font-size:.8rem;
   font-weight: 400;
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  0%{
+    opacity:0;
+  }
+
+  50%{
+
+  }
+
+  100%{
+    opacity:1;
+  }
 }
 
 .main > .contact-container > .contact-box > a > .contact-ot{
@@ -359,7 +374,10 @@ html{
     left:50%;
     transform:translateX(-50%) translateY(-50%);
     transition: .3s ease-in;
+
 }
+
+
 
 .main > .contact-container > .contact-box > a:hover > .contact-ot{
   width:130px;
@@ -524,11 +542,10 @@ html{
         top:-80%;
         left:50%;
         transform:translateX(-50%) translateY(-50%);
-        
+
     }
 
-
-
+    
     .main > .contact-container > .contact-scope{
         width:50vw;
         height:50vh;
@@ -540,9 +557,11 @@ html{
         flex-direction: column;
         justify-content: center;
     }
+
     .main >.contact-container > .contact-scope > .contact-inf-section div{
         font-size:0.7rem;
     }
+
     .main >.contact-container > .contact-scope > .contact-inf-section div:first-child{
         margin-top:55px;
     }
