@@ -1,4 +1,6 @@
 
+
+
 //Plugin
 gsap.registerPlugin(ScrollTrigger) 
 //End plugin
@@ -77,11 +79,13 @@ imgLoad.on('progress', function(){
 function updateProgress(){
   var target = (imgLoaded/imgTotal) * 100;
   var imageBox = $(".image-box");
+
   $progressBar.css({width:target + 90 +'px'});
   imageBox.css({scale:"4", rotate:"540deg", scale:"20"})
 
   if(target == 100){
     clearInterval(progressTimer);
+    
 
     $progressBar.delay(500).animate({opacity:100}, 250, function(){
     $container.animate({left:'-100%', opacity:'0'}, 300);
@@ -249,9 +253,6 @@ vimeoClose.click(function(){
 
   vimeo.setAttribute('src','https://player.vimeo.com/video/887994748?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479');
 });
-
-
-
 
 
 
