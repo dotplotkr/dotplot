@@ -1,0 +1,211 @@
+<div class="descriptions">
+                    <div class="descriptions-box active">
+                        <div class="description-head">
+                            <div>FILM</div>
+                        </div>
+                        <div class="description-body"><p>
+                            Video is the best way to express products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>DESIGN</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Design intuitively expresses the special features of products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>BRANDING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            We carry out brand communication through continuous messaging with a clear identity.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>PERFORMANCE</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Performance marketing is a basic means of promoting a brand to consumers and allows targeting based on data.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>CONSULTING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through consulting, we establish the most efficient strategy and carry out systematic execution based on planning.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>REPORT</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through reporting, we check whether the project has progressed well and come up with new plans and strategic directions.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head"><div>FILM</div></div>
+                        <div class="description-body"><p>
+                            Video is the best way to express products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>DESIGN</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Design intuitively expresses the special features of products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>BRANDING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            We carry out brand communication through continuous messaging with a clear identity.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>PERFORMANCE</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Performance marketing is a basic means of promoting a brand to consumers and allows targeting based on data.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>CONSULTING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through consulting, we establish the most efficient strategy and carry out systematic execution based on planning.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>REPORT</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through reporting, we check whether the project has progressed well and come up with new plans and strategic directions.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head"><div>FILM</div></div>
+                        <div class="description-body"><p>
+                            Video is the best way to express products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>DESIGN</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Design intuitively expresses the special features of products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>BRANDING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            We carry out brand communication through continuous messaging with a clear identity.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>PERFORMANCE</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Performance marketing is a basic means of promoting a brand to consumers and allows targeting based on data.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>CONSULTING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through consulting, we establish the most efficient strategy and carry out systematic execution based on planning.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>REPORT</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through reporting, we check whether the project has progressed well and come up with new plans and strategic directions.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>FILM</div>
+                        </div>
+                        <div class="description-body"><p>
+                            Video is the best way to express products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>DESIGN</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Design intuitively expresses the special features of products and services.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>BRANDING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            We carry out brand communication through continuous messaging with a clear identity.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>PERFORMANCE</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Performance marketing is a basic means of promoting a brand to consumers and allows targeting based on data.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>CONSULTING</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through consulting, we establish the most efficient strategy and carry out systematic execution based on planning.</p>
+                        </div>
+                    </div>
+                    <div class="descriptions-box">
+                        <div class="description-head">
+                            <div>REPORT</div>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                            Through reporting, we check whether the project has progressed well and come up with new plans and strategic directions.</p>
+                        </div>
+                    </div>
+                    
+                </div>

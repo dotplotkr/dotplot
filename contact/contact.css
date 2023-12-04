@@ -347,7 +347,7 @@ html{
 .main > .contact-container > .contact-box > a > span{
   font-size:.8rem;
   font-weight: 400;
-  animation:blink 1s infinite;
+  
 }
 
 @keyframes blink{
@@ -374,7 +374,7 @@ html{
     left:50%;
     transform:translateX(-50%) translateY(-50%);
     transition: .3s ease-in;
-
+    animation:blink 1s infinite;
 }
 
 
@@ -383,7 +383,7 @@ html{
   width:130px;
   height:130px;
   mix-blend-mode: difference;
-  
+  animation:none;
   
   }
 
