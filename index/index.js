@@ -119,14 +119,14 @@ gsap.from('.slogan-box-up', {
   y:100,
   opacity:0,
   duration:1,
-  delay:.5
+  delay:1
  });
  
  gsap.from('.slogan-box-down', {
    y:100,
    opacity:0,
    duration:1,
-   delay:1
+   delay:1.5
   });
 
   
