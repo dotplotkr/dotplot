@@ -1,11 +1,11 @@
-# frozen_string_literal: true
+frozen_string_literal: true
 
 source "https://rubygems.org"
 
-# gem "jekyll"
+ gem "jekyll"
 
 group :jekyllz_plugins do
-    
+
     gem "jekyll-feed"
     gem "jekyll-seo-tag"
     gem "jekyll-include-cache"
