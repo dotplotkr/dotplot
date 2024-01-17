@@ -1,4 +1,4 @@
-frozen_string_literal: true
+# frozen_string_literal: true
 
 source "https://rubygems.org"
 
@@ -11,5 +11,6 @@ group :jekyllz_plugins do
     gem "jekyll-include-cache"
     gem "minimal-mistakes-jekyll"
     gem "jekyll-data"
+    gem "jekyll-remote-theme"
 
 end
