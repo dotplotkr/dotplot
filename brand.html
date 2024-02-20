@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닷플랏 | DOTPLOT | Let's Make a Plot</title>
+    <link rel="icon" href="/source/img/DotplotFavicon.webp"/>
+    <meta name="description" content="이야기로 세상을 다채롭게. Let's make a plot.">
+    
+    <link rel="stylesheet" href="/brand/brand.css">
+    <script src="/brand/brand.js" defer></script>
+
+
+
+    <!-- opengraph -->
+    <meta property="og:title" content="DOTPLOT">
+    <meta property="og:image" content="https://raw.githubusercontent.com/dotplotkr/dotplot/master/source/img/DotplotOpengraph.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dotplot.kr">
+    <meta property="og:description" content="이야기로 세상을 다채롭게. Let's make a plot.">
+    <!-- End opengraph -->
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N95LQD2');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- End jquery -->
+
+
+
+
+    <!-- imagesloaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js" integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- End imagesloaded -->
+
+
+
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- End gsap -->
+
+
+
+    <!-- locomotive Scroll-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="/source/css/locomotive-scroll.css" defer>
+    <!-- End locomotive Scroll-->
+
+
+
+    <!-- ftc -->
+    <script language="JavaScript">
+        function onopen()
+        {
+        var url =
+        "http://www.ftc.go.kr/bizCommPop.do?wrkr_no="+7662401352;
+        window.open(url, "bizCommPop", "width=750, height=700;");
+        }
+    </script>
+    <!-- End ftc -->
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N95LQD2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+    <!-- ChannelIO -->
+    <script>
+        (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.")}var ch=function(){ch.c(arguments)};ch.q=[];ch.c=function(args){ch.q.push(args)};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x)}}if(document.readyState==="complete"){l()}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l)}})();
+
+        ChannelIO('boot', {
+        "pluginKey": "1f5c0ba8-0135-4a80-9d98-30d0906df7a7" // fill your plugin key
+  
+        });
+    </script>
+    <!-- End ChannelIO -->
+
+
+
+
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <!-- End Cursor -->
+
+
+
+
+
+    <!-- Loader -->    
+
+    <div class="progress" id="progress">
+        <span class="progress-text">Hello. Welcome to DOTPLOT</span> 
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- End Loader -->
+
+
+
+
+
+
+    <!-- Header -->
+    <header class="header">
+        <section class="header-logobox">
+            <a href="/index">
+                DOTPLOT
+            </a>
+        </section>
+        
+        <section class="header-menubox" id="menu">
+            <div class="menu-first" id="menu"></div>
+            <div class="menu-second" id="menu"></div>
+            <div class="menu-third" id="menu"></div>
+        </section>
+    </header>
+
+    <div class="menuSelector">
+        <div class="menuSelectorWrapper">
+            <div><a class="menu-film cursor-big" id="about" href="/index">ABOUT</mark></a></div>
+            <div><a class="menu-film cursor-big" id="film" href="/film">FILM</mark></a></div>
+            <div><a class="menu-design cursor-big" id="design" href="/design">DESIGN</a></div>
+            <div><a class="menu-contact cursor-big" id="contact"href="/contact">CONTACT</a></div>
+        </div>
+    </div>
+    
+    <!-- End Header -->
+
+
+
+
+
+
+    <!-- Main -->
+
+<div class="main">
+
+
+
+    <div class="area-1">
+        <div class="title-container">
+            <div class="number-box">
+                <div class="number">01
+                </div>
+            </div>
+            <div class="title-box">
+                <div class="title">
+                <b>어떤게</b> 우리 브랜드에 맞는
+                <br>
+                디자인인지 <b>확신하기에</b>
+                <br>
+                <b>애매하지 않으셨나요?</b>
+                </div>
+            </div>
+        </div> 
+
+        <div class="subtitle-container">
+
+            <div class="subtitle-wrapper-1">
+                <div class="point-box">
+                    <div class="point">
+                        <img src="source/img/brand/brandLogo.png" alt="">                        
+                    </div>
+                </div>
+                <div class="explain-box">
+                    <div class="explain-1">
+                        일방적인 소통이 아닌 함께하는 소통
+                    </div>
+                    <div class="explain-2">
+                        항상 클라이언트와의 원활한 소통을
+                        <br>
+                        우선시하여 온/오프라인 상담 및 미팅은
+                        <br>
+                        항시 열려 있습니다.
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtitle-wrapper-2">
+                <div class="point-box">
+                    <div class="point">                        
+                        <img src="source/img/brand/brandLogo.png" alt="">
+                    </div>
+                </div>
+                <div class="explain-box">
+                    <div class="explain-1">
+                        추상적인 언어를 구체적으로 연상 가능
+                    </div>
+                    
+                    <div class="explain-2">
+                        왜 우리 브랜드에게 맞는 디자인인지
+                        <br>
+                        이해하기 쉽도록 구체적인 언어와
+                        <br>
+                        이미지로 연상할 수 있게끔 설명드립니다.
+                    </div>
+                </div>
+            </div>
+
+            </div> 
+        </div>
+
+
+
+        <div class="area-2">
+            <div class="title-container">
+                <div class="number-box">
+                    <div class="number">02
+                    </div>
+                </div>
+                <div class="title-box">
+                    <div class="title">
+                    <b>브랜드의</b> 성장단계에 따라
+                    <br>
+                    필요한 <b>브랜드 디자인이</b>
+                    <br>
+                    <b>다르다는 것을 알고 계셨나요?</b>
+                    </div>
+                </div>
+            </div> 
+    
+            <div class="subtitle-container">
+    
+                <div class="subtitle-wrapper-1">
+                    <div class="point-box">
+                        <div class="point">
+                            <img src="source/img/brand/brandLogo.png" alt="">                        
+                        </div>
+                    </div>
+                    <div class="explain-box">
+                        <div class="explain-1">
+                            업종 및 규모에 따른 맞춤형 디자인 제공
+                        </div>
+                        <div class="explain-2">
+                            일관된 형식과 디자인이 아닌
+                            <br>
+                            업종 및 규모에 맞춰 컨설팅을 통해
+                            <br>
+                            맞춤형 브랜드 디자인을 제공합니다.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="subtitle-wrapper-2">
+                    <div class="point-box">
+                        <div class="point">                        
+                            <img src="source/img/brand/brandLogo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="explain-box">
+                        <div class="explain-1">
+                            초기 브랜드 혹은 리브랜딩에 따른 맞춤 솔루션
+                        </div>
+                        
+                        <div class="explain-2">
+                            초기 브랜드 혹은 리브랜딩에 따라
+                            <br>
+                            맞춤 솔루션을 제공합니다.
+                        </div>
+                    </div>
+                </div>
+    
+            </div> 
+
+            </div>
+
+
+            <div class="area-3">
+                <div class="title-container">
+                    <div class="number-box">
+                        <div class="number">03
+                        </div>
+                    </div>
+                    <div class="title-box">
+                        <div class="title">
+                        <b>결과물만 제공 받아</b> 활용할 때
+                        <br>
+                        난감한 적 <b>없으셨나요?</b>
+                        </div>
+                    </div>
+                </div> 
+        
+                <div class="subtitle-container">
+        
+                    <div class="subtitle-wrapper-1">
+                        <div class="point-box">
+                            <div class="point">
+                                <img src="source/img/brand/brandLogo.png" alt="">                        
+                            </div>
+                        </div>
+                        <div class="explain-box">
+                            <div class="explain-1">
+                                사용 가이드북 제공
+                            </div>
+                            <div class="explain-2">
+                                최종 작업물이 완료된 후 자사에게
+                                <br>
+                                제공하는 디자인 사용 가이드북을
+                                <br>
+                                드립니다
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="subtitle-wrapper-2">
+                        <div class="point-box">
+                            <div class="point">                        
+                                <img src="source/img/brand/brandLogo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="explain-box">
+                            <div class="explain-1">
+                                작업 완료 후 6개월 간의 AS기간
+                            </div>
+                            
+                            <div class="explain-2">
+                                더불어, 작업이 마무리 된 후 6개월 동안
+                                <br>
+                                브랜드 디자인의 관리를 도와 크고 작은
+                                <br>
+                                조언을 얻으실 수 있습니다.
+                            </div>
+                        </div>
+                    </div>
+        
+                </div> 
+        </div>
+        
+                <div class="area-4">
+                    <div class="title-container">
+                        <div class="title-box">
+                            <div class="title">PROCESS
+                            </div>
+                        </div>    
+                        <div class="point-box">
+                            <img src="/source/img/brand/brandFigure.png" alt="">
+                        </div>
+                    </div> 
+            
+                    <div class="process-container">
+                        <div class="process-box">
+                                <div class="process">
+                                    01 온라인 의뢰서 작성 -- 02 온라인 상담 -- 03 아이데이션 
+                                    <br>- 04 시안 제작 -- 05 디벨롭 -- 06 가이드라인 제공
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-5">
+                    <div class="process-container-1">
+                        <div class="title-box">
+                            <div class="number">01
+                            </div>
+                            <div class="title">
+                                온라인 의뢰서 작성
+                            </div>
+                        </div>
+                            
+                        <div class="subtitle-box">
+                            <div class="subtitle">: 브랜드 내부 인터뷰
+                            </div>
+                            <div class="explain">
+                                브랜드에 대해 말해주세요. 특장점, 가치관 등 브랜드에 대한
+                                <br>이해가 바탕이 되어야 좋은 디자인이 나올 수 있어요
+                            </div>
+                        </div>
+
+                    </div> 
+            
+                    <div class="process-container-2">
+                        <div class="example-box">
+                                <img src="/source/img/brand/Test_A.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-6">
+                    <div class="process-container-1">
+                        <div class="title-box">
+                            <div class="number">02
+                            </div>
+                            <div class="title">
+                                온라인 상담
+                            </div>
+                        </div>
+                            
+                        <div class="subtitle-box">
+                            <div class="subtitle">: 브랜드 컨셉 개발 및 선정
+                            </div>
+                            <div class="explain">
+                                작성한 의뢰서를 바탕으로 견적과 일정을 조율해요
+                                <br>
+                                브랜드의 업종 및 규모 그리고 초기 브랜드 or 리브랜딩 등
+                                <br>
+                                브랜드 마다의 상황에 맞춰 상담 후 작업을 진행해요.
+                            </div>
+                        </div>
+
+                    </div> 
+            
+                    <div class="process-container-2">
+                        <div class="example-box">
+                            <img src="/source/img/brand/Test_B.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-7">
+                    <div class="process-container-1">
+                        <div class="title-box">
+                            <div class="number">03
+                            </div>
+                            <div class="title">
+                                아이데이션
+                            </div>
+                        </div>
+                            
+                        <div class="subtitle-box">
+                            <div class="subtitle">: 브랜드 컨셉 개발 및 선정
+                            </div>
+                            <div class="explain">
+                                자사 / 경쟁사 분석 및 리서치를 통해 컨셉을 선정하고 이를 원활하게
+                                <br>
+                                커뮤니케이션 하기 위해 이미지를 적극적으로 활용하여 해당 브랜드의
+                                <br>
+                                페르소나를 함께 구체적으로 연상해보며 미팅을 진행해요.
+                            </div>
+                        </div>
+
+                    </div> 
+            
+                    <div class="process-container-2">
+                        <div class="example-box">
+                            <img src="/source/img/brand/Test_C.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-8">
+                    <div class="process-container-1">
+                        <div class="title-box">
+                            <div class="number">04
+                            </div>
+                            <div class="title">
+                                시안 제작
+                            </div>
+                        </div>
+                            
+                        <div class="subtitle-box">
+                            <div class="subtitle">: 브랜드 컨셉 토대로 1차 시안 공유
+                            </div>
+                            <div class="explain">
+                                제작된 브랜드 컨셉을 토대로 브랜드의 로고 및 심볼
+                                <br>그리고 키비쥬얼 등을 제작해요. 1차로 제작된 시안을
+                                <br>함께 보며 피드백을 받아요.
+                            </div>
+                        </div>
+
+                    </div> 
+            
+                    <div class="process-container-2">
+                        <div class="example-box">
+                            <img src="/source/img/brand/Test_D.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-9">
+                    <div class="process-container-1">
+                        <div class="title-box">
+                            <div class="number">05
+                            </div>
+                            <div class="title">
+                                디벨롭
+                            </div>
+                        </div>
+                            
+                        <div class="subtitle-box">
+                            <div class="subtitle">: 디자인 어플리케이션을 포함한 2차 시안 공유
+                            </div>
+                            <div class="explain">
+                                1차 시안의 피드백을 토대로 작업물을 수정 후 선정한 개발 항목의
+                                <br>종류에 따라 우리 브랜드의 디자인 어플리케이션을 추가로 제작해요
+                            </div>
+                        </div>
+
+                    </div> 
+            
+                    <div class="process-container-2">
+                        <div class="example-box">
+                            <img src="/source/img/brand/Test_E.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area-10">
+                    <div class="process-container-1">
+                        <div class="title-box">
+                            <div class="number">06
+                            </div>
+                            <div class="title">
+                                가이드라인 제공
+                            </div>
+                        </div>
+                            
+                        <div class="subtitle-box">
+                            <div class="subtitle">: 작업 완료 시 '원본 파일 + 사용 가이드북'제공
+                            </div>
+                            <div class="explain">
+                                작업이 마무리 된 후 제작된 디자인을 활용하는 방법을 설명하는
+                                <br>사용 가이드북을 제공해요! 또한, 6개월 동안 브랜드 디자인의
+                                <br>관리를 도와 크고 작은 조언을 얻을 수 있어요
+                            </div>
+                        </div>
+
+                    </div> 
+            
+                    <div class="process-container-2">
+                        <div class="example-box">
+                            <img src="/source/img/brand/Test_F.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="area-11">
+                    <div class="title-container">
+                        <div class="title-box">
+                            <div class="title">PORTFOLIO
+                            </div>
+                        </div>    
+                        <div class="portfolio-wrapper">
+                            <div class="portfolio-text-box">
+                                포트폴리오
+                                 <br>
+                                더 보러가기
+                            </div>
+                            <div class="portfolio-href-box">
+                                <div class="portfolio-href-1">
+                                </div>
+                                <div class="portfolio-href-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+            
+                    <div class="process-container">
+                        <div class="process-box">
+                                <div class="process">
+                                    의뢰서 작성 시에 "000브랜드처럼 럭셔리한 무드로 만들고 싶어요." 혹은 "000 브랜드와 같은
+                                    <br>
+                                    디자인 어플리케이션을 만들고 싶어요."등으로 얘기해주시면 더 원활한 소통이 될 것 같습니다
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+
+                <div class="area-12">
+                    <div class="portfolio-container">
+
+                        <div class="portfolio-box">
+                            <a class="portfolio" href="">
+                                <img src="/source/img/brand/Test_FA.png" alt=""></a>
+                        </div>
+
+                        <div class="portfolio-box">
+                            <a class="portfolio" href="">
+                                <img src="/source/img/brand/Test_FB.png" alt=""></a>
+                        </div>
+
+                        <div class="portfolio-box">
+                            <a class="portfolio" href="">
+                                <img src="/source/img/brand/Test_FC.png" alt=""></a>
+                        </div>
+
+                        <div class="portfolio-box">
+                            <a class="portfolio" href="">
+                                <img src="/source/img/brand/Test_FD.png" alt=""></a>
+                        </div>
+
+                    </div> 
+                </div>
+
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-infBox">
+                <div class="co-inf cursor-big" onclick="onopen();">ⓒ2024. DOTPLOT. all rights reserved.
+                </div>
+                <div class="web-inf">
+                    <div>Seoul Jung-gu Sejongdae-ro 19-gil 16</div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>070. 8098. 2655.</div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>contact@dotplot.kr</div>
+                   </div>
+        </div>
+    </div>
+
+
+
+<!-- End Main -->
+</body>
+
+<img src="" alt="">
+</html>
