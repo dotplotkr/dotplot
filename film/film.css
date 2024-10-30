@@ -723,6 +723,147 @@ input[id="popup4"] + label + div > label {
 
   /* modal6 End */
 
+
+    /* modal 7 */
+    input[id="popup7"]{
+      display:none;
+    }
+  
+    input[id="popup7"] + label + div{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:501;
+    }
+  
+    input[id*="popup7"] + label + div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity:0;
+      visibility:hidden;
+      transition:all .5s;
+    }
+  
+    input[id*="popup7"]:checked + label + div{
+      opacity:1;
+      visibility:visible;
+      
+    }
+  
+    input[id="popup7"] + label + div > div{
+      position:fixed;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      width:72vw;
+      height:40.5vw;
+      z-index:1;
+    }
+  
+    input[id="popup7"] + label + div > div > iframe{
+      width:100%;
+      height:100%;
+    }
+  
+    input[id="popup7"] + label + div > div > label{
+      position:absolute;
+      color:white;
+      font-size:3rem;
+      top:50%;
+      right:-5%;
+      transform:translate(40%, -40%);
+      padding:20px;
+      border-radius:100%;
+      z-index:501;
+  
+    }
+  
+    input[id="popup7"] + label + div > label {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,.9);
+      z-index:1;
+    }
+  
+    /* modal7 End */
+
+
+      /* modal 8 */
+      input[id="popup8"]{
+        display:none;
+      }
+    
+      input[id="popup8"] + label + div{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:501;
+      }
+    
+      input[id*="popup8"] + label + div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity:0;
+        visibility:hidden;
+        transition:all .5s;
+      }
+    
+      input[id*="popup8"]:checked + label + div{
+        opacity:1;
+        visibility:visible;
+        
+      }
+    
+      input[id="popup8"] + label + div > div{
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width:72vw;
+        height:40.5vw;
+        z-index:1;
+      }
+    
+      input[id="popup8"] + label + div > div > iframe{
+        width:100%;
+        height:100%;
+      }
+    
+      input[id="popup8"] + label + div > div > label{
+        position:absolute;
+        color:white;
+        font-size:3rem;
+        top:50%;
+        right:-5%;
+        transform:translate(40%, -40%);
+        padding:20px;
+        border-radius:100%;
+        z-index:501;
+    
+      }
+    
+      input[id="popup8"] + label + div > label {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,.9);
+        z-index:1;
+      }
+    
+      /* modal8 End */
+
+
   .workBox > div{
     scroll-snap-align: start;
     position:relative;
@@ -735,7 +876,7 @@ input[id="popup4"] + label + div > label {
     box-sizing: border-box;
   }
 
-  .workBox div:nth-of-type(6){
+  .workBox div:nth-of-type(8){
     margin-bottom:15vh;
 
   }
@@ -1177,9 +1318,105 @@ input[id="popup6"] + label + div > div > label{
 }
 /* modal 6 End*/
 
+/* 모달 윈도우 7 시작 */
+input[id="popup7"] + label + div > div{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:80vw;
+  height:80vh;
+  /*background-color: white;*/
+  z-index:2;
+}
+
+input[id="popup7"] + label + div > div > label{
+  position:absolute;
+  color:white;
+  font-size:2rem;
+  top:-30px;
+  right:40px;
+  padding:20px;
+  border-radius:100%;
+  z-index:1;
+
+}
 
 
+@media screen and (max-width:960px){
+  input[id="popup7"] + label + div > div{
+    width:96vw;
+    height:48vw;
+  }
+  
+  input[id="popup7"] + label + div > div > label{
+    top:-25px;
+    right:18px;
+  }
+}
 
+@media screen and (max-width:960px){
+  input[id="popup7"] + label + div > div{
+    width:96vw;
+    height:54vw;
+  }
+  
+  input[id="popup7"] + label + div > div > label{
+    top:-30px;
+    right:18px;
+  }
+}
+/* 모달 윈도우 7 끝 */
+
+/* 모달 윈도우 8 시작 */
+input[id="popup8"] + label + div > div{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:80vw;
+  height:80vh;
+  /*background-color: white;*/
+  z-index:2;
+}
+
+input[id="popup8"] + label + div > div > label{
+  position:absolute;
+  color:white;
+  font-size:2rem;
+  top:-30px;
+  right:40px;
+  padding:20px;
+  border-radius:100%;
+  z-index:1;
+
+}
+
+
+@media screen and (max-width:960px){
+  input[id="popup8"] + label + div > div{
+    width:96vw;
+    height:48vw;
+  }
+  
+  input[id="popup8"] + label + div > div > label{
+    top:-25px;
+    right:18px;
+  }
+}
+
+@media screen and (max-width:960px){
+  input[id="popup8"] + label + div > div{
+    width:96vw;
+    height:54vw;
+  }
+  
+  input[id="popup8"] + label + div > div > label{
+    top:-30px;
+    right:18px;
+  }
+}
+/* 모달 윈도우 8 끝 */
 
 /* 메인 정리 끝 */
 

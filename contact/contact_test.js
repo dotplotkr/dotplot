@@ -72,7 +72,9 @@ function updateProgress(){
 // End loader
 
 
-
+$('.contact-inf-address').click(function(){
+  $('.loader-container').toggleClass('displayFlex')
+});
 
 
 // Header

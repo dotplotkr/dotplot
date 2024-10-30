@@ -294,32 +294,85 @@ html{
 
 
 
-
-
-
-
-
-
+  
+  
+  /* main */
 
 .main{
     width:100vw;
     height:100vh;
     display:flex;
-    align-items: center;
-    flex-direction: column;
+    
 }
 
-.main > .contact-title{
-    margin-top:10vh;
+.loader-container{
+  z-index:200;
+  display:none;
+  position:absolute;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  border:1px solid red;
+  background-color:#0d0d0d;
+}
+
+
+.send-loader {
+  display:flex;
+  height: 10px;
+  aspect-ratio: 5;
+  --_g:no-repeat radial-gradient(farthest-side,#fff 94%,#ffffff00);
+  background: var(--_g),var(--_g),var(--_g),var(--_g);
+  background-size: 20% 100%;
+  animation:
+    l40-1 .75s infinite alternate,
+    l40-2 1.5s infinite alternate; 
+}
+@keyframes l40-1 {
+  0%,
+  10% {background-position: 0 0,0 0,0 0,0 0}
+  33% {background-position: 0 0,calc(100%/3) 0,calc(100%/3) 0,calc(100%/3) 0}
+  66% {background-position: 0 0,calc(100%/3) 0,calc(2*100%/3) 0,calc(2*100%/3) 0}
+  90%,
+  100% {background-position: 0 0,calc(100%/3) 0,calc(2*100%/3) 0,100% 0}
+}
+@keyframes l40-2 {
+  0%,49.99% {transform: scale( 1)}
+  50%,100%  {transform: scale(-1)}
+}
+
+
+.main > .contact-title-box{
+  border:1px solid blue;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  height:90%;
+  margin-top:10vh;
+
+}
+
+.main > .contact-title-box > .contact-title{
     color:#f2f0f0;
 
     font-family: "aktiv-grotesk", sans-serif;
     font-weight: 600;
     font-style: normal;
 
-    font-size:10rem;
-    width:80vw;
+    font-size:5rem;
+    width:100%;
     text-align: center;
+
+    border:1px solid red;
+}
+
+.main > .contact-title-box > .img-box{
+  display:flex;
+  height:50%;
+  width:50%;
+  border:1px solid white;
 }
 
 .main > .contact-container{
@@ -340,71 +393,13 @@ html{
     top:20%;
 }
 
-.main > .contact-container > .contact-box > a{
-    position:relative;
-    width:30px;
-    height:30px;
-    color:#f2f0f0;
-    top:70%;
-    left:20%;
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 600;
-}
-
-.main > .contact-container > .contact-box > a > span{
-  font-size:.8rem;
-  font-weight: 400;
-  
-}
-
-@keyframes blink{
-  0%{
-    opacity:0;
-  }
-
-  50%{
-
-  }
-
-  100%{
-    opacity:1;
-  }
-}
-
-.main > .contact-container > .contact-box > a > .contact-ot{
-    width:10px;
-    height:10px;
-    background-color: #f2f0f0;
-    border-radius: 100%;
-    position:absolute;
-    top:-50%;
-    left:50%;
-    transform:translateX(-50%) translateY(-50%);
-    transition: .3s ease-in;
-    animation:blink 1s infinite;
-}
-
-
-
-.main > .contact-container > .contact-box > a:hover > .contact-ot{
-  width:130px;
-  height:130px;
-  mix-blend-mode: difference;
-  animation:none;
-  
-  }
-
-  
-.main >.contact-container > .contact-scope > .contact-inf-section > .contact-inf-mail:hover{
-  text-decoration: underline;
-}
-
 
 
 .main > .contact-container > .contact-scope{
-    width:50vw;
-    height:50vh;
     display:flex;
+    margin-top:10vh;
+    width:100%;
+    height:90%;
     font-family: "aktiv-grotesk", sans-serif;
     font-weight: 300;
     font-size:1rem;
@@ -412,13 +407,41 @@ html{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    border:1px solid green;
 }
 
-.main >.contact-container > .contact-scope > .contact-scope-section{
-    width:80%;
-    height:20%;
-    text-align: justify;
+.main > .contact-container > .contact-scope > .contact-form{
+  display:flex;
+  height:80%;
+  width:100%;
+  border:1px solid white;
+}
 
+.main > .contact-container > .contact-scope > .contact-form{
+  display:flex;
+  flex-direction: column;
+}
+
+.main > .contact-container > .contact-scope > .contact-form > form > input:nth-child(1){
+  display:flex;
+  width: 500px;
+  height: 20px;
+  border: 1px solid red;
+  margin:15px;
+}
+
+.main > .contact-container > .contact-scope > .contact-form > form > input:nth-child(2){
+  display:flex;
+  width: 500px;
+  height: 250px;
+  margin:15px;
+  border: 1px solid blue;
+}
+
+.main > .contact-container > .contact-scope > .contact-form > form > button{
+  display: flex;
+  margin:15px;
+  border:1px solid red;
 }
 
 .main >.contact-container > .contact-scope > .contact-inf-section div{
@@ -574,6 +597,12 @@ html{
         margin-top:55px;
     }
 }
+
+
+
+
+
+
   /* Footer */
 
   .footer{
@@ -601,3 +630,9 @@ html{
   }
 
   /* End Footer */
+
+
+  .displayFlex{
+    display:flex;
+    flex-direction: column;
+  }

@@ -171,6 +171,31 @@ gsap.from('.scroll6', {
   duration: 4,
 });
 
+gsap.from('.scroll7', {
+  scrollTrigger:{
+    trigger:'.scroll7',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4,
+});
+
+gsap.from('.scroll8', {
+  scrollTrigger:{
+    trigger:'.scroll8',
+    scrub:true,
+    start:"top +=80%",
+    end:"bottom +=100%",
+    markers:false
+  },
+  opacity:0,
+  x: -1000,
+  duration: 4,
+});
 //ScrollTriger end
 
 
@@ -238,6 +263,26 @@ $('#vpause6-1').click(function(){
 
 $('#vpause6-2').click(function(){
   video6.setAttribute('src','https://player.vimeo.com/video/865837820?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+});
+
+const video7 = document.getElementById('video7');
+
+$('#vpause7-1').click(function(){
+  video7.setAttribute('src','https://player.vimeo.com/video/1024587855?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+});
+
+$('#vpause7-2').click(function(){
+  video7.setAttribute('src','https://player.vimeo.com/video/1024587855?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+});
+
+const video8 = document.getElementById('video8');
+
+$('#vpause8-1').click(function(){
+  video7.setAttribute('src','https://player.vimeo.com/video/1021729328?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+});
+
+$('#vpause8-2').click(function(){
+  video7.setAttribute('src','https://player.vimeo.com/video/1021729328?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 });
 //VideoPause end
 
