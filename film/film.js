@@ -278,11 +278,11 @@ $('#vpause7-2').click(function(){
 const video8 = document.getElementById('video8');
 
 $('#vpause8-1').click(function(){
-  video7.setAttribute('src','https://player.vimeo.com/video/1021729328?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+  video8.setAttribute('src','https://player.vimeo.com/video/1021729328?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 });
 
 $('#vpause8-2').click(function(){
-  video7.setAttribute('src','https://player.vimeo.com/video/1021729328?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
+  video8.setAttribute('src','https://player.vimeo.com/video/1021729328?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479');
 });
 //VideoPause end
 
