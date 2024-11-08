@@ -72,9 +72,6 @@ function updateProgress(){
 // End loader
 
 
-$('.contact-inf-address').click(function(){
-  $('.loader-container').toggleClass('displayFlex')
-});
 
 
 // Header
@@ -105,4 +102,40 @@ function parallax(e){
 
   });
 }
+
+
+
+
+
+
+
+function loading(){
+
+var name = document.getElementById('name');
+var email = document.getElementById('email');
+
+var at = email.value.match('@')
+
+if(
+  name.value === '' || email.value === '' || at === null){
+
+}
+
+   else{
+    setTimeout(() => {
+    name.value = '';
+    email.value = '';
+    }, '1000');
+    
+     $('.loader-container').toggleClass('displayFlex');
+
+    
+   }
+ }
+
+
+  $('.loader-container').click(function(){
+    $('.loader-container').toggleClass('displayFlex')
+  });
+
 

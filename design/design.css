@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+@import url("https://use.typekit.net/ipm5esh.css");
 
 /* Nomalize start */
 * {
     box-sizing: border-box;
+}
+
+*::selection {
+
+  background-color: #E8642B;
+
 }
 
 body, ul, li{
@@ -137,8 +143,8 @@ html{
 
 
 
-  /* Header */
-  .header{
+   /* Header */
+   .header{
     position:fixed;
     display:flex;
     align-items: center;
@@ -148,30 +154,69 @@ html{
     z-index: 101;
     padding:0 30px;
     }
-  
-  .header-logobox{
-    z-index: 300;
-  }
+      
+    .header-logobox{
+      z-index: 300;
+    }
 
-  .header-logobox > a{
-    font-family:'Roboto','sans-serif';
-    font-weight: 700;
-    color:white;
-    vertical-align: middle;
-    font-size:1.2rem;
-    padding:3px;
-    z-index: 300;
-  }
+    .header-logobox > a{
+      
+      color:white;
+      vertical-align: middle;
+      padding:3px;
+      z-index: 300;
+
+      display:flex;
+      align-items: center;
+      
+    }
+
+    .header-logobox > a > img{
+      
+      width:80px;
+    }
  
+
   .header-menubox{
     display:flex;
-    flex-direction: column;
+      
+    justify-content: space-between;
+    align-items:center;
+    height:30px;
+    width:80px;
+    position: relative;
+    z-index: 201;
+
+  }
+
+  .header-menu-en{
+    display:flex;
+    
+    align-items: center;
+    height:30px;
+
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 600;
+    font-size:1rem;
+    color:#f2f0f0;
+    
+    transition: .3s;
+  }
+
+  .header-menubox:hover > .header-menu-en{
+    font-size:1.3rem;
+    
+    transition: .5s;
+  }
+
+  .header-menu-dot{
+    display:flex;
+    
     justify-content: space-around;
     align-items:center;
     height:30px;
     width:30px;
-    position: relative;
-    z-index: 201;
+
   }
 
 
@@ -203,18 +248,18 @@ html{
     transition: all 1s;
   }
 
-  .header-menubox:hover > div:nth-child(1){
+  .header-menubox:hover > .header-menu-dot > .menu-first{
     display:none;
   }
 
-  .header-menubox:hover > div:nth-child(3){
+  .header-menubox:hover > .header-menu-dot > .menu-third{
     display:none;
   }
 
-  .header-menubox:hover > div:nth-child(2){
+  .header-menubox:hover > .header-menu-dot > .menu-second{
     width:25px;
     height:25px;
-  border-radius: 100%;
+    border-radius: 100%;
   }
 
   .scale{
@@ -248,6 +293,7 @@ html{
 
 .menuSelectorWrapper{
   display:none;
+  flex-direction: column;
   font-family:'Roboto','sans-serif';
   font-weight:700;
   justify-content: center;
@@ -265,10 +311,7 @@ html{
   font-size .5s;
 }
 
-.displayFlex{
-  display:flex;
-  flex-direction: column;
-}
+
   
   /* End Header */
 

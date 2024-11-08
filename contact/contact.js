@@ -4,10 +4,6 @@ gsap.registerPlugin(ScrollTrigger);
 //End Plugin
 
 
-
-
-
-
 //Cursor
 const $cursor = $('.cursor');
 
@@ -84,6 +80,7 @@ $('.header-menubox').click(function(){
 });
 //End header
 
+//parallax
 
 document.addEventListener("mousemove", parallax);
 
@@ -98,3 +95,30 @@ function parallax(e){
 
   });
 }
+
+//End parallax
+
+// fomrsubmit
+
+
+
+  
+
+    // End fomrsubmit
+
+    const conCard = document.getElementById('contact-card-container');
+
+    $('.contact').click(function changeId(){
+
+      conCard.setAttribute('id','displayFlex')
+      
+    })
+
+    $('.close-button').click(function changeId(){
+
+      conCard.setAttribute('id','contact-card-container')
+      
+    })
+
+
+    

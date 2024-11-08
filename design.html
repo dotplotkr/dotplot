@@ -113,20 +113,6 @@
 
 
 
-<!-- ChannelIO -->
-    <script>
-        (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.")}var ch=function(){ch.c(arguments)};ch.q=[];ch.c=function(args){ch.q.push(args)};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x)}}if(document.readyState==="complete"){l()}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l)}})();
-
-        ChannelIO('boot', {
-        "pluginKey": "1f5c0ba8-0135-4a80-9d98-30d0906df7a7" // fill your plugin key
-  
-        });
-    </script>
-<!-- End ChannelIO -->
-
-
-
-
 
 <!-- Cursor -->
 <div class="cursor"></div>
@@ -148,34 +134,35 @@
 
 
 
-<!-- Header -->
-<header class="header">
-    <section class="header-logobox">
-        <a href="/index">
-            DOTPLOT
-        </a>
-    </section>
-    
-    <section class="header-menubox" id="menu">
-        <div class="menu-first" id="menu"></div>
-        <div class="menu-second" id="menu"></div>
-        <div class="menu-third" id="menu"></div>
-    </section>
-</header>
+    <!-- Header -->
+    <header class="header">
+        <section class="header-logobox">
+            <a href="/index">
+                <img src="/source/img/DotplotLogo.webp" alt="">
+            </a>
+        </section>
+        <section class="header-menubox" id="menu">
+            <div class="header-menu-en">
+                <p>menu</p>
+            </div>
+            <div class="header-menu-dot" id="menu">
+                <div class="menu-first" id="menu"></div>
+                <div class="menu-second" id="menu"></div>
+                <div class="menu-third" id="menu"></div>
+            </div>
+        </section>
+    </header>
 
-<div class="menuSelector">
-    <div class="menuSelectorWrapper">
-        <div><a class="menu-film cursor-big" id="about" href="/index">ABOUT</mark></a></div>
-        <div><a class="menu-film cursor-big" id="film" href="/film">FILM</mark></a></div>
-        <div><a class="menu-design cursor-big" id="design" href="/design">DESIGN</a></div>
-        <div><a class="menu-contact cursor-big" id="contact"href="/contact">CONTACT</a></div>
+    <div class="menuSelector">
+        <div class="menuSelectorWrapper">
+            <div><a class="menu-film cursor-big" id="about" href="/index">ABOUT</mark></a></div>
+            <div><a class="menu-film cursor-big" id="film" href="/film">FILM</mark></a></div>
+            <div><a class="menu-design cursor-big" id="design" href="/design">DESIGN</a></div>
+            <div><a class="menu-contact cursor-big" id="contact"href="/contact">CONTACT</a></div>
+        </div>
     </div>
-</div>
-
-
-
-
-<!-- End Header -->
+    
+    <!-- End Header -->
 
 
 

@@ -172,6 +172,7 @@ html{
     height:100px;
     z-index: 101;
     padding:0 50px;
+    border: 1px solid blue;
 
 }
   
@@ -193,8 +194,8 @@ html{
  
   .header-logobox > a > img{
     
-    width:10%;
-}
+    width:80px;
+  }
 
   .header-menubox{
     display:flex;
@@ -314,12 +315,25 @@ html{
   width:100vw;
   height:100vh;
   border:1px solid red;
+}
+
+.send-background{
+  z-index:200;
+  display:flex;
+  position:absolute;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  opacity: 70%;
+  border:10px solid red;
   background-color:#0d0d0d;
 }
 
-
 .send-loader {
   display:flex;
+  z-index:201;
+  opacity: 100%;
   height: 10px;
   aspect-ratio: 5;
   --_g:no-repeat radial-gradient(farthest-side,#fff 94%,#ffffff00);
@@ -343,116 +357,199 @@ html{
 }
 
 
-.main > .contact-title-box{
-  border:1px solid blue;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  width:100%;
-  height:90%;
-  margin-top:10vh;
-
-}
-
-.main > .contact-title-box > .contact-title{
-    color:#f2f0f0;
-
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
-    font-size:5rem;
-    width:100%;
-    text-align: center;
-
-    border:1px solid red;
-}
-
-.main > .contact-title-box > .img-box{
-  display:flex;
-  height:50%;
-  width:50%;
-  border:1px solid white;
-}
-
 .main > .contact-container{
     display:flex;
-    width:80vw;
+    width:100vw;
+    height:100vw;
 }
 
 .main > .contact-container > .contact-box{
-    width:50vw;
-    height:50vh;
-}
-
-.main > .contact-container > .contact-box > img{
-    margin-left:10vw;
-    position:absolute;
-    width:20%;
-    left:10%;
-    top:20%;
-}
-
-
-
-.main > .contact-container > .contact-scope{
     display:flex;
-    margin-top:10vh;
+    margin-top:100px;
+    height:calc(100vh - 100px);
     width:100%;
-    height:90%;
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 300;
+    flex-direction: column;
+    align-items:center;
+    border:1px solid blue;
+}
+
+.main > .contact-container > .contact-box > .contact-title-section{
+  display:flex;
+  width:100%;
+  height:200px;
+  
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 600;
+  font-size:1rem;
+  color:#f2f0f0;
+
+  align-items: center;
+  justify-content: center;
+  border:1px solid red;
+
+  text-align: center;
+}
+
+.main > .contact-container > .contact-box > .contact-title-section > .contact-title{
+  line-height:2;
+}
+
+
+.contact-checkbox{
+  border:1px solid green;
+  display:flex;
+}
+
+.main > .contact-container > .contact-box > .contact-form-section{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 500px);
+  width:100%;
+
+  font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 600;
     font-size:1rem;
     color:#f2f0f0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    border:1px solid green;
+
+
+  border:1px solid red;
+
+  
 }
 
-.main > .contact-container > .contact-scope > .contact-form{
+input[id="checkbox-1"]{
+  display:none;
+
+}
+input[id="checkbox-1"]:checked + label > .checkbox-1{
+  background-color: red;
+  
+}
+
+.checkbox-1{
   display:flex;
-  height:80%;
-  width:100%;
-  border:1px solid white;
+  border-radius: 5%;
+  background-color:#F2F0F0;
+  color:#0d0d0d;
+  font-size:1.5rem;
+  width:100px;
+  height:50px;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.main > .contact-container > .contact-scope > .contact-form{
+
+input[id="checkbox-2"]{
+  display:none;
+
+}
+input[id="checkbox-2"]:checked + label > .checkbox-2{
+  background-color: red;
+  
+}
+
+
+.checkbox-2{
   display:flex;
-  flex-direction: column;
+  border-radius: 5%;
+  background-color:#F2F0F0;
+  color:#0d0d0d;
+  font-size:1.5rem;
+  width:100px;
+  height:50px;
+  align-items: center;
+  justify-content: center;
+  
+  
 }
 
-.main > .contact-container > .contact-scope > .contact-form > form > input:nth-child(1){
+input[id="checkbox-3"]{
+  display:none;
+
+}
+input[id="checkbox-3"]:checked + label > .checkbox-3{
+  background-color: red;
+  
+}
+
+
+.checkbox-3{
+  display:flex;
+  border-radius: 5%;
+  background-color:#F2F0F0;
+  color:#0d0d0d;
+  font-size:1.5rem;
+  width:100px;
+  height:50px;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+input[id="checkbox-4"]{
+  display:none;
+
+}
+input[id="checkbox-4"]:checked + label > .checkbox-4{
+  background-color: red;
+  
+}
+
+
+.checkbox-4{
+  display:flex;
+  border-radius: 5%;
+  background-color:#F2F0F0;
+  color:#0d0d0d;
+  font-size:1.5rem;
+  width:100px;
+  height:50px;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.main > .contact-container > .contact-box > .contact-form-section > .contact-form > form > input:nth-child(1){
   display:flex;
   width: 500px;
   height: 20px;
-  border: 1px solid red;
   margin:15px;
 }
 
-.main > .contact-container > .contact-scope > .contact-form > form > input:nth-child(2){
+.main > .contact-container > .contact-box > .contact-form-section > .contact-form > form > input:nth-child(2){
   display:flex;
   width: 500px;
-  height: 250px;
-  margin:15px;
-  border: 1px solid blue;
+  margin:15px
 }
 
-.main > .contact-container > .contact-scope > .contact-form > form > button{
+.main > .contact-container > .contact-box > .contact-form-section > .contact-form > form >button{
   display: flex;
   margin:15px;
+}
+
+.main >.contact-container > .contact-box > .contact-inf-section{
+  width:100%;
+  height:200px;
   border:1px solid red;
 }
 
-.main >.contact-container > .contact-scope > .contact-inf-section div{
+.main >.contact-container > .contact-box > .contact-inf-section div{
     margin-top:20px;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 600;
+    font-size:1rem;
+    color:#f2f0f0;
 }
 
-.main >.contact-container > .contact-scope > .contact-inf-section div:first-child > a > span{ font-weight:900;
+.main >.contact-container > .contact-box > .contact-inf-section div:first-child > a > span{ font-weight:900;
     
 }
 
-.main >.contact-container > .contact-scope > .contact-inf-section div:last-child > span{
+.main >.contact-container > .contact-box > .contact-inf-section div:last-child > span{
     font-weight:900;
 }
 
@@ -509,7 +606,7 @@ html{
         
     }
 
-    .main > .contact-container > .contact-scope{
+    .main > .contact-container > .contact-box{
         width:50vw;
         height:50vh;
         display:flex;
@@ -520,64 +617,17 @@ html{
         flex-direction: column;
         justify-content: center;
     }
-    .main >.contact-container > .contact-scope > .contact-inf-section div:first-child{
+    .main >.contact-container > .contact-box > .contact-inf-section div:first-child{
         margin-top:70px;
     }
 }
     
 @media screen and (max-width: 480px){
-    .main{
-        position:flex;
-        padding-top:10vh;
-    }
+    
 
-    .main > .contact-title{
-        margin-top:10vh;
-        color:#f2f0f0;
-        font-family: "aktiv-grotesk", sans-serif;
-        font-weight:900;
-        font-size:4rem;
-        width:80vw;
-        text-align: center;
-    }
-
+    
+    
     .main > .contact-container > .contact-box{
-        width:50vw;
-        height:50vh;
-    }
-    
-    .main > .contact-container > .contact-box > img{
-        margin-left:10vw;
-        position:absolute;
-        width:30%;
-        left:10%;
-        top:45%;
-    }
-    .main > .contact-container > .contact-box > a{
-        position:relative;
-        width:30px;
-        height:30px;
-        color:#f2f0f0;
-        top:50%;
-        left:-10%;
-        font-family: "aktiv-grotesk", sans-serif;
-        font-size:.8rem;
-    }
-    
-    .main > .contact-container > .contact-box > a > .contact-ot{
-        width:10px;
-        height:10px;
-        background-color: #f2f0f0;
-        border-radius: 100%;
-        position:absolute;
-        top:-80%;
-        left:50%;
-        transform:translateX(-50%) translateY(-50%);
-
-    }
-
-    
-    .main > .contact-container > .contact-scope{
         width:50vw;
         height:50vh;
         display:flex;
@@ -589,11 +639,11 @@ html{
         justify-content: center;
     }
 
-    .main >.contact-container > .contact-scope > .contact-inf-section div{
+    .main >.contact-container > .contact-box > .contact-inf-section div{
         font-size:0.7rem;
     }
 
-    .main >.contact-container > .contact-scope > .contact-inf-section div:first-child{
+    .main >.contact-container > .contact-box > .contact-inf-section div:first-child{
         margin-top:55px;
     }
 }

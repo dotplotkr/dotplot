@@ -107,23 +107,6 @@
 
 
 
-
-
-    <!-- ChannelIO -->
-    <script>
-        (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.")}var ch=function(){ch.c(arguments)};ch.q=[];ch.c=function(args){ch.q.push(args)};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x)}}if(document.readyState==="complete"){l()}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l)}})();
-
-        ChannelIO('boot', {
-        "pluginKey": "1f5c0ba8-0135-4a80-9d98-30d0906df7a7" // fill your plugin key
-  
-        });
-    </script>
-    <!-- End ChannelIO -->
-
-
-
-
-
     <!-- Cursor -->
     <div class="cursor"></div>
     <!-- End Cursor -->
@@ -150,14 +133,18 @@
     <header class="header">
         <section class="header-logobox">
             <a href="/index">
-                DOTPLOT
+                <img src="/source/img/DotplotLogo.webp" alt="">
             </a>
         </section>
-        
         <section class="header-menubox" id="menu">
-            <div class="menu-first" id="menu"></div>
-            <div class="menu-second" id="menu"></div>
-            <div class="menu-third" id="menu"></div>
+            <div class="header-menu-en">
+                <p class="contemp">menu</p>
+            </div>
+            <div class="header-menu-dot" id="menu">
+                <div class="menu-first" id="menu"></div>
+                <div class="menu-second" id="menu"></div>
+                <div class="menu-third" id="menu"></div>
+            </div>
         </section>
     </header>
 
@@ -173,48 +160,145 @@
     <!-- End Header -->
 
 
+
+
+    
     <div class="main">
 
-        <div class="contact-title">STORY FOR DOT.</div>
+        <div class="contact-card-container" id="contact-card-container">
+
+            <div class="contact-card-box">
+                
+                <div class="close-button"></div>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="form" class="contact-card-form">
+                    
+                    <input type="hidden" name="access_key" value="bb5e9177-a8d4-4031-b1af-33cefc765808">
+
+                    <div class="form-first-section">
+                        <div class="name-box">
+                        Name <br>
+                        <input type="text" name="name" required id="id"
+                        placeholder="Your Name" class="input-name">
+                        </div>
+                        
+                        <div class="email-box">
+                        Email <br>
+                        <input type="email" name="email" required id="email" data="email" placeholder="your@email.com" class="input-email">
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-second-section">
+                        <div class="position-box">
+                        Number <br>
+                        <input type="name" name="number" 
+                        required id="number" 
+                        placeholder="Number" class="input-position">
+                        </div>
+
+                        <div class="company-box">
+                        Company <br>
+                        <input type="company" name="company" id="company" placeholder="Company Name" class="input-company">
+                        </div>
+                    </div>
+
+                    <div class="form-third-section">
+                        Project
+                    <!-- checkbox -->
+                        <div class="contact-checkbox">
+                            
+                            <input type="checkbox" name="product" id="checkbox1-1">
+                            <label for="checkbox1-1" class="checkbox1-1">
+                                영상 및 디자인
+                            </label>
+
+                            <input type="checkbox" name="branding" id="checkbox1-2">
+                            <label for="checkbox1-2" class="checkbox1-2">
+                                    브랜딩
+                            </label>
+
+                            <input type="checkbox" name="marketing" id="checkbox1-3">
+                            <label for="checkbox1-3" class="checkbox1-3">
+                                    마케팅
+                            </label>
+
+                            <input type="checkbox" name="etc" id="checkbox1-4">
+                            <label for="checkbox1-4" class="checkbox1-4">
+                                    기타문의
+                            </label>
+                        </div>
+                    <!-- checkbox -->
+                    </div>
+
+                    <div class="form-fourth-section">
+                        Budget
+                    <!-- checkbox -->
+                        <div class="contact-checkbox">
+                            
+                            <input type="checkbox" name="- 100" id="checkbox2-1">
+                            <label for="checkbox2-1" class="checkbox2-1">
+                                - 100
+                            </label>
+
+                            <input type="checkbox" name="300-500" id="checkbox2-2">
+                            <label for="checkbox2-2" class="checkbox2-2">
+                                    100 - 500
+                            </label>
+
+                            <input type="checkbox" name="500+" id="checkbox2-3">
+                            <label for="checkbox2-3" class="checkbox2-3">
+                                    500 +
+                            </label>
+                        </div>
+                    <!-- checkbox -->
+                    </div>
+
+                    <!-- etc -->
+                    <input type="hidden" name="redirect" value="https://dotplot.kr/">
+                    
+                    <!-- end etc -->
+                    <div class="submit-box">
+                        <button type="submit" class="submit-button" >Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
 
         <div class="contact-container">
             <div class="contact-box">
+
                 <img src="/source/img/index/hand.webp" class="main-image img-hand" data-value=".1" alt="손">
-                <a href ="https://walla.my/otform" target="_blank" class="ot" alt="" id="ot">WRITE OT <span>&#40;click!&#41;</span>
-                    <div class="contact-ot"></div>
+
+                <div class="contact" target="_blank" class="contact" alt="" id="contact">CONTACT
+                    <span>&#40;click!&#41;</span>
+                    <div class="contact-dot"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact-inf-section">
+            <div class="contact-inf-address">
+                <span> WE CAN MEET AT </span> <br>
+                1 Floor, Gosanja-ro 14-gil 26 <br>
+                Seongdong-gu, Seoul <br>
+                Republic of Korea <br>
+            </div>
+            <div class="contact-inf-call">
+                +82. 70. 8098. 2655.
+            </div>
+            <div class="contact-inf-mail">
+                <a href="mailto:contact@dotplot.kr">
+                    <span>MAIL TO</span> <br>
+                    contact@dotplot.kr 
                 </a>
             </div>
-            <div class="contact-scope">	
-                <div class="contact-scope-section">
-                    PERFORMANCE
-                    &#183; SNS MARKETING
-                    &#183; INFLUENCER
-                    &#183; SEO
-                    &#183; COPYWRITE
-                    &#183; WEBSITES
-                    &#183; PRODCTS DESIGN
-                    &#183; GRAPHIC DESIGN
-                    &#183; FILM PRODUCTION
-                    &#183; PHOTOGRAPHY
-                    &#183; 2D GRAPHICS
-                    &#183; 3D GRAPHICS
-                    &#183; BRAND COMMUNICATION
-                    &#183; BRAND IDENTITY
-                    &#183; BRAND GUIDES
-                    &#183; CAMPAIGNS
-                    &#183; CONSULTING
-                    &#183; ANALYTICS &#183;&#183;&#183;
-                </div>
-                <div class="contact-inf-section">
-                    <div class="contact-inf-mail">
-                        <a href="mailto:contact@dotplot.kr"><span>MAIL TO</span> &#40; contact@dotplot.kr &#41;</a>
-                        </div>
-                    <div class="contact-inf-address">
-                    <span> WE CAN MEET AT </span> &#40; Seoul Seongdong-gu Gosanja-ro 14-gil 26 &#41;
-                    </div>
-                </div>
-          </div>
+
         </div>
+
     </div>
 
     <div class="footer">
