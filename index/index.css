@@ -642,6 +642,11 @@ html{
   text-align: center;
   padding-bottom:100px;
 }
+
+
+.contemp{
+  display:none;
+}
 }
 /* End area-1 */
 

@@ -1075,6 +1075,12 @@ input[id="popup4"] + label + div > label {
         font-weight:300;
         margin:1px;
       }
+
+
+  .contemp{
+    display:none;
+  }
+  
       }
       
 

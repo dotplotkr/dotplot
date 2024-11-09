@@ -514,6 +514,10 @@ html{
         font-weight:300;
         margin:1px;
       }
+
+  .contemp{
+    display:none;
+  }
     }
   /* 워크 래퍼 끝 */
 
