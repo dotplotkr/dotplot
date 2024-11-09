@@ -517,6 +517,11 @@ html{
     }
   /* 워크 래퍼 끝 */
 
+
+  .displayFlex{
+    display:flex;
+  }
+  
 /* 메인 정리 끝 */
 
 /* Footer start*/
