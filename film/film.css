@@ -1030,7 +1030,7 @@ input[id="popup4"] + label + div > label {
 
 
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:430px){
     .workBox{
       margin-top:0vh;
     }
@@ -1080,7 +1080,7 @@ input[id="popup4"] + label + div > label {
   .contemp{
     display:none;
   }
-  
+
       }
       
 
@@ -1122,7 +1122,7 @@ input[id="popup4"] + label + div > label {
         }
       }
 
-      @media screen and (max-width:480px){
+      @media screen and (max-width:430px){
         input[id="popup"] + label + div > div{
           width:96vw;
           height:54vw;
@@ -1170,7 +1170,7 @@ input[id="popup4"] + label + div > label {
         }
       }
 
-      @media screen and (max-width:480px){
+      @media screen and (max-width:430px){
         input[id="popup2"] + label + div > div{
           width:96vw;
           height:54vw;
@@ -1220,7 +1220,7 @@ input[id="popup3"] + label + div > div > label{
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:430px){
   input[id="popup3"] + label + div > div{
     width:96vw;
     height:54vw;
@@ -1267,7 +1267,7 @@ input[id="popup4"] + label + div > div > label{
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:430px){
   input[id="popup4"] + label + div > div{
     width:96vw;
     height:54vw;

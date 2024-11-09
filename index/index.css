@@ -565,7 +565,7 @@ html{
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:430px){
   .area-1 > .image-box img{
     position:absolute;
     object-fit: cover;
@@ -648,6 +648,7 @@ html{
   display:none;
 }
 }
+
 /* End area-1 */
 
 
@@ -928,7 +929,7 @@ html{
 
   }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:430px){
   .area-2 > .intro-background-container > .intro-box > .intro-explain{
     font-size:1rem;
   }
@@ -1189,7 +1190,7 @@ html{
   }
 
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:430px){
       .area-3 > .value-img-container > .value-img-box-1{
         width:150px;
         height:450px;
@@ -1584,7 +1585,7 @@ html{
 
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:430px){
   .area-4 >  .works-title{
     font-size: 4rem;
     align-items: center;
