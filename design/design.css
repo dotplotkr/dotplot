@@ -385,7 +385,7 @@ html{
   }
   
   .work_wrapper div > .work > img{
-    opacity:30%;
+    opacity:100%;
     border-radius: 20px;
     width:60vw;
     height:75vh; 
@@ -394,7 +394,7 @@ html{
   }
 
   .work_wrapper div > .work:hover > img{
-    opacity:100%;
+    opacity:70%;
     transform: scale(0.8);
   }
 
