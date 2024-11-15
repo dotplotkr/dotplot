@@ -194,7 +194,7 @@ html{
 
     .header-logobox > a > img{
       
-      width:80px;
+      width:90px;
     }
  
 
@@ -737,8 +737,9 @@ html{
   display:block;
   width:100vw;
   height:100vh;
-
+  
 }
+
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper > .video-box{
   display:flex;
   width:100vw;
@@ -750,6 +751,7 @@ html{
 .area-2 > .intro-background-container > .intro-box > .intro-video-wrapper > .video-box > video{
   width:100vw;
   object-fit: cover;
+  
 
 }
 
@@ -815,10 +817,12 @@ html{
 
 }
 
+
 .showreel > iframe{
   width:80vw;
   height:90vh;
-  z-index: 1;
+  z-index:1;
+
 }
 
 .displayFlex{
@@ -916,10 +920,12 @@ html{
     margin-left:2vw;
     width:50vw;
   }
+
   .showreel > iframe{
     width:85vw;
     height:90vh;
     z-index: 1;
+
   }
 
   .showreel-close-box{
