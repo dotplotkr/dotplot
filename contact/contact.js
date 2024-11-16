@@ -108,7 +108,7 @@ function parallax(e){
 
     const conCard = document.getElementById('contact-card-container');
 
-    $('.contact').click(function changeId(){
+    $('.contact-button').click(function changeId(){
 
       conCard.setAttribute('id','displayFlex')
       
@@ -119,6 +119,3 @@ function parallax(e){
       conCard.setAttribute('id','contact-card-container')
       
     })
-
-
-    
