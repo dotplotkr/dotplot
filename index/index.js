@@ -244,17 +244,11 @@ const vimeoBg = $('.showreel-bg');
 
 introVideo.click(function(){
   $('.showreel').addClass('displayFlex')
+  
 });
-
-vimeoBg.click(function(){
-$('.showreel').removeClass('displayFlex');
-
-vimeo.setAttribute('src','https://player.vimeo.com/video/887994748?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479');
-})
 
 vimeoClose.click(function(){
   $('.showreel').removeClass('displayFlex');
- 
 
   vimeo.setAttribute('src','https://player.vimeo.com/video/887994748?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479');
 });
