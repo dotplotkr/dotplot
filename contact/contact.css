@@ -1373,7 +1373,7 @@ input[id="checkbox2-3"]:checked + label{
     }
     
     .main > .contact-container > .contact-box > .img-hand{
-        margin-left:10vw;
+        margin-left:15vw;
         position:absolute;
         width:30%;
         left:40%;
