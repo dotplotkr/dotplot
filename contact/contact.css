@@ -1290,7 +1290,7 @@ input[id="checkbox2-3"]:checked + label{
     align-items: center;
     width:50vw;
     height:70vh;
-    border:1px solid red;
+    
     
 }
 
@@ -1298,7 +1298,7 @@ input[id="checkbox2-3"]:checked + label{
   position:absolute;
   width:300px;
   top:15%;
-  border:1px solid blue;
+ 
 }
 
 .main > .contact-container > .contact-box > .contact-button{
