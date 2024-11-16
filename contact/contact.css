@@ -1377,7 +1377,7 @@ input[id="checkbox2-3"]:checked + label{
         position:absolute;
         width:30%;
         left:40%;
-        top:35%;
+        margin-top:20%;
     }
 
 }
