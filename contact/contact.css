@@ -1290,17 +1290,15 @@ input[id="checkbox2-3"]:checked + label{
     align-items: center;
     width:50vw;
     height:70vh;
-    
+    border:1px solid red;
     
 }
 
-.main > .contact-container > .contact-box > img{
-    margin-left:40vw;
-    position:absolute;
-    width:300px;
-    left:10%;
-    top:15%;
-
+.main > .contact-container > .contact-box > .img-hand{
+  position:absolute;
+  width:300px;
+  top:15%;
+  border:1px solid blue;
 }
 
 .main > .contact-container > .contact-box > .contact-button{
@@ -1488,11 +1486,10 @@ transition: 1s;
         
     }
     
-    .main > .contact-container > .contact-box > img{
+    .main > .contact-container > .contact-box > .img-hand{
         margin-left:10vw;
         position:absolute;
-        width:20%;
-        left:15%;
+        top:20%;
     }
 
 
