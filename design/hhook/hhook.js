@@ -84,9 +84,9 @@ $('.header-menubox').click(function(){
 
 
 // GSAP 
-gsap.to('.card-1', {
+gsap.to('.section-1', {
   scrollTrigger:{
-    trigger:'.card-1',
+    trigger:'.section-1',
     scrub:true,
     start:"top",
     end:"bottom",
@@ -95,9 +95,33 @@ gsap.to('.card-1', {
   opacity:0
 });
 
-gsap.from('.card-6', {
+
+gsap.from('.problem', {
   scrollTrigger:{
-    trigger:'.card-6',
+    trigger:'.area-3',
+    scrub:true,
+    start:"top-=10%",
+    end:"top+=10%",
+    markers:false
+    },
+  opacity:0
+});
+
+
+gsap.from('.problem-2', {
+  scrollTrigger:{
+    trigger:'.area-3',
+    scrub:true,
+    start:"top+=10%",
+    end:"top+=30%",
+    markers:false
+    },
+  opacity:0
+});
+
+gsap.from('.idImgCon', {
+  scrollTrigger:{
+    trigger:'.idImgCon',
     toggleActions: 'restart none none none',
     },
   scale:1.3,

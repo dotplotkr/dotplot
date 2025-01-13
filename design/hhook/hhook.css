@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+HK:wght@200..900&display=swap');
+
+
+@import url("https://use.typekit.net/ipm5esh.css");
 
 /* Nomalize */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    white-space: nowrap;
 }
 
-body, ul, li{
+body, div, div{
     margin:0;
     padding:0;
     list-style:none;
@@ -37,7 +42,21 @@ h3{
 
 
 /* Lib */
+.title{
+  margin:0;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 3rem;
+  font-weight:bold;
+  color:#b9b9b9;
+}
 
+.subtitle{
+  margin:2px;
+  font-family: 'avalon';
+  font-weight: 100;
+  font-size: 1rem;
+  color:#b9b9b9;
+}
 /* End Lib */
 
 
@@ -138,7 +157,7 @@ html{
   }
   
   .progress-text{
-    font-family:'roboto','sans-serif';
+    font-family: "aktiv-grotesk", sans-serif;
     font-size:15px;
     position: absolute;
     z-index:300;
@@ -314,7 +333,7 @@ html{
 .menuSelectorWrapper{
   display:none;
   flex-direction: column;
-  font-family:'Roboto','sans-serif';
+  font-family: "aktiv-grotesk", sans-serif;
   font-weight:700;
   justify-content: center;
   align-items: start;
@@ -332,6 +351,13 @@ html{
 }
 
 
+@media screen and (max-width:480px){
+
+  .menuEn{
+  display:none;
+  }
+  
+  }
   
   /* End Header */
 
@@ -341,240 +367,1031 @@ html{
 /* Main start */
 
 .mainBox{
-  width:100;
+  width:100vw;
   overflow: hidden;
-}
-
-.title{
-  margin:0;
-  font-family:'Anton', sans-serif;
-  font-size: 3rem;
-  font-weight:bold;
-  color:#b9b9b9;
-}
-
-.subtitle{
-  margin:2px;
-  font-family: 'avalon';
-  font-weight: 100;
-  font-size: 1rem;
-  color:#b9b9b9;
-}
-
-.card-1{
-  display:flex;
-  position:fixed;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  font-weight:300;
   color:white;
-  z-index: -1;
+
 }
-.card-1 > video{
+
+.area-1{
   display:flex;
-  object-fit: cover;
   width:100vw;
   height:100vh;
-  pointer-events: none;
-  z-index:1;
-  color:white;
-  font-size:100rem;
-  box-sizing:border-box;
+
 }
-.card-2{
+
+.area-1 > .video-container{
+  display:flex;
+  position:absolute;
+  width:100vw;
   height:100vh;
-  display: flex;
-  color:white;
-  font-size:4rem;
+  overflow:hidden;
+  
+}
+
+.area-1 > .video-container > video{
+  position:absolute;
+  width:100vw;
+  
+}
+
+.area-1 > .text-container{
+  display:flex;
+  position:absolute;
   align-items: center;
   justify-content: center;
-  opacity: 0.8;
+  width:100vw;
+  height:100vh;
+
+  font-size:4rem;
+  z-index:3;
+
+  opacity: 100;
+
 }
 
-.card-2 > div:nth-of-type(1){
+
+.area-1 > .text-container > div:nth-of-type(1){
   font-style:italic;
 }
-.card-2 > div:nth-of-type(2){
+.area-1 > .text-container > div:nth-of-type(2){
   font-size:4rem;
 }
-.card-2 > div:nth-of-type(3){
+.area-1 > .text-container > div:nth-of-type(3){
   font-family:'Anton', sans-serif;
   font-weight:bold;
   
 }
 
-.card-3{
+.area-1 > .cover-container{
+  display:flex;
+  position:absolute;
+  margin-top:40%;
+  width:100vw;
+  height:100px;
+
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  
+  font-family: 'notosans-kr', sans-serif;
+  font-size: 14px;
+  font-weight:500;
+
+  
+}
+
+
+.area-1 > .cover-container div{
+  width:150px;
+  height:70px;
+
+  
+}
+
+.area-1 > .participants nav{
+  margin-top:3px;
+  font-weight:200;
+  
+}
+
+
+@media screen and (max-width:480px){
+
+
+  .area-1 > .video-container > video{
+    position:relative;
+    object-fit: cover;
+  }
+
+  .area-1 > .text-container > div:nth-of-type(1){
+    font-size:1.5rem;
+  }
+  .area-1 > .text-container > div:nth-of-type(2){
+    font-size:1.5rem;
+  }
+  .area-1 > .text-container > div:nth-of-type(3){
+    font-size:1.5rem;
+  }
+
+  .area-1 > .cover-container{
+    display:flex;
+    margin-top:85vh;
+    font-weight: 200;
+    font-size: .8rem;
+  }
+
+  .area-1 > .cover-container div{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    padding:10px;
+  }
+
+}
+
+
+
+
+.area-2{
+  display:flex;
+  flex-direction: row;
   background-color:black;
   color:white;
-  padding:150px 50px;
+  padding:200px 150px;
+  height:1000px;
 }
 
-.card-3 > ul{
+.area-2 > div{
   display:flex;
-  align-items: center;
+  flex-direction: column;
+  height:300px;
+  align-items: start;
   justify-content: space-around;
+
+  font-family:'Noto Sans KR', sans-serif;
 }
 
-.card-3 > ul > li > .substanceKr{
+
+.area-2 > div > .overviewTitle{
+font-size: 1.6rem;
+font-weight:600;
+}
+
+
+.area-2 > div > .overviewTeamhhook{
   display:inline-block;
-  margin-top:100px;
-  font-family:'Noto Sans KR', sans-serif;
-  font-weight:400;
+  margin-top:50px;
+  
+  font-weight:300;
   font-size: 1rem;
   margin-right:3vw;
 }
 
-.card-3 > ul > li > .substanceEn{
+.area-2 > div > .overviewDotplot{
   display:inline-block;
-  margin-top:100px;
+  margin-top:15px;
   font-family:'Noto Sans KR', sans-serif;
-  font-weight:400;
+  font-weight:300;
   font-size: 1rem;
 }
 
 
 
-.card-4 > video{
+.area-2 > .overviewSnap{
   display:flex;
+  position:absolute;
+  left:50%;
+  width:1000px;
   object-fit: cover;
-  pointer-events: none;
   z-index:1;
-  width:100vw;
   color:white;
-  font-size:100rem;
   box-sizing:border-box;
 }
 
-
-
-.card-5{
-  background-color:black;
-  color:white;
-  padding:150px 50px;
-}
-
-.card-5 > ul{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card-5 > ul > li > .substanceKr{
-  display:inline-block;
-  margin-top:100px;
-  font-family:'Noto Sans KR', sans-serif;
-  font-weight:400;
-  font-size: 1rem;
-  margin-right:3vw;
-}
-
-.card-5 > ul > li > .substanceEn{
-  display:inline-block;
-  margin-top:100px;
-  font-family:'Noto Sans KR', sans-serif;
-  font-weight:400;
-  font-size: 1rem;
-}
-
-.card-6{
-  display:flex;
-  width:100vw;
-  background-color:black;
-  color:white;
-}
-.card-6 > ul{
-  display:flex;
-  
-}
-.card-6 > div{
-  position:absolute;
-  margin:150px 50px;
-}
-
-.card-6 > ul > li{
-  margin-top:150px;
-}
-
-.card-6 > ul > li > img{
-  width:calc(100vw/3);
-}
-
-.card-7{
-  display:block;
-  background-color:black;
-  width:100vw;
-  padding:150px 50px;
-  color:white;
-}
-
-.card-7 > img{
+.area-2 > .overviewSnap div{
   object-fit: cover;
-  box-sizing: border-box;
-  width:calc(100vw - 100px);
+  width:500px;
+
 }
 
-.card-8 > ul{
-  display:block;
-  background-color: black; 
-}
-
-.card-8 > ul li{
-  width:100vw;
-}
-
-.card-8 > ul li >img{
-  width:100vw;
+.area-2 > .overviewSnap div img{
+  position:absolute;
+  width:500px;
 }
 
 
-@media screen and (max-width:430px){
+.area-2 > .overviewSnap > div:nth-child(1) > .hhookPhoto1{
+  top: -100px;
+}
 
-  .card-2{
-    font-size:1.6rem;
-  }
-  .card-2 > div:nth-of-type(2){
-    font-size:1.6rem;
-  }
-  
-  .card-4{
-    height:50vh;
-    width:100vw;
-    display:flex;
-    align-items: center;
-    background-color:black;
-    scale:1.4;
-  }
+.area-2 > .overviewSnap > div:nth-child(2) > .hhookPhoto2{
+  top:200px;
+  left:300px;
+}
 
-  .card-4 > video{
-    object-fit: contain;
-  }
-  
-  .card-6 > ul{
-    display:block;
-  }
-  .card-6 > ul li{
-    margin:0;
-  }
+.area-2 > .overviewSnap > div:nth-child(3) > .hhookPhoto3{
+  width:350px;
+  top:500px;
+  left:80px;
+}
 
-  .card-6 > ul li:first-child{
-    margin-top:150px;
-  }
 
-  .card-6 > ul li > img{
-    width:100vw;
-    display:block;
+@media screen and (max-width: 480px){
+  .area-2{
+    flex-direction: column;
+    padding: 150px 50px;
+    height:1500px;
     
   }
-  .card-7{
-    margin:10% 0;
-    scale:1.2;
+
+  .area-2 > div > .overviewTitle{
+    font-size: 1.2rem;
   }
 
+  .area-2 > div > .overviewTeamhhook{
+    width:80vw;
+    font-size:.8rem;
+    white-space: normal;
+    text-align: justify;
+  }
 
-  .contemp{
+  .area-2 > div > .overviewTeamhhook br{
     display:none;
   }
 
+  .area-2 > div > .overviewDotplot{
+    white-space: normal;
+    display:inline-block;
+    width:80vw;
+    margin-top:15px;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight:300;
+    font-size: .8rem;
+
+    text-align: justify;
+  }
+  
+  .area-2 > div > .overviewDotplot br{
+    display:none;
+  }
+  
+  .area-2 > .overviewSnap{
+    display:flex;
+    position:relative;
+    left:0;
+    width:100vw;
+    color:white;
+
+    object-fit: cover;
+    
+    box-sizing:border-box;
+    z-index:1;
+
+    margin-top: 10vh;
+  }
+  
+  .area-2 > .overviewSnap div{
+    width:80vw;
+    margin:5px;
+  
+  }
+  
+  .area-2 > .overviewSnap div img{
+    position:absolute;
+    width:100%;
+  }
+  
+  
+  .area-2 > .overviewSnap > div:nth-child(1) > .hhookPhoto1{
+    position:relative;
+    top: 0;
+  }
+  
+  .area-2 > .overviewSnap > div:nth-child(2) > .hhookPhoto2{
+    position:relative;
+    top:0;
+    left:0;
+  }
+  
+  .area-2 > .overviewSnap > div:nth-child(3) > .hhookPhoto3{
+    position:relative;
+    width:100%;
+    top:0;
+    left:0;
+  }
+}
+
+
+.area-3{
+  display:flex;
+  position:relative;
+  height: 1500px;
+
+  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.56)), url('/source/img/design/hhook/Alli.webp');
+  background-size: cover;
+
+  color:white;
+  padding:200px 150px;
+  font-family:'Noto Sans KR', sans-serif;
+  
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+
+.area-3 > div{
+  display:flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.area-3 > div > .problem{
+  margin-top:200px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  font-weight:300;
+  z-index: 1;
+  
+  
+}
+
+.area-3 > div > .problem > p{
+  font-size:1.2rem;
+
+  font-family: "Noto Serif HK", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.area-3 > div > .problem-2{
+  margin-top:200px;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:1rem;
+  font-weight:300;
+  z-index: 1;
+  
+}
+
+.area-3 > div > .problem-2 > p{
+  font-size:1.2rem;
+
+  font-family: "Noto Serif HK", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.area-3 > div nav{
+  
+  z-index: 1;
+}
+
+
+
+@media screen and (max-width:480px){
+  .area-3{
+    display:flex;
+    position:relative;
+    height: 1000px;
+  
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.56)), url('/source/img/design/hhook/Alli.webp');
+    background-size: cover;
+    background-position-x: -400px;
+  
+    color:white;
+    padding:150px 50px;
+    font-family:'Noto Sans KR', sans-serif;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+  
+  }
+  
+  
+  .area-3 > div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+  
+  }
+  
+  .area-3 > div > .problem{
+    font-size:.8rem;
+    white-space: normal;
+  }
+  
+ 
+  
+  
+  .area-3 > div > .problem-2{
+    font-size:.8rem;
+    white-space: normal;
+  }
+  
+
+
+
+}
+
+
+
+.area-4{
+  display:flex;
+  flex-direction: column;
+  padding:200px 150px;
+}
+
+.area-4 > .identity > .idTitle{
+  font-size:1.6rem;
+  font-weight:600;
+}
+
+.area-4 > .identity > .idBody{
+  margin:75px 0;
+}
+
+.area-4 > .idImgCon{
+  height:100vh;
+  display:Flex;
+  align-self: center;
+  margin-top:150px;
+  
+}
+
+.area-4 > .idImgCon div{
+  overflow: hidden;
+}
+
+.area-4 > .idImgCon div img{
+  width: calc(100vw/3);
+}
+
+
+
+
+@media screen and (max-width:480px){
+  .area-4{
+    display:flex;
+    flex-direction: column;
+    padding:150px 50px;
+  }
+  
+  .area-4 > .identity > .idTitle{
+    font-size:1.2rem;
+    font-weight:600;
+  }
+  
+  .area-4 > .identity > .idBody{
+    font-size:.8rem;
+    white-space: normal;
+  }
+  
+  .area-4 > .identity > .idBody br:not(:nth-child(n+2):nth-child(-n+3)){
+    display:none;
+  }
+
+  .area-4 > .idImgCon{
+    height:240vh;
+    display:Flex;
+    flex-direction: column;
+    align-self: center;
+    margin:0;
+    padding:0;
+  }
+  
+  .area-4 > .idImgCon div{
+    overflow: hidden;
+  }
+  
+  .area-4 > .idImgCon div img{
+    width: 90vw;
+    margin:5px;
+  }
+  
+  .area-4> .dImgCon div{
+width:100%;
+height:100%;
+    border:1px solid green;
+  }
+}
+
+
+.area-5{
+  display:flex;
+  flex-direction:column;
+
+  background-color:black;
+  width:100vw;
+  padding:200px 150px;
+
+  font-size: 18px;
+  font-weight: 500;
+  color:white;
+}
+
+.area-5 > .logoHead{
+  font-weight:300;
+}
+
+.area-5 > .visualTitle{
+  font-size:1.6rem;
+  font-weight:600;
+  margin-bottom: 75px;
+}
+
+
+.area-5 > .logoExpl{
+  font-size:16px;
+  font-weight:300;
+  text-align: end;
+
+  margin-top:-30px;
+}
+
+.area-5 > .logoType{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc(100vw - 300px);
+  overflow: hidden;
+}
+
+
+.area-5 > .logoType > img{
+  width:100%;
+  margin-bottom:100px;
+}
+
+.area-5 > .fontHead{
+  font-weight:300;
+}
+
+.area-5 > .mainFont{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  margin-top:200px;
+  margin-bottom:200px;
+
+  overflow:hidden;
+}
+
+.area-5 > .fontExpl{
+  font-size:16px;
+  font-weight:300;
+  text-align: end;
+
+  margin-top:-30px;
+}
+.area-5 > .mainFont div{
+  display:flex;
+  justify-content:center;
+}
+
+.area-5 > .mainFont img{
+  width:90%;
+
+}
+
+.area-5 > .colorExpl{
+  font-size:16px;
+  font-weight:300;
+  text-align: end;
+
+  margin-top:-30px;
+}
+
+.area-5 > .colorHead{
+  font-weight:300;
+}
+
+.area-5 > .brandColor{
+  margin-top:200px;
+  display:flex;
+  width:100vw;
+}
+
+.area-5 > .brandColor > div:first-child{
+  display:flex;
+  flex-direction: column;
+
+  width:60%;
+  height:150px;
+  border-radius: 5px;
+
+  font-size:15px;
+  font-weight: 300;
+  padding: 10px 25px;
+  line-height: 0;
+
+  background-color: #A90F29;
+}
+
+.area-5 > .brandColor > div:last-child{
+  display:flex;
+  flex-direction: column;
+
+  width:60%;
+  height:150px;
+  border-radius: 5px;
+
+  font-size:15px;
+  font-weight: 300;
+  padding: 10px 25px;
+  line-height: 0;
+
+
+  background-color: #080506;
+}
+
+
+@media screen and (max-width:480px){
+  .area-5{
+    display:flex;
+    width:100vw;
+    height:100%;
+    flex-direction: column;
+    padding:100px 50px;
+  
+    font-size: 1rem;
+    font-weight: 600;
+
+  }
+  
+  .area-5 > .visualTitle{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom: 75px;
+  }
+
+  .area-5 > .logoHead{
+    font-weight:300;
+    white-space: normal;
+  }
+  
+  
+  .area-5 > .logoExpl{
+    font-size:.8rem;
+    font-weight:300;
+    white-space: normal;
+    margin-top:20px;
+    text-align: justify;
+  }
+
+  .area-5 > .logoExpl br{
+    display:none;
+  }
+  
+  .area-5 > .logoType{
+    display:flex;
+  
+    width: 80vw;
+    overflow: hidden;
+  }
+  
+  
+  .area-5 > .logoType > img{
+    width:100%;
+    margin:50px 0;
+  }
+  
+  .area-5 > .fontHead{
+    font-weight:300;
+    margin-bottom:20px; 
+  }
+  
+  .area-5 > .mainFont{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    margin:50px 0;
+  
+    overflow:hidden;
+  }
+  
+  .area-5 > .fontExpl{
+    font-size:.8rem;
+    font-weight:300;
+    text-align: justify;
+    white-space: normal;
+  
+    margin-top:0px;
+  }
+
+  .area-5 > .fontExpl br{
+    display: none;
+  }
+  
+
+  .area-5 > .mainFont img{
+    width: 100vw;
+    overflow: hidden;
+  
+  }
+  
+  .area-5 > .colorExpl{
+    font-size:.8rem;
+    font-weight:300;
+    text-align: justify;
+    white-space: normal;
+  
+    margin-top:20px;
+  }
+  
+  .area-5 > .colorHead{
+    font-weight:300;
+  }
+  
+  .area-5 > .brandColor{
+    margin:100px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100vw;
+  }
+  
+  .area-5 > .brandColor > div:first-child{
+    display:flex;
+  
+    width:80%;
+    height:150px;
+    border-radius: 5px;
+  
+    font-size:0.8rem;
+    font-weight: 300;
+    padding: 10px 25px;
+  
+    background-color: #A90F29;
+  }
+  
+  .area-5 > .brandColor > div:last-child{
+    display:flex;
+  
+    width:80%;
+    height:150px;
+    border-radius: 5px;
+  
+    font-size:0.8rem;
+    font-weight: 300;
+    padding: 10px 25px;
+  
+    background-color: #080506;
+
+    margin-bottom:-100px;
+  }
+
+}
+
+
+
+.area-6{
+  display:flex;
+  flex-direction:column;
+  padding: 200px 150px;
+}
+
+.area-6 > .visualTitle{
+  font-size:1.6rem;
+  font-weight:600;
+}
+
+.area-6 > .applicationBox{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-6 > .applicationBox > .appTitle{
+  margin-top: 100px;
+  font-weight:400;
+  
+}
+
+.area-6 > .applicationBox > .appExpl{
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+.area-6 > .signBox{
+  position:absolute;
+  margin:0 -150px;
+  width:100%;
+  height:110%;
+  z-index:-1;
+
+  overflow: hidden;
+}
+
+.area-6 > .signBox > .imgGradientBox{
+  position:absolute;
+  width:100%;
+  height:100%;
+
+  background: 
+  linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1));
+  z-index:1;
+}
+
+
+
+.area-6 > .signBox > img{
+  width:100vw;
+  transform: translateY(-10%);
+}
+
+
+.area-6 > .appImgBox{
+  display:flex;
+  flex-direction: column;
+  width:100vw;
+  margin:100px -150px;
+
+}
+
+.area-6 > .appImgBox > .poster img{
+  width:50%;
+}
+
+.area-6 > .appImgBox > .tshirt{
+  width:100%;
+  margin-top:-300px;
+  margin-left: -100px;
+}
+
+.area-6 > .appImgBox > .tshirt > img{
+  widtH:100%;
+}
+
+.area-6 > .appImgBox > .namecard{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  margin-top:-55vh;
+  margin-left: 65vw;
+}
+
+.area-6 > .appImgBox > .namecard > img{
+  width:25%;
+  margin:10px;
+}
+
+.area-6 > .appImgBox > .namecard > img:first-child{
+  margin-left:-150px;
+}
+
+.area-6 > .appImgBox > .patch{
+  width:100%;
+}
+
+.area-6 > .appImgBox > .patch > img{
+  width:40%;
+  margin-left: 15vw;
+  margin-top: -50vh;
+}
+
+
+@media screen and (max-width:480px){
+  .area-6{
+    width:100%;
+    height:420vh;
+    display:flex;
+    flex-direction:column;
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+  }
+  
+  .area-6 > .visualTitle{
+    font-size:1.2rem;
+    font-weight:600;
+  }
+  
+  .area-6 > .applicationBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .area-6 > .applicationBox > .appTitle{
+    margin-top: 100px;
+    font-weight:300;
+    
+  }
+  
+  .area-6 > .applicationBox > .appExpl{
+    margin-top: 50px;
+
+    font-size:0.8rem;
+    text-align: justify;
+
+    white-space: normal;
+  }
+  
+  .area-6 > .applicationBox > .appExpl br{
+    display:none;
   }
 
 
+  .area-6 > .signBox{
+    position:absolute;
+    margin:-50px;
+    width:100%;
+    z-index:-1;
+  
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .area-6 > .signBox > .imgGradientBox{
+    position:absolute;
+    width:100%;
+    height:100%;
+  
+    background: 
+    linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1));
+    z-index:1;
+  }
+  
+  
+  
+  .area-6 > .signBox > img{
+    object-fit: cover;
+    scale: 1.4;
+    transform: translateY(0);
+  }
+  
+  
+  .area-6 > .appImgBox{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    margin:0;
+    padding:0;
+    margin:50px -50px;
+  }
+
+  .area-6 > .appImgBox > .poster{
+    display:flex;
+    flex-direction: column;
+    margin-top:50px;
+  }
+
+  .area-6 > .appImgBox > .poster img{
+    width:100%;
+    scale:1.4;
+    margin:50px 0;
+  }
+  
+  .area-6 > .appImgBox > .tshirt{
+    width:100%;
+    margin:75px 0;
+    overflow:hidden;
+    margin-bottom:0px;
+  }
+  
+  .area-6 > .appImgBox > .tshirt > img{
+    width:100%;
+    scale:1.5;
+    object-fit: cover;
+  }
+  
+  .area-6 > .appImgBox > .namecard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    width:100%;
+    margin:75px 0;
+  }
+  
+  .area-6 > .appImgBox > .namecard > img{
+    width:70%;
+    margin:10px;
+
+  }
+  
+  .area-6 > .appImgBox > .namecard > img:first-child{
+    margin:10px;
+  }
+  
+  .area-6 > .appImgBox > .patch{
+    display:flex;
+    justify-content: center;
+    width:100vw;
+    margin: 100px 0;
+  }
+  
+  .area-6 > .appImgBox > .patch > img{
+    width:100%;
+    margin:100px 0;
+    scale:2;
+  }
+
+}
 
 /* Main end */
 
