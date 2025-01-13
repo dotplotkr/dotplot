@@ -583,8 +583,9 @@ font-weight:600;
 
 @media screen and (max-width: 480px){
   .area-2{
+    display:flex;
     flex-direction: column;
-    padding: 150px 50px;
+    padding: 150px 25px;
     height:1500px;
     
   }
@@ -622,9 +623,12 @@ font-weight:600;
   
   .area-2 > .overviewSnap{
     display:flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
     position:relative;
     left:0;
-    width:100vw;
+    
     color:white;
 
     object-fit: cover;
@@ -632,13 +636,15 @@ font-weight:600;
     box-sizing:border-box;
     z-index:1;
 
-    margin-top: 10vh;
+    margin-top: 100px;
+
   }
   
   .area-2 > .overviewSnap div{
-    width:80vw;
-    margin:5px;
-  
+    width:100%;
+    margin:5px 0;
+    
+    
   }
   
   .area-2 > .overviewSnap div img{
@@ -755,7 +761,7 @@ font-weight:600;
     background-position-x: -400px;
   
     color:white;
-    padding:150px 50px;
+    padding:150px 25px;
     font-family:'Noto Sans KR', sans-serif;
     
     box-sizing: border-box;
@@ -831,7 +837,7 @@ font-weight:600;
   .area-4{
     display:flex;
     flex-direction: column;
-    padding:150px 50px;
+    padding:150px 25px;
   }
   
   .area-4 > .identity > .idTitle{
@@ -867,9 +873,9 @@ font-weight:600;
   }
   
   .area-4> .dImgCon div{
-width:100%;
-height:100%;
-    border:1px solid green;
+  width:100%;
+  height:100%;
+    
   }
 }
 
@@ -888,7 +894,7 @@ height:100%;
 }
 
 .area-5 > .logoHead{
-  font-weight:300;
+  font-weight:400;
 }
 
 .area-5 > .visualTitle{
@@ -922,7 +928,7 @@ height:100%;
 }
 
 .area-5 > .fontHead{
-  font-weight:300;
+  font-weight:400;
 }
 
 .area-5 > .mainFont{
@@ -961,7 +967,7 @@ height:100%;
 }
 
 .area-5 > .colorHead{
-  font-weight:300;
+  font-weight:400;
 }
 
 .area-5 > .brandColor{
@@ -1010,7 +1016,7 @@ height:100%;
     width:100vw;
     height:100%;
     flex-direction: column;
-    padding:100px 50px;
+    padding:100px 25px;
   
     font-size: 1rem;
     font-weight: 600;
@@ -1024,7 +1030,7 @@ height:100%;
   }
 
   .area-5 > .logoHead{
-    font-weight:300;
+    font-weight:400;
     white-space: normal;
   }
   
@@ -1055,7 +1061,7 @@ height:100%;
   }
   
   .area-5 > .fontHead{
-    font-weight:300;
+    font-weight:400;
     margin-bottom:20px; 
   }
   
@@ -1099,7 +1105,7 @@ height:100%;
   }
   
   .area-5 > .colorHead{
-    font-weight:300;
+    font-weight:400;
   }
   
   .area-5 > .brandColor{
@@ -1258,7 +1264,7 @@ height:100%;
     height:420vh;
     display:flex;
     flex-direction:column;
-    padding: 100px 50px;
+    padding: 100px 25px;
 
     box-sizing: border-box;
   }
@@ -1276,7 +1282,7 @@ height:100%;
   
   .area-6 > .applicationBox > .appTitle{
     margin-top: 100px;
-    font-weight:300;
+    font-weight: 400;
     
   }
   
@@ -1326,10 +1332,11 @@ height:100%;
   .area-6 > .appImgBox{
     display:flex;
     flex-direction: column;
-    width:100vw;
+    width:100%;
     margin:0;
     padding:0;
-    margin:50px -50px;
+    margin:50px 0px;
+  
   }
 
   .area-6 > .appImgBox > .poster{
@@ -1381,13 +1388,13 @@ height:100%;
   .area-6 > .appImgBox > .patch{
     display:flex;
     justify-content: center;
-    width:100vw;
+    width:100%;
     margin: 100px 0;
   }
   
   .area-6 > .appImgBox > .patch > img{
     width:100%;
-    margin:100px 0;
+    margin:100px 0px;
     scale:2;
   }
 
