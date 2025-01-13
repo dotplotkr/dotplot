@@ -119,3 +119,14 @@ function parallax(e){
       conCard.setAttribute('id','contact-card-container')
       
     })
+
+    gsap.from('.coLetter', {
+      scrollTrigger:{
+        trigger:'.main',
+        toggleActions: 'restart none none none',
+        },
+      x:150,
+      duration: .5,
+      delay: 2,
+      opacity:0
+    });

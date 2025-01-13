@@ -1427,6 +1427,91 @@ transition: 1s;
   text-decoration: underline;
 }
 
+.coLetter{
+  display:flex;
+  position: fixed;
+  justify-content: end;
+  align-items: end;
+  width:100vw;
+  height:100vh;
+  
+}
+.coLetter > a{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.coLetter > a > .letterCon{
+  width:150px;
+  height:50px;
+  border:1px solid #F2F0F0;
+  border-radius: 9999px;
+  color:#f2f0f0;
+  font-family:'Noto Sans KR', 'san-serif';
+  font-weight:300;
+  font-size: 1rem;
+  text-align: center;  
+  padding:10px;
+
+  margin:75px;
+
+  transition: .2s;
+}
+
+.coLetter > a > .letterCon:hover{
+
+  background-color:#F2F0F0;
+  color:#0d0d0d;
+
+}
+
+@media screen and (max-width: 480px){
+
+  .coLetter{
+    display:flex;
+    position: fixed;
+    justify-content: end;
+    align-items: end;
+    width:100vw;
+    height:100vh;
+    
+  }
+  
+  .coletter > a {
+    display:flex;
+    flex-direction: center;
+    justify-content: center;
+  }
+
+  .coLetter > a > .letterCon{
+    width:120px;
+    height:50px;
+    border:1px solid #F2F0F0;
+    border-radius: 9999px;
+    color:#f2f0f0;
+    font-family:'Noto Sans KR', 'san-serif';
+    font-weight:300;
+    font-size: .8rem;
+
+    
+    padding:10px;
+  
+    margin:200px 15px;
+  
+    transition: .2s;
+  }
+  
+  .coLetter > a > .letterCon:hover{
+  
+    background-color:#F2F0F0;
+    color:#0d0d0d;
+  
+  }
+  
+
+}
+
+
 @media screen and (max-width: 430px){
     .main  > .contact-inf-section{
       display:flex;
@@ -1513,7 +1598,7 @@ transition: 1s;
     height:10vh;
     position:relative;
     width:100vw;
-    background-color: #0d0d0d;
+    
     
   }
   
