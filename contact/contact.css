@@ -1484,6 +1484,9 @@ transition: 1s;
     display:flex;
     flex-direction: center;
     justify-content: center;
+    z-index: 3;
+    margin:200px 15px;
+
   }
 
   .coLetter > a > .letterCon{
@@ -1498,8 +1501,6 @@ transition: 1s;
 
     
     padding:10px;
-  
-    margin:200px 15px;
   
     transition: .2s;
   }
