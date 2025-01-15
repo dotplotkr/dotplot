@@ -1458,9 +1458,10 @@ transition: 1s;
   text-align: center;  
   padding:10px;
   transition: .2s;
+  
 }
 
-.coLetter > a > .letterCon:hover{
+.coLetter > a:hover > .letterCon{
 
   background-color:#F2F0F0;
   color:#0d0d0d;
@@ -1503,12 +1504,7 @@ transition: 1s;
     transition: .2s;
   }
   
-  .coLetter > a > .letterCon:hover{
-  
-    background-color:#F2F0F0;
-    color:#0d0d0d;
-  
-  }
+
   
 
 }
