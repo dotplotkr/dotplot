@@ -1397,6 +1397,7 @@ input[id="checkbox2-3"]:checked + label{
     font-weight: 400;
     font-size: 2rem;
     padding: 150px;
+    z-index: 1;
 
   }
 
@@ -1436,11 +1437,15 @@ transition: 1s;
   height:100vh;
   
 }
+
 .coLetter > a{
   display:flex;
   justify-content: center;
   align-items: center;
+  border-radius: 9999px;
+  margin:75px;
 }
+
 .coLetter > a > .letterCon{
   width:150px;
   height:50px;
@@ -1452,9 +1457,6 @@ transition: 1s;
   font-size: 1rem;
   text-align: center;  
   padding:10px;
-
-  margin:75px;
-
   transition: .2s;
 }
 
@@ -1477,7 +1479,7 @@ transition: 1s;
     
   }
   
-  .coletter > a {
+  .coLetter > a {
     display:flex;
     flex-direction: center;
     justify-content: center;

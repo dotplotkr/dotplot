@@ -196,14 +196,7 @@ let tl4 = gsap.timeline({
 tl4.to(".works-bg",{height:0, width:0});
 
 
-gsap.from('.coLetter', {
-  scrollTrigger:{
-    trigger:'.main',
-    toggleActions: 'restart none none none',
-    },
-  right:150,
-  opacity:0
-});
+
 
 const circularSlider = document.querySelector('.wrapper'),
 slides = document.querySelectorAll('.slides'),

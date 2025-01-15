@@ -126,7 +126,7 @@ function parallax(e){
         toggleActions: 'restart none none none',
         },
       x:150,
-      duration: .5,
+      duration: .5                                                                     ,
       delay: 2,
       opacity:0
     });
