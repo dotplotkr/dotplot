@@ -453,7 +453,7 @@ html{
   
 }
 
-.area-1 > .participants nav{
+.area-1 > .participants div{
   margin-top:3px;
   font-weight:200;
   
@@ -749,7 +749,7 @@ font-weight:600;
 }
 
 
-.area-3 > div nav{
+.area-3 > div div{
   
   z-index: 1;
 }
