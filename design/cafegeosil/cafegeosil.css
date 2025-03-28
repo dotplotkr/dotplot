@@ -4,6 +4,13 @@
 
 @import url("https://use.typekit.net/ipm5esh.css");
 
+@font-face {
+  font-family: 'LeferiBaseType-RegularA';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Nomalize */
 * {
     box-sizing: border-box;
@@ -410,7 +417,7 @@ html{
 
   width:100vw;
 
-  padding:150px 150px;
+  padding:150px 300px;
 
 }
 
@@ -425,6 +432,8 @@ html{
 
   width: 100vw;
   height: 100vh;
+  line-height:1.8;
+  
 }
 
 .area-2 > .overview > .overviewTitle{
@@ -436,6 +445,7 @@ html{
 .area-2 > .overview > .overviewGeosil{
   margin-top:50px;
   text-align: center;
+  
 }
 
 .area-2 > .overview > .overviewDotplot{
@@ -446,7 +456,7 @@ html{
  .area-2 > .overview > .overviewLogo{
   display:flex;
   justify-content: center;
-  width:80%;
+  width:30%;
   margin-top:100px;
 }
 
@@ -464,7 +474,7 @@ html{
 
 .area-3{
   width:100vw;
-  padding:100px 150px;
+  padding:100px 300px;
 }
 
 
@@ -477,13 +487,14 @@ html{
 .discover > .discoverTitleCon{
   width:100%;
   display:flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 .discover > .discoverTitleCon > .discoverTitle{
   width:100%;
   font-size:1.6rem;
   font-weight:600;
+  margin-bottom:30px;
 }
 
 
@@ -506,6 +517,7 @@ html{
 
   font-size: 1.4rem;
   font-weight:400;
+  
 }
 
 .discover > .discoverPicto > div span{
@@ -529,40 +541,348 @@ html{
 
 .solution > .solutionPicto{
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:400px;
-  height:400px;
-  border:.5px solid rgba(0, 0, 0, 0.3);
-  border-radius: 99999px;
+
+  width:100%;
   margin-top:100px;
 
-  font-size:1.4rem;
-  font-weight:400;
+
+  font-size:1.2rem;
+  font-weight:300;
+  margin:200px 0;
+
+  color:rgba(133, 61, 14, 0.6);
 }
+
+
+@keyframes cirToRec {
+  0% {
+    border-radius: 0px;
+  }
+  50%{
+    border-radius: 300px;
+  }
+  100% {
+    border-radius:0px;
+  }
+}
+
+@keyframes recToCir {
+  0% {
+    border-radius: 300px;
+  }
+  75%{
+    border-radius: 0px;
+  }
+  100% {
+    border-radius:300px;
+  }
+}
+
+.solution > .solutionPicto div:nth-child(1){
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  width:300px;
+  height:300px;
+  border:.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 9999px;
+
+  animation-name: cirToRec;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+.solution > .solutionPicto div:nth-child(2){
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  width:270px;
+  height:270px;
+  border:.5px solid rgba(0, 0, 0, 0.3);;
+  border-radius:5px;
+  margin-top:-285px;
+
+  animation-name: recToCir;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  }
+
 .area-4{
   width:100vw;
-  height:100vh;
+
+  display:flex;
+  flex-direction: column;
+
+  padding:100px 0;
   overflow: hidden;
+}
+
+.identity > .identityCon{
+  display:flex;
+  flex-direction: column;
+  padding:0 300px;
+  margin-bottom: 100px;
+  width : 100%;
+  
+}
+
+.identity > .identityCon >.identityTitle{
+  font-size:1.6rem;
+  font-weight:600; 
+  margin-bottom:30px;
 }
 
 .area-4 > video{
   width:100%;
+  border-radius: 10px;
+  align-self: center;
   
 }
+
 .area-5{
   width:100vw;
-  height:100vh;
+  padding:100px 300px;
+}
+
+.concept > .conceptCon{
+  display:flex;
+  flex-direction: column;
+  width : 100%;
+  margin-bottom: 100px;
+}
+
+.concept > .conceptCon >.conceptTitle{
+  font-size:1.6rem;
+  font-weight:600; 
+  margin-bottom:30px;
+}
+
+.concept > .conceptImgCon{
+  display:grid;
+  width: 100%;
+  height: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 200px;
+  grid-auto-rows: 1000px;
+  gap:10px;
+  white-space: nowrap;
+}
+
+.concept > .conceptImgCon div{
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.concept > .conceptImgCon div img{
+  white-space: nowrap;
+  width:100%;
+  height:100%;
+}
+
+.concept > .conceptImgCon > .conceptImg-1{
+  display:grid;
+  border-radius: 20px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+
+}
+.concept > .conceptImgCon > .conceptImg-1 > img{
+  width:120%;
+  transform: translate(-100px, -250px)
+}
+
+.concept > .conceptImgCon > .conceptImg-2{
+  display:grid;
+  border-radius: 20px;
+  grid-column: 4 / 6;
+  grid-row: 1 / 3;
+
+}
+
+.concept > .conceptImgCon > .conceptImg-3{
+  display:grid;
+  border-radius: 20px;
+  grid-column: 4 / 6;
+  grid-row: 3 / 4;
+
+}
+
+.concept > .conceptKey{
+  display:flex;
+  flex-direction: column;
+  margin-top: 200px;
+  font-family: 'LeferiBaseType-RegularA';
+  font-size:4rem;
+}
+
+.conceptKey > .conceptKey-2{
+  text-align: center;
+  margin-top:100px;
+}
+
+.conceptKey > .conceptKey-3{
+  text-align: right;
+  margin-top:100px;
 }
 
 .area-6{
   width:100vw;
-  height:100vh;
+  padding:100px 300px;
 }
 
+
+.elDesign > .elDesignCon{
+  display:flex;
+  flex-direction: column;
+  width : 100%;
+  margin-bottom: 100px;
+}
+
+.elDesign > .elDesignCon >.elDesignTitle{
+  font-size:1.6rem;
+  font-weight:600; 
+  margin-bottom:30px;
+}
+
+
+
+
+
+.elDesign > .elDesignImgCon{
+  display:grid;
+  width: 100%;
+  height: 1000px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-auto-columns: 200px;
+  grid-auto-rows: 200px;
+  gap:30px;
+  white-space: nowrap;
+}
+
+.elDesign > .elDesignImgCon div{
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elDesign > .elDesignImgCon div img{
+  white-space: nowrap;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.elDesign > .elDesignImgCon > .elDesignImg-1{
+  display:grid;
+  border-radius: 20px;
+  grid-column: 1 / 3;
+  grid-row: 1 / 6;
+
+}
+
+
+.elDesign > .elDesignImgCon > .elDesignImg-2 {
+  display:grid;
+  border-radius: 20px;
+  grid-column: 3 / 11;
+  grid-row: 1 / 6;
+
+}
+
+.elDesign > .elDesignImgCon > .elDesignImg-3{
+  display:grid;
+  border-radius: 20px;
+  grid-column: 8 / 11;
+  grid-row: 6 / 9;
+}
+
+.elDesign > .elDesignImgCon > .elDesignImg-3 img{
+  scale: .8;
+  transform:translate(80px, 30px);
+}
+.elDesign > .elDesignImgCon > .elDesignImg-4{
+  display:grid;
+  border-radius: 20px;
+  grid-column: 1 / 8;
+  grid-row: 6 / 9;
+  
+}
+
+.elDesign > .elDesignImgCon > .elDesignImg-4 img{
+  transform: translate(0, -230px);
+}
+
+.elDesign > .colorCon{
+  display:flex;
+  width:100%;
+  height:400px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  margin-bottom:150px;
+}
+
+.elDesign > .colorCon div{
+width:100%;
+height:400px;
+}
+
+.elDesign > .colorCon > .color-brown{
+  width:60%;
+  background-color:#0d0d0d;
+  
+}
+.elDesign > .colorCon > .color-orange{
+  width:20%;
+  background-color:orange;
+  
+}
+.elDesign > .colorCon > .color-navy{
+  width:20%;
+  background-color:navy;
+  
+}
+.elDesign > .colorCon > div p {
+  color: white;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
 .area-7{
   width:100vw;
   height:100vh;
+}
+
+.element > .elements > .symbol img{
+  width:50%;
+}
+.area-7{
+  width:100vw;
+  height:100vh;
+  padding: 100px 300px;
+}
+
+.application > .elDesignCon{
+  display:flex;
+  flex-direction: column;
+  width : 100%;
+  margin-bottom: 100px;
+}
+
+.application > .appCon >.appTitle{
+  font-size:1.6rem;
+  font-weight:600; 
+  margin-bottom:30px;
 }
 /* Main end */
 
