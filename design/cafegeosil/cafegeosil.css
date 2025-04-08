@@ -926,6 +926,7 @@ html{
   .concept > .conceptImgCon > .conceptImg-1 > img{
     width:130%;
     transform:translate(-40px, -100px);
+    object-fit: cover;
   }
   
   .concept > .conceptImgCon > .conceptImg-2{
@@ -1144,6 +1145,7 @@ html{
   
   .elDesign > .elDesignImgCon > .elDesignImg-1 > img{
     transform:translate(0px, -150px);
+    object-fit: cover;
   }
 
   .elDesign > .elDesignImgCon > .elDesignImg-2 {
