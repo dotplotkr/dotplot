@@ -925,7 +925,7 @@ html{
   }
   .concept > .conceptImgCon > .conceptImg-1 > img{
     width:130%;
-    transform:translate(-40px, -100px);
+    transform:translate(-40px, -50px);
     object-fit: cover;
   }
   
