@@ -925,8 +925,9 @@ html{
   }
   .concept > .conceptImgCon > .conceptImg-1 > img{
     width:130%;
-    transform:translate(-40px, -200px);
+    transform:translate(-40px, -100px);
     object-fit: cover;
+    border-radius: 20px;
   }
   
   .concept > .conceptImgCon > .conceptImg-2{
