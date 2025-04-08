@@ -531,7 +531,13 @@ html{
 
 
    .area-2 > .overview > .overviewLogo{
-    margin-top:50px;
+    margin-top:100px;
+  }
+
+  .area-2 > .overview > .overviewLogo > img{
+    min-width:200px;
+    width:30%;
+  
   }
 
 }
