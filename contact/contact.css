@@ -1401,8 +1401,12 @@ input[id="checkbox2-3"]:checked + label{
 
   }
 
-  .main > .contact-inf-section .contact-inf-address > span{
+  .main > .contact-inf-section .contact-inf-address > a > span{
     font-weight:900;
+  }
+
+  .main > .contact-inf-section .contact-inf-address > a:hover{
+    text-decoration: underline;
   }
 
 .main > .contact-inf-section > .contact-inf-mail > a > span{
@@ -1424,7 +1428,23 @@ transition: 1s;
 }
 
 
-.main > .contact-inf-section > .contact-inf-mail:hover{
+
+.main > .contact-inf-section > .contact-inf-mail:hover {
+  text-decoration: underline;
+}
+
+
+.main > .contact-inf-section > .contact-inf-social{
+  display:flex;
+  margin-top:100px;
+  gap:15px;
+}
+
+.main > .contact-inf-section > .contact-inf-social > i{
+  color:#F2F0F0;
+}
+
+.main > .contact-inf-section > .contact-inf-social > i:hover{
   text-decoration: underline;
 }
 
