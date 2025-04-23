@@ -125,7 +125,7 @@ function parallax(e){
         trigger:'.main',
         toggleActions: 'restart none none none',
         },
-      x:150,
+      x:50,
       duration: .5                                                                     ,
       delay: 2,
       opacity:0
